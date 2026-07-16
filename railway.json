@@ -1,0 +1,15 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "IMAGE",
+    "image": "ghcr.io/lxyaverse/nexa:latest"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "startCommand": "node main.js",
+    "healthcheckPath": "/api/info",
+    "healthcheckTimeout": 300,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 5
+  }
+}
