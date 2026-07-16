@@ -1,0 +1,175 @@
+/*
+ * Nexa Chat — Profile Panel & User Card Styles
+ * Enhances the existing InfoPanel and UserCard components
+ * with Nexa design language.
+ */
+
+/* =====================================================
+   USER INFO PANEL (full profile in contextual bar)
+   ===================================================== */
+
+/* Profile avatar section — add a gradient banner above the avatar */
+.rcx-info-panel-avatar,
+[class*='InfoPanelAvatar'] {
+	position: relative;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+/* Inject a gradient banner above the avatar using a pseudo-element approach */
+.rcx-info-panel-avatar::before,
+[class*='InfoPanelAvatar']::before {
+	content: '';
+	display: block;
+	height: 120px;
+	width: 100%;
+	background: linear-gradient(135deg, #6c63ff 0%, #8b5cf6 50%, #a855f7 100%);
+	border-radius: 8px 8px 0 0;
+	margin-bottom: -48px;
+}
+
+/* Avatar sits on top of the banner */
+.rcx-info-panel-avatar .rcx-avatar,
+[class*='InfoPanelAvatar'] .rcx-avatar {
+	position: relative;
+	z-index: 1;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
+	margin-top: 0;
+}
+
+/* Dark mode banner */
+[data-color-scheme='dark'] .rcx-info-panel-avatar::before,
+[data-color-scheme='dark'] [class*='InfoPanelAvatar']::before {
+	background: linear-gradient(135deg, #4c44b5 0%, #6a4cbf 50%, #803aac 100%);
+}
+
+[data-color-scheme='dark'] .rcx-info-panel-avatar .rcx-avatar,
+[data-color-scheme='dark'] [class*='InfoPanelAvatar'] .rcx-avatar {
+	border-color: #1f2937;
+}
+
+/* =====================================================
+   INFO PANEL SECTIONS
+   ===================================================== */
+
+/* Display name / title */
+[class*='InfoPanelTitle'] {
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: -0.015em;
+	color: var(--rcx-color-font-titles-labels, #111827);
+}
+
+/* Field labels */
+[class*='InfoPanelLabel'] {
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--rcx-color-font-annotation, #6b7280);
+	margin-bottom: 4px;
+}
+
+/* Field values */
+[class*='InfoPanelText'] {
+	font-size: 0.9375rem;
+	color: var(--rcx-color-font-default, #374151);
+}
+
+/* Section dividers */
+[class*='InfoPanelSection'] + [class*='InfoPanelSection'] {
+	border-top: 1px solid var(--rcx-color-stroke-extra-light, #e5e7eb);
+	padding-top: 16px;
+	margin-top: 4px;
+}
+
+/* Action buttons row */
+[class*='InfoPanelActionGroup'] {
+	gap: 8px;
+}
+
+[class*='InfoPanelActionGroup'] .rcx-button--primary,
+[class*='InfoPanelActionGroup'] .rcx-icon-button {
+	border-radius: 8px;
+}
+
+/* =====================================================
+   USER CARD (quick popover)
+   ===================================================== */
+
+.rcx-user-card-dialog {
+	border-radius: 12px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+	border: 1px solid var(--rcx-color-stroke-extra-light, #e5e7eb);
+	overflow: hidden;
+}
+
+/* Avatar in the user card */
+.rcx-user-card-dialog .rcx-avatar {
+	border: 3px solid #ffffff;
+	box-shadow: 0 2px 8px rgba(108, 99, 255, 0.2);
+	border-radius: 50%;
+}
+
+/* Username label in card */
+.rcx-user-card__username,
+[class*='UserCardUsername'] {
+	font-weight: 700;
+	font-size: 1rem;
+	letter-spacing: -0.01em;
+}
+
+/* Role pills in user card */
+.rcx-tag,
+[class*='UserCardRole'] {
+	border-radius: 9999px;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	padding: 2px 8px;
+	background-color: rgba(108, 99, 255, 0.1);
+	color: var(--color-primary, #6c63ff);
+	border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+/* "See full profile" button */
+.rcx-user-card-dialog .rcx-button--small {
+	border-radius: 8px;
+	font-size: 0.8125rem;
+	font-weight: 600;
+}
+
+/* =====================================================
+   STATUS INDICATORS
+   ===================================================== */
+
+/* Online status dot */
+.rcx-status-bullet--online {
+	background-color: #22c55e;
+	box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+.rcx-status-bullet--busy {
+	background-color: var(--color-red, #ef4444);
+}
+
+.rcx-status-bullet--away {
+	background-color: var(--color-yellow, #f59e0b);
+}
+
+.rcx-status-bullet--offline {
+	background-color: var(--color-gray, #9ca3af);
+}
+
+/* =====================================================
+   USERNAME DISPLAY (@handle)
+   ===================================================== */
+
+/* Style the @username field with the Nexa purple */
+.rcx-info-panel__username,
+[data-qa='username-field'] {
+	font-family: monospace;
+	color: var(--color-primary, #6c63ff);
+	font-size: 0.875rem;
+}
