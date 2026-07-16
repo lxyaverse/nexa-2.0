@@ -1,0 +1,6 @@
+<svg width="150" height="36" viewBox="0 0 150 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nexa Chat">
+  <rect x="0" y="4" width="28" height="28" rx="7" fill="#6C63FF"/>
+  <path d="M7 26V10h2.6l7.8 8.7V10H20v16h-2.6L9.6 17.3V26H7z" fill="#ffffff"/>
+  <text x="38" y="25" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#F5F5FA">Nexa</text>
+  <text x="98" y="25" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#9CA3AF">Chat</text>
+</svg>

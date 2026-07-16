@@ -1,3 +1,0 @@
-paths:
- .github/workflows/**/*.yml:
-   ignore: ['file "dist/index\.js" does not exist in .*/packages/release-action']
