@@ -36,3 +36,8 @@ export type Reaction = {
 export type DmChannel = Channel & {
   other: Profile
 }
+
+export type MessageWithAuthor = Message & {
+  author: Profile | null
+  reactions: Reaction[]
+}

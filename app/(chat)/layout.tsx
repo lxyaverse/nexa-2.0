@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { AppSidebar } from '@/components/chat/app-sidebar'
+import { PresenceProvider } from '@/components/chat/presence-context'
 import type { Channel, DmChannel, Profile } from '@/lib/types'
 
 export default async function ChatLayout({ children }: { children: React.ReactNode }) {
@@ -43,14 +44,16 @@ export default async function ChatLayout({ children }: { children: React.ReactNo
   }
 
   return (
-    <div className="flex h-svh overflow-hidden bg-background">
-      <AppSidebar
-        profile={profile as Profile}
-        channels={(channels ?? []) as Channel[]}
-        memberChannelIds={[...memberChannelIds]}
-        dms={dms}
-      />
-      <main className="flex min-w-0 flex-1 flex-col">{children}</main>
-    </div>
+    <PresenceProvider userId={user.id}>
+      <div className="flex h-svh overflow-hidden bg-background">
+        <AppSidebar
+          profile={profile as Profile}
+          channels={(channels ?? []) as Channel[]}
+          memberChannelIds={[...memberChannelIds]}
+          dms={dms}
+        />
+        <main className="flex min-w-0 flex-1 flex-col">{children}</main>
+      </div>
+    </PresenceProvider>
   )
 }

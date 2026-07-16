@@ -19,13 +19,17 @@ export async function sendMessage(channelId: string, content: string) {
   if (!trimmed) return { error: 'Message is empty' }
   if (trimmed.length > 4000) return { error: 'Message too long' }
 
-  const { error } = await supabase.from('messages').insert({
-    channel_id: channelId,
-    user_id: user.id,
-    content: trimmed,
-  })
-  if (error) return { error: error.message }
-  return { error: null }
+  const { data, error } = await supabase
+    .from('messages')
+    .insert({
+      channel_id: channelId,
+      user_id: user.id,
+      content: trimmed,
+    })
+    .select('id')
+    .single()
+  if (error) return { error: error.message, id: null }
+  return { error: null, id: data.id as string }
 }
 
 export async function editMessage(messageId: string, content: string) {
