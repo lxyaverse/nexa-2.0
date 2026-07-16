@@ -55,7 +55,7 @@ jobs:
           | tar -czf /tmp/nexa-packages-build.tar.gz -T -
 
       - name: Upload packages build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: packages-build
           path: /tmp/nexa-packages-build.tar.gz
@@ -116,7 +116,7 @@ jobs:
         run: tar -czf /tmp/nexa-bundle.tar.gz -C /tmp/nexa-bundle .
 
       - name: Upload Meteor bundle
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: nexa-bundle
           path: /tmp/nexa-bundle.tar.gz
