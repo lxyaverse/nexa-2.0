@@ -22,7 +22,7 @@
 		"@rocket.chat/emitter": "^0.33.0",
 		"@rocket.chat/fuselage-hooks": "~0.43.0",
 		"@rocket.chat/fuselage-tokens": "~0.33.2",
-		"@storybook/addon-a11y": "^9.1.13",
+		"@storybook/addon-a11y": "^10.5.2",
 		"@storybook/addon-docs": "^9.1.13",
 		"@storybook/addon-styling-webpack": "^2.0.0",
 		"@storybook/addon-webpack5-compiler-swc": "^4.0.3",
