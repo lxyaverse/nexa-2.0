@@ -1,0 +1,102 @@
+/* Nexa Chat - Modern Communication Platform Branding CSS */
+
+:root {
+	/* Nexa Brand Colors */
+	--nexa-primary: #6C63FF;
+	--nexa-primary-dark: #5A50D5;
+	--nexa-primary-light: #8B5CF6;
+	--nexa-accent: #A855F7;
+	
+	/* Status Colors */
+	--nexa-success: #22C55E;
+	--nexa-warning: #F59E0B;
+	--nexa-danger: #EF4444;
+	--nexa-info: #3B82F6;
+	
+	/* Neutral Grays */
+	--nexa-gray-50: #F9FAFB;
+	--nexa-gray-100: #F3F4F6;
+	--nexa-gray-200: #E5E7EB;
+	--nexa-gray-300: #D1D5DB;
+	--nexa-gray-400: #9CA3AF;
+	--nexa-gray-500: #6B7280;
+	--nexa-gray-600: #4B5563;
+	--nexa-gray-700: #374151;
+	--nexa-gray-800: #1F2937;
+	--nexa-gray-900: #111827;
+	
+	/* Semantic Colors */
+	--nexa-surface: #FFFFFF;
+	--nexa-surface-hover: #F9FAFB;
+	--nexa-surface-alt: #F3F4F6;
+	--nexa-text-primary: #111827;
+	--nexa-text-secondary: #4B5563;
+	--nexa-text-tertiary: #6B7280;
+	--nexa-border: #E5E7EB;
+	
+	/* Spacing and Sizing */
+	--nexa-radius-sm: 0.375rem;
+	--nexa-radius-md: 0.5rem;
+	--nexa-radius-lg: 0.75rem;
+	--nexa-radius-xl: 1rem;
+	--nexa-radius-full: 9999px;
+}
+
+/* Dark Mode Variants */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--nexa-surface: #0F172A;
+		--nexa-surface-hover: #1A202C;
+		--nexa-surface-alt: #1F2937;
+		--nexa-text-primary: #F9FAFB;
+		--nexa-text-secondary: #D1D5DB;
+		--nexa-text-tertiary: #9CA3AF;
+		--nexa-border: #374151;
+	}
+}
+
+/* Button Utilities */
+.nexa-btn-primary {
+	background-color: var(--nexa-primary);
+	color: white;
+	transition: all 0.2s ease;
+}
+
+.nexa-btn-primary:hover {
+	background-color: var(--nexa-primary-dark);
+	transform: translateY(-1px);
+}
+
+.nexa-btn-secondary {
+	background-color: var(--nexa-primary-light);
+	color: white;
+	transition: all 0.2s ease;
+}
+
+/* Gradient Accents */
+.nexa-gradient-text {
+	background: linear-gradient(135deg, var(--nexa-primary), var(--nexa-accent));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+/* Typography Utilities */
+.nexa-text-primary {
+	color: var(--nexa-text-primary);
+}
+
+.nexa-text-secondary {
+	color: var(--nexa-text-secondary);
+}
+
+/* Transitions */
+.nexa-transition {
+	transition: all 0.2s ease;
+}
+
+/* Focus States */
+.nexa-focus:focus-visible {
+	outline: 2px solid var(--nexa-primary);
+	outline-offset: 2px;
+}
