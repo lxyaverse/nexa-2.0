@@ -5448,6 +5448,2229 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nexa/abac@workspace:^, @nexa/abac@workspace:ee/packages/abac":
+  version: 0.0.0-use.local
+  resolution: "@nexa/abac@workspace:ee/packages/abac"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/server-fetch": "workspace:^"
+    "@nexa/tools": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    "@types/node": "npm:~22.19.17"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    mem: "npm:^8.1.1"
+    mongodb: "npm:6.10.0"
+    mongodb-memory-server: "npm:^10.2.3"
+    p-limit: "npm:3.1.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/account-service@workspace:ee/apps/account-service":
+  version: 0.0.0-use.local
+  resolution: "@nexa/account-service@workspace:ee/apps/account-service"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tools": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@types/bcrypt": "npm:^6.0.0"
+    "@types/node": "npm:~22.19.17"
+    "@types/polka": "npm:^0.5.8"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    bcrypt: "npm:^6.0.0"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    mem: "npm:^8.1.1"
+    moleculer: "npm:^0.14.35"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    pino: "npm:10.3.1"
+    polka: "npm:^0.5.2"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/account-utils@workspace:^, @nexa/account-utils@workspace:packages/account-utils":
+  version: 0.0.0-use.local
+  resolution: "@nexa/account-utils@workspace:packages/account-utils"
+  dependencies:
+    eslint: "npm:~9.39.4"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/agenda@workspace:^, @nexa/agenda@workspace:packages/agenda":
+  version: 0.0.0-use.local
+  resolution: "@nexa/agenda@workspace:packages/agenda"
+  dependencies:
+    "@types/debug": "npm:^4.1.13"
+    cron: "npm:~1.8.2"
+    date.js: "npm:~0.3.3"
+    debug: "npm:~4.3.7"
+    eslint: "npm:~9.39.4"
+    human-interval: "npm:^2.0.1"
+    moment-timezone: "npm:~0.5.48"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/api-client@workspace:^, @nexa/api-client@workspace:packages/api-client":
+  version: 0.0.0-use.local
+  resolution: "@nexa/api-client@workspace:packages/api-client"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    "@types/strict-uri-encode": "npm:^2.0.2"
+    eslint: "npm:~9.39.4"
+    filter-obj: "npm:^3.0.0"
+    jest: "npm:~30.2.0"
+    jest-fetch-mock: "npm:~3.0.3"
+    query-string: "npm:^7.1.3"
+    split-on-first: "npm:^3.0.0"
+    strict-uri-encode: "npm:^2.0.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/apps-engine@workspace:^, @nexa/apps-engine@workspace:packages/apps-engine":
+  version: 0.0.0-use.local
+  resolution: "@nexa/apps-engine@workspace:packages/apps-engine"
+  dependencies:
+    "@nexa/ui-kit": "workspace:~"
+    "@types/node": "npm:~22.19.17"
+    eslint: "npm:~9.39.4"
+    npm-run-all: "npm:^4.1.5"
+    rimraf: "npm:^6.0.1"
+    typedoc: "npm:~0.28.10"
+    typescript: "npm:~5.9.3"
+    uuid: "npm:~11.1.1"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/apps@workspace:^, @nexa/apps@workspace:packages/apps":
+  version: 0.0.0-use.local
+  resolution: "@nexa/apps@workspace:packages/apps"
+  dependencies:
+    "@msgpack/msgpack": "npm:3.0.0-beta2"
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/adm-zip": "npm:^0.5.7"
+    "@types/debug": "npm:^4.1.12"
+    "@types/lodash.clonedeep": "npm:^4.5.9"
+    "@types/node": "npm:~22.16.5"
+    "@types/semver": "npm:^7.5.8"
+    "@types/stack-trace": "npm:0.0.33"
+    "@types/uuid": "npm:~10.0.0"
+    acorn: "npm:8.17.0"
+    acorn-walk: "npm:8.3.5"
+    adm-zip: "npm:^0.5.16"
+    astring: "npm:1.8.6"
+    debug: "npm:^4.3.7"
+    esbuild: "npm:~0.28.1"
+    eslint: "npm:~9.39.4"
+    jose: "npm:^4.15.9"
+    jsonrpc-lite: "npm:^2.2.0"
+    lodash.clonedeep: "npm:^4.5.0"
+    npm-run-all: "npm:^4.1.5"
+    rimraf: "npm:^6.0.1"
+    semver: "npm:^7.6.3"
+    stack-trace: "npm:0.0.10"
+    ts-node: "npm:^6.2.0"
+    typescript: "npm:~5.9.3"
+    uuid: "npm:~11.1.1"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/authorization-service@workspace:ee/apps/authorization-service":
+  version: 0.0.0-use.local
+  resolution: "@nexa/authorization-service@workspace:ee/apps/authorization-service"
+  dependencies:
+    "@nexa/abac": "workspace:^"
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@types/node": "npm:~22.19.17"
+    "@types/polka": "npm:^0.5.8"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    mem: "npm:^8.1.1"
+    moleculer: "npm:^0.14.35"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    pino: "npm:10.3.1"
+    polka: "npm:^0.5.2"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/base64@workspace:^, @nexa/base64@workspace:packages/base64":
+  version: 0.0.0-use.local
+  resolution: "@nexa/base64@workspace:packages/base64"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/cas-validate@workspace:^, @nexa/cas-validate@workspace:packages/cas-validate":
+  version: 0.0.0-use.local
+  resolution: "@nexa/cas-validate@workspace:packages/cas-validate"
+  dependencies:
+    cheerio: "npm:1.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/core-services@workspace:^, @nexa/core-services@workspace:packages/core-services":
+  version: 0.0.0-use.local
+  resolution: "@nexa/core-services@workspace:packages/core-services"
+  dependencies:
+    "@nexa/apps": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/http-router": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/media-signaling": "workspace:^"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-kit": "workspace:~"
+    "@rocket.chat/federation-sdk": "npm:0.6.3"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    mongodb: "npm:6.16.0"
+    prettier: "npm:~3.3.3"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/core-typings@workspace:^, @nexa/core-typings@workspace:packages/core-typings, @nexa/core-typings@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/core-typings@workspace:packages/core-typings"
+  dependencies:
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/ui-kit": "workspace:~"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@types/express": "npm:^4.17.25"
+    eslint: "npm:~9.39.4"
+    mongodb: "npm:6.16.0"
+    npm-run-all: "npm:~4.1.5"
+    prettier: "npm:~3.3.3"
+    rimraf: "npm:^6.0.1"
+    ts-patch: "npm:^3.3.0"
+    typescript: "npm:~5.9.3"
+    typia: "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
+    zod: "npm:~4.3.6"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/cron@workspace:^, @nexa/cron@workspace:packages/cron":
+  version: 0.0.0-use.local
+  resolution: "@nexa/cron@workspace:packages/cron"
+  dependencies:
+    "@nexa/agenda": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/random": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    eslint: "npm:~9.39.4"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ddp-client@workspace:^, @nexa/ddp-client@workspace:packages/ddp-client, @nexa/ddp-client@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ddp-client@workspace:packages/ddp-client"
+  dependencies:
+    "@nexa/api-client": "workspace:^"
+    "@nexa/core-typings": "workspace:~"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/media-signaling": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    "@types/ws": "npm:^8.18.1"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    jest-websocket-mock: "npm:~2.5.0"
+    typescript: "npm:~5.9.3"
+    ws: "npm:~8.21.0"
+  peerDependencies:
+    "@rocket.chat/emitter": "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ddp-streamer@workspace:ee/apps/ddp-streamer":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ddp-streamer@workspace:ee/apps/ddp-streamer"
+  dependencies:
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/ddp-client": "workspace:~"
+    "@nexa/instance-status": "workspace:^"
+    "@nexa/jest-presets": "workspace:*"
+    "@nexa/logger": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@types/ejson": "npm:^2.2.2"
+    "@types/jest": "npm:~30.0.0"
+    "@types/node": "npm:~22.19.17"
+    "@types/polka": "npm:^0.5.8"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    "@types/underscore": "npm:^1.13.0"
+    "@types/uuid": "npm:^10.0.0"
+    "@types/ws": "npm:^8.18.1"
+    colorette: "npm:^1.4.0"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    jaeger-client: "npm:^3.19.0"
+    jest: "npm:~30.2.0"
+    mem: "npm:^8.1.1"
+    moleculer: "npm:^0.14.35"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    pino: "npm:10.3.1"
+    pino-pretty: "npm:13.1.3"
+    polka: "npm:^0.5.2"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    sharp: "npm:^0.33.5"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:~5.9.3"
+    underscore: "npm:^1.13.8"
+    uuid: "npm:^11.1.1"
+    ws: "npm:~8.21.0"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/desktop-api@workspace:^, @nexa/desktop-api@workspace:packages/desktop-api, @nexa/desktop-api@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/desktop-api@workspace:packages/desktop-api"
+  dependencies:
+    eslint: "npm:~9.39.4"
+    rimraf: "npm:~6.0.1"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/eslint-config@workspace:packages/eslint-config, @nexa/eslint-config@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/eslint-config@workspace:packages/eslint-config"
+  dependencies:
+    "@babel/core": "npm:~7.29.6"
+    "@babel/eslint-parser": "npm:~7.28.6"
+    "@eslint/js": "npm:~9.39.4"
+    "@types/eslint": "npm:~8.44.9"
+    "@types/prettier": "npm:^2.7.3"
+    eslint: "npm:~9.39.4"
+    eslint-config-prettier: "npm:~10.1.8"
+    eslint-import-resolver-typescript: "npm:~4.4.4"
+    eslint-plugin-anti-trojan-source: "npm:~1.1.2"
+    eslint-plugin-import-x: "npm:~4.17.1"
+    eslint-plugin-jest: "npm:~29.15.2"
+    eslint-plugin-jsx-a11y: "npm:~6.10.2"
+    eslint-plugin-prettier: "npm:~5.5.5"
+    eslint-plugin-react: "npm:~7.37.5"
+    eslint-plugin-react-hooks: "npm:~7.0.1"
+    eslint-plugin-storybook: "npm:~10.2.19"
+    eslint-plugin-testing-library: "npm:~7.16.2"
+    globals: "npm:~17.3.0"
+    prettier: "npm:~3.3.3"
+    typescript: "npm:~5.9.3"
+    typescript-eslint: "npm:~8.56.1"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/favicon@workspace:^, @nexa/favicon@workspace:packages/favicon":
+  version: 0.0.0-use.local
+  resolution: "@nexa/favicon@workspace:packages/favicon"
+  dependencies:
+    eslint: "npm:~9.39.4"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/federation-matrix@workspace:^, @nexa/federation-matrix@workspace:ee/packages/federation-matrix":
+  version: 0.0.0-use.local
+  resolution: "@nexa/federation-matrix@workspace:ee/packages/federation-matrix"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/ddp-client": "workspace:^"
+    "@nexa/http-router": "workspace:^"
+    "@nexa/license": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/federation-sdk": "npm:0.6.3"
+    "@types/lodash.debounce": "npm:^4.0.9"
+    "@types/node": "npm:~22.19.17"
+    "@types/sanitize-html": "npm:~2.16.1"
+    emojibase: "npm:^16.0.0"
+    emojibase-data: "npm:^16.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    jest-qase-reporter: "npm:^2.4.0"
+    lodash.debounce: "npm:^4.0.8"
+    marked: "npm:^16.1.2"
+    matrix-js-sdk: "npm:^38.4.0"
+    mem: "npm:^8.1.1"
+    mongodb: "npm:6.16.0"
+    pino: "npm:10.3.1"
+    pino-pretty: "npm:13.1.3"
+    reflect-metadata: "npm:^0.2.2"
+    sanitize-html: "npm:~2.17.4"
+    tsyringe: "npm:^4.10.0"
+    tweetnacl: "npm:^1.0.3"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/fuselage-ui-kit@workspace:^, @nexa/fuselage-ui-kit@workspace:packages/fuselage-ui-kit, @nexa/fuselage-ui-kit@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/fuselage-ui-kit@workspace:packages/fuselage-ui-kit"
+  dependencies:
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/gazzodown": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/mock-providers": "workspace:^"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@nexa/ui-kit": "workspace:~"
+    "@nexa/ui-video-conf": "workspace:^"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@storybook/react": "npm:^9.1.13"
+    "@storybook/react-webpack5": "npm:^9.1.13"
+    "@tanstack/react-query": "npm:~5.65.1"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@testing-library/user-event": "npm:~14.6.1"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    cross-env: "npm:^7.0.3"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    normalize.css: "npm:^8.0.1"
+    npm-run-all: "npm:^4.1.5"
+    prettier: "npm:~3.3.3"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-i18next: "npm:~13.2.2"
+    react-virtuoso: "npm:~4.18.10"
+    rimraf: "npm:^6.0.1"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+  peerDependencies:
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@nexa/ui-kit": "workspace:^"
+    "@nexa/ui-video-conf": "workspace:^"
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/fuselage-hooks": "*"
+    "@rocket.chat/icons": "*"
+    "@rocket.chat/styled": "*"
+    "@tanstack/react-query": "*"
+    i18next: "*"
+    react: "*"
+    react-dom: "*"
+    react-i18next: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/gazzodown@workspace:^, @nexa/gazzodown@workspace:packages/gazzodown":
+  version: 0.0.0-use.local
+  resolution: "@nexa/gazzodown@workspace:packages/gazzodown"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-client": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@storybook/addon-links": "npm:^9.1.13"
+    "@storybook/react": "npm:^9.1.13"
+    "@storybook/react-webpack5": "npm:^9.1.13"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@types/jest": "npm:~30.0.0"
+    "@types/katex": "npm:~0.16.8"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    date-fns: "npm:~4.1.0"
+    dompurify: "npm:~3.4.7"
+    eslint: "npm:~9.39.4"
+    highlight.js: "npm:11.8.0"
+    i18next: "npm:~23.4.9"
+    identity-obj-proxy: "npm:^3.0.0"
+    jest: "npm:~30.2.0"
+    katex: "npm:~0.16.45"
+    outdent: "npm:^0.8.0"
+    react: "npm:~19.2.7"
+    react-aria: "npm:~3.37.0"
+    react-dom: "npm:~19.2.7"
+    react-error-boundary: "npm:~6.1.2"
+    react-i18next: "npm:~13.2.2"
+    react-stately: "npm:~3.17.0"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+  peerDependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/message-parser": 0.31.36
+    "@nexa/ui-client": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/css-in-js": "*"
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/fuselage-tokens": "*"
+    "@rocket.chat/styled": "*"
+    katex: "*"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/http-router@workspace:^, @nexa/http-router@workspace:packages/http-router":
+  version: 0.0.0-use.local
+  resolution: "@nexa/http-router@workspace:packages/http-router"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/jest-presets": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/express": "npm:^4.17.25"
+    "@types/jest": "npm:~30.0.0"
+    "@types/supertest": "npm:~6.0.3"
+    ajv: "npm:^8.20.0"
+    eslint: "npm:~9.39.4"
+    express: "npm:^4.21.2"
+    hono: "npm:4.12.25"
+    jest: "npm:~30.2.0"
+    qs: "npm:^6.15.2"
+    supertest: "npm:~7.1.4"
+    ts-jest: "npm:~29.4.9"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/i18n@workspace:^, @nexa/i18n@workspace:packages/i18n, @nexa/i18n@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/i18n@workspace:packages/i18n"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tools": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@nexa/tools": "workspace:~"
+    i18next: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/instance-status@workspace:^, @nexa/instance-status@workspace:packages/instance-status":
+  version: 0.0.0-use.local
+  resolution: "@nexa/instance-status@workspace:packages/instance-status"
+  dependencies:
+    "@nexa/models": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    eslint: "npm:~9.39.4"
+    mongodb: "npm:6.16.0"
+    prettier: "npm:~3.3.3"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/jest-presets@workspace:*, @nexa/jest-presets@workspace:^, @nexa/jest-presets@workspace:packages/jest-presets, @nexa/jest-presets@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/jest-presets@workspace:packages/jest-presets"
+  dependencies:
+    "@swc/core": "npm:1.15.30"
+    "@swc/jest": "npm:~0.2.39"
+    "@testing-library/jest-dom": "npm:~6.8.0"
+    "@types/identity-obj-proxy": "npm:^3.0.2"
+    "@types/jest": "npm:~30.0.0"
+    "@types/jest-axe": "npm:~3.5.9"
+    "@types/uuid": "npm:^10.0.0"
+    eslint: "npm:~9.39.4"
+    identity-obj-proxy: "npm:~3.0.0"
+    jest: "npm:~30.2.0"
+    jest-axe: "npm:~10.0.0"
+    jest-environment-jsdom: "npm:~30.2.0"
+    jest-environment-node: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+    uuid: "npm:~11.1.1"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/jwt@workspace:^, @nexa/jwt@workspace:packages/jwt":
+  version: 0.0.0-use.local
+  resolution: "@nexa/jwt@workspace:packages/jwt"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    jose: "npm:^4.15.9"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/license@workspace:^, @nexa/license@workspace:ee/packages/license":
+  version: 0.0.0-use.local
+  resolution: "@nexa/license@workspace:ee/packages/license"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/jwt": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/bcrypt": "npm:^6.0.0"
+    "@types/jest": "npm:~30.0.0"
+    "@types/ws": "npm:^8.5.14"
+    bcrypt: "npm:^6.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    jest-websocket-mock: "npm:~2.5.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/livechat@workspace:^, @nexa/livechat@workspace:packages/livechat":
+  version: 0.0.0-use.local
+  resolution: "@nexa/livechat@workspace:packages/livechat"
+  dependencies:
+    "@babel/core": "npm:~7.29.6"
+    "@babel/preset-env": "npm:~7.29.5"
+    "@babel/preset-react": "npm:~7.28.5"
+    "@babel/preset-typescript": "npm:~7.28.5"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/ddp-client": "workspace:^"
+    "@nexa/gazzodown": "workspace:^"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/random": "workspace:~"
+    "@nexa/ui-contexts": "workspace:^"
+    "@nexa/ui-kit": "workspace:~"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/logo": "npm:~0.33.1"
+    "@storybook/addon-docs": "npm:^9.1.13"
+    "@storybook/addon-styling-webpack": "npm:^1.0.1"
+    "@storybook/addon-webpack5-compiler-swc": "npm:^4.0.3"
+    "@storybook/preact": "npm:9.0.0-alpha.11"
+    "@storybook/preact-webpack5": "npm:9.0.0-alpha.11"
+    "@types/crypto-js": "npm:~4.2.2"
+    "@types/mini-css-extract-plugin": "npm:~2.5.1"
+    "@types/react": "npm:~19.2.17"
+    "@types/webpack-env": "npm:~1.18.8"
+    "@types/whatwg-fetch": "npm:~0.0.33"
+    ajv: "npm:^8.20.0"
+    ajv-formats: "npm:^3.0.1"
+    autoprefixer: "npm:^9.8.8"
+    babel-loader: "npm:~10.0.0"
+    cross-env: "npm:^7.0.3"
+    css-loader: "npm:^4.3.0"
+    css-vars-ponyfill: "npm:^2.4.9"
+    cssnano: "npm:^7.1.7"
+    date-fns: "npm:~4.1.0"
+    desvg-loader: "npm:^0.1.0"
+    dompurify: "npm:~3.4.7"
+    emoji-mart: "npm:^3.0.1"
+    eslint: "npm:~9.39.4"
+    file-loader: "npm:^6.2.0"
+    history: "npm:~5.3.0"
+    html-webpack-plugin: "npm:~5.6.7"
+    i18next: "npm:~23.4.9"
+    if-env: "npm:^1.0.4"
+    lorem-ipsum: "npm:^2.0.8"
+    mem: "npm:^8.1.1"
+    mini-css-extract-plugin: "npm:~2.9.4"
+    npm-run-all: "npm:^4.1.5"
+    path-to-regexp: "npm:^6.3.0"
+    postcss: "npm:8.5.10"
+    postcss-css-variables: "npm:^0.19.0"
+    postcss-dir-pseudo-class: "npm:^9.0.1"
+    postcss-flexbugs-fixes: "npm:^5.0.2"
+    postcss-loader: "npm:^8.1.1"
+    postcss-logical: "npm:^8.0.0"
+    postcss-scss: "npm:^4.0.9"
+    postcss-selector-not: "npm:^8.0.1"
+    preact: "npm:~10.25.4"
+    preact-router: "npm:^4.1.2"
+    query-string: "npm:^7.1.3"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-hook-form: "npm:~7.54.2"
+    react-i18next: "npm:~13.2.2"
+    resolve-url-loader: "npm:~5.0.0"
+    rimraf: "npm:^6.0.1"
+    sass: "npm:~1.80.7"
+    sass-loader: "npm:~16.0.7"
+    storybook: "npm:^9.1.13"
+    storybook-dark-mode: "npm:^5.0.0"
+    style-loader: "npm:^1.3.0"
+    stylelint: "npm:^16.10.0"
+    stylelint-order: "npm:^6.0.4"
+    svg-loader: "npm:^0.0.2"
+    terser-webpack-plugin: "npm:~5.3.17"
+    typescript: "npm:~5.9.3"
+    url-loader: "npm:^4.1.1"
+    webpack: "npm:~5.104.1"
+    webpack-cli: "npm:~5.1.4"
+    webpack-dev-server: "npm:~5.2.5"
+    whatwg-fetch: "npm:^3.6.20"
+  peerDependencies:
+    "@rocket.chat/fuselage-tokens": "*"
+    "@rocket.chat/logo": "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/log-format@workspace:^, @nexa/log-format@workspace:packages/log-format":
+  version: 0.0.0-use.local
+  resolution: "@nexa/log-format@workspace:packages/log-format"
+  dependencies:
+    "@types/chalk": "npm:^2.2.4"
+    "@types/ejson": "npm:^2.2.2"
+    chalk: "npm:^4.1.2"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/logger@workspace:^, @nexa/logger@workspace:packages/logger":
+  version: 0.0.0-use.local
+  resolution: "@nexa/logger@workspace:packages/logger"
+  dependencies:
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    eslint: "npm:~9.39.4"
+    pino: "npm:10.3.1"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/media-calls@workspace:^, @nexa/media-calls@workspace:ee/packages/media-calls":
+  version: 0.0.0-use.local
+  resolution: "@nexa/media-calls@workspace:ee/packages/media-calls"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/media-signaling": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@types/jest": "npm:~30.0.0"
+    drachtio-srf: "patch:drachtio-srf@npm%3A5.0.12#~/.yarn/patches/drachtio-srf-npm-5.0.12-b0b1afaad6.patch"
+    eslint: "npm:~9.39.4"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/media-signaling@workspace:^, @nexa/media-signaling@workspace:packages/media-signaling, @nexa/media-signaling@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/media-signaling@workspace:packages/media-signaling"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@types/jest": "npm:~30.0.0"
+    ajv: "npm:^8.20.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/message-parser@workspace:^, @nexa/message-parser@workspace:packages/message-parser, @nexa/message-parser@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/message-parser@workspace:packages/message-parser"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/peggy-loader": "workspace:~"
+    "@rocket.chat/prettier-config": "npm:~0.31.25"
+    "@types/jest": "npm:~30.0.0"
+    "@types/node": "npm:~22.19.17"
+    eslint: "npm:~9.39.4"
+    fast-check: "npm:^4.6.0"
+    jest: "npm:~30.2.0"
+    npm-run-all: "npm:^4.1.5"
+    peggy: "npm:4.1.1"
+    prettier: "npm:~3.3.3"
+    prettier-plugin-pegjs: "npm:~0.5.4"
+    rimraf: "npm:^6.0.1"
+    tinybench: "npm:^3.0.7"
+    tldts: "npm:~6.1.86"
+    ts-loader: "npm:~9.5.7"
+    ts-node: "npm:~10.9.2"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+    webpack-cli: "npm:~5.1.4"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/message-types@workspace:packages/message-types, @nexa/message-types@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/message-types@workspace:packages/message-types"
+  dependencies:
+    "@nexa/core-typings": "workspace:~"
+    date-fns: "npm:~4.1.0"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    moment: "npm:^2.30.1"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    date-fns: ~4.1.0
+    moment: ^2.30.1
+  languageName: unknown
+  linkType: soft
+
+"@nexa/meteor@workspace:apps/meteor":
+  version: 0.0.0-use.local
+  resolution: "@nexa/meteor@workspace:apps/meteor"
+  dependencies:
+    "@aws-sdk/client-s3": "npm:^3.862.0"
+    "@aws-sdk/lib-storage": "npm:^3.862.0"
+    "@aws-sdk/s3-request-presigner": "npm:^3.862.0"
+    "@axe-core/playwright": "npm:^4.10.2"
+    "@babel/core": "npm:~7.29.6"
+    "@babel/preset-env": "npm:~7.29.5"
+    "@babel/preset-react": "npm:~7.27.1"
+    "@babel/register": "npm:~7.28.6"
+    "@babel/runtime": "npm:~7.29.2"
+    "@bugsnag/js": "npm:~7.20.2"
+    "@bugsnag/plugin-react": "npm:~7.19.0"
+    "@datastructures-js/priority-queue": "npm:^6.3.5"
+    "@date-fns/tz": "npm:^1.4.1"
+    "@faker-js/faker": "npm:~8.0.2"
+    "@google-cloud/storage": "npm:^7.19.0"
+    "@kaciras/deasync": "npm:^1.1.0"
+    "@nexa/abac": "workspace:^"
+    "@nexa/account-utils": "workspace:^"
+    "@nexa/agenda": "workspace:^"
+    "@nexa/api-client": "workspace:^"
+    "@nexa/apps": "workspace:^"
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/base64": "workspace:^"
+    "@nexa/cas-validate": "workspace:^"
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/cron": "workspace:^"
+    "@nexa/ddp-client": "workspace:^"
+    "@nexa/desktop-api": "workspace:~"
+    "@nexa/favicon": "workspace:^"
+    "@nexa/federation-matrix": "workspace:^"
+    "@nexa/fuselage-ui-kit": "workspace:^"
+    "@nexa/gazzodown": "workspace:^"
+    "@nexa/http-router": "workspace:^"
+    "@nexa/i18n": "workspace:^"
+    "@nexa/instance-status": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/jwt": "workspace:^"
+    "@nexa/license": "workspace:^"
+    "@nexa/livechat": "workspace:^"
+    "@nexa/log-format": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/media-calls": "workspace:^"
+    "@nexa/media-signaling": "workspace:^"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/message-types": "workspace:~"
+    "@nexa/mock-providers": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/mongo-adapter": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/omni-core": "workspace:^"
+    "@nexa/omni-core-ee": "workspace:^"
+    "@nexa/omnichannel-services": "workspace:^"
+    "@nexa/passport-x": "workspace:~"
+    "@nexa/password-policies": "workspace:^"
+    "@nexa/patch-injection": "workspace:^"
+    "@nexa/pdf-worker": "workspace:^"
+    "@nexa/poplib": "workspace:^"
+    "@nexa/presence": "workspace:^"
+    "@nexa/random": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/server-cloud-communication": "workspace:^"
+    "@nexa/server-fetch": "workspace:^"
+    "@nexa/sha256": "workspace:^"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tools": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-client": "workspace:^"
+    "@nexa/ui-composer": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@nexa/ui-kit": "workspace:~"
+    "@nexa/ui-video-conf": "workspace:^"
+    "@nexa/ui-voip": "workspace:^"
+    "@nexa/web-ui-registration": "workspace:^"
+    "@nivo/bar": "npm:0.88.0"
+    "@nivo/core": "npm:0.88.0"
+    "@nivo/heatmap": "npm:0.88.0"
+    "@nivo/line": "npm:0.88.0"
+    "@nivo/pie": "npm:0.88.0"
+    "@noble/ed25519": "npm:^3.0.0"
+    "@node-oauth/oauth2-server": "npm:~5.3.0"
+    "@opentelemetry/api": "npm:^1.9.1"
+    "@opentelemetry/exporter-trace-otlp-grpc": "npm:^0.217.0"
+    "@opentelemetry/sdk-node": "npm:^0.217.0"
+    "@parse/node-apn": "npm:^8.1.0"
+    "@playwright/test": "npm:~1.52.0"
+    "@react-aria/toolbar": "npm:^3.0.0-nightly.5042"
+    "@react-pdf/renderer": "npm:~4.5.1"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/federation-sdk": "npm:0.6.3"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-forms": "npm:~1.5.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-toastbar": "npm:~0.36.1"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/layout": "npm:~0.36.0"
+    "@rocket.chat/logo": "npm:~0.33.1"
+    "@rocket.chat/memo": "npm:~0.31.25"
+    "@rocket.chat/mp3-encoder": "npm:^0.31.26"
+    "@rocket.chat/onboarding-ui": "npm:~0.37.1"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@slack/bolt": "npm:^3.22.0"
+    "@slack/rtm-api": "npm:~7.0.4"
+    "@storybook/react": "npm:^9.1.13"
+    "@storybook/react-webpack5": "npm:^9.1.13"
+    "@tanstack/react-query": "npm:~5.65.1"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@testing-library/user-event": "npm:~14.6.1"
+    "@types/adm-zip": "npm:^0.5.8"
+    "@types/archiver": "npm:~6.0.4"
+    "@types/babel__preset-env": "npm:^7.10.0"
+    "@types/bad-words": "npm:^3.0.3"
+    "@types/bcrypt": "npm:^6.0.0"
+    "@types/body-parser": "npm:^1.19.6"
+    "@types/busboy": "npm:^1.5.4"
+    "@types/chai": "npm:~4.3.20"
+    "@types/chai-as-promised": "npm:^7.1.8"
+    "@types/chai-datetime": "npm:0.0.39"
+    "@types/chai-dom": "npm:1.11.3"
+    "@types/chai-spies": "npm:~1.0.6"
+    "@types/codemirror": "npm:~5.60.17"
+    "@types/cookie": "npm:^0.5.4"
+    "@types/cookie-parser": "npm:^1.4.10"
+    "@types/cors": "npm:^2.8.19"
+    "@types/cssom": "npm:^0.4.3"
+    "@types/ejson": "npm:^2.2.2"
+    "@types/express": "npm:^4.17.25"
+    "@types/express-rate-limit": "npm:^5.1.3"
+    "@types/express-session": "npm:^1"
+    "@types/fast-redact": "npm:^3"
+    "@types/google-libphonenumber": "npm:^7.4.30"
+    "@types/gravatar": "npm:^1.8.6"
+    "@types/he": "npm:^1.2.3"
+    "@types/i18next-sprintf-postprocessor": "npm:^0.2.3"
+    "@types/imap": "npm:^0.8.43"
+    "@types/jest": "npm:~30.0.0"
+    "@types/jsdom": "npm:^21.1.7"
+    "@types/jsdom-global": "npm:^3.0.7"
+    "@types/jsrsasign": "npm:^10.5.15"
+    "@types/katex": "npm:^0.16.8"
+    "@types/later": "npm:^1.2.9"
+    "@types/ldapjs": "npm:^2.2.5"
+    "@types/less": "npm:~3.0.8"
+    "@types/lodash": "npm:~4.17.24"
+    "@types/lodash.clonedeep": "npm:^4.5.9"
+    "@types/lodash.debounce": "npm:^4.0.9"
+    "@types/lodash.escape": "npm:^4.0.9"
+    "@types/lodash.get": "npm:^4.4.9"
+    "@types/mailparser": "npm:^3.4.6"
+    "@types/marked": "npm:^4.3.2"
+    "@types/meteor": "npm:^2.9.11"
+    "@types/meteor-collection-hooks": "npm:^0.8.9"
+    "@types/mkdirp": "npm:^1.0.2"
+    "@types/mocha": "github:whitecolor/mocha-types"
+    "@types/node": "npm:~22.19.17"
+    "@types/node-rsa": "npm:^1.1.4"
+    "@types/nodemailer": "npm:^8.0.1"
+    "@types/oauth2-server": "npm:^3.0.18"
+    "@types/object-path": "npm:^0.11.4"
+    "@types/parseurl": "npm:^1.3.3"
+    "@types/passport": "npm:^1.0.17"
+    "@types/passport-apple": "npm:^2"
+    "@types/passport-facebook": "npm:^3.0.4"
+    "@types/passport-github2": "npm:^1.2.9"
+    "@types/passport-google-oauth20": "npm:^2"
+    "@types/passport-oauth2": "npm:^1"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    "@types/proxy-from-env": "npm:^1.0.4"
+    "@types/proxyquire": "npm:^1.3.31"
+    "@types/psl": "npm:^1.1.3"
+    "@types/qs": "npm:^6.14.0"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    "@types/react-is": "npm:^19"
+    "@types/sanitize-html": "npm:~2.16.1"
+    "@types/semver": "npm:^7.5.8"
+    "@types/sharp": "npm:^0.32.0"
+    "@types/sinon": "npm:^10.0.20"
+    "@types/speakeasy": "npm:^2.0.10"
+    "@types/strict-uri-encode": "npm:^2.0.2"
+    "@types/supertest": "npm:~6.0.3"
+    "@types/supports-color": "npm:~7.2.1"
+    "@types/swagger-ui-express": "npm:^4.1.8"
+    "@types/textarea-caret": "npm:^3.0.4"
+    "@types/ua-parser-js": "npm:^0.7.39"
+    "@types/underscore": "npm:^1.13.0"
+    "@types/xml-encryption": "npm:~1.2.4"
+    "@xmldom/xmldom": "npm:~0.8.13"
+    adm-zip: "npm:0.5.17"
+    ajv: "npm:^8.20.0"
+    ajv-formats: "npm:~3.0.1"
+    archiver: "npm:^7.0.1"
+    asterisk-manager: "npm:^0.2.0"
+    atlassian-crowd-patched: "npm:^0.5.1"
+    autoprefixer: "npm:^9.8.8"
+    babel-loader: "npm:~10.0.0"
+    babel-plugin-array-includes: "npm:^2.0.3"
+    babel-plugin-istanbul: "npm:~7.0.1"
+    bad-words: "npm:^3.0.4"
+    bcrypt: "npm:^6.0.0"
+    body-parser: "npm:1.20.4"
+    bson: "npm:^6.7.1"
+    busboy: "npm:^1.6.0"
+    chai: "npm:^4.5.0"
+    chai-as-promised: "npm:^7.1.2"
+    chai-datetime: "npm:^1.8.1"
+    chai-dom: "npm:^1.12.1"
+    chai-spies: "npm:~1.1.0"
+    chalk: "npm:^4.1.2"
+    change-case: "npm:^4.1.2"
+    chart.js: "npm:^3.9.1"
+    codemirror: "npm:~5.65.21"
+    colorette: "npm:^2.0.20"
+    colors: "npm:^1.4.0"
+    connect: "npm:^3.7.0"
+    connect-mongo: "npm:5.1.0"
+    cookie: "npm:^0.7.2"
+    cookie-parser: "npm:^1.4.7"
+    cors: "npm:^2.8.6"
+    cron: "npm:~1.8.2"
+    cron-validator: "npm:^1.3.1"
+    cross-env: "npm:^7.0.3"
+    css-vars-ponyfill: "npm:^2.4.9"
+    csv-parse: "npm:^5.5.6"
+    date-fns: "npm:~4.1.0"
+    date.js: "npm:~0.3.3"
+    debug: "npm:~4.3.7"
+    docker-compose: "npm:^0.24.8"
+    dompurify: "npm:~3.4.7"
+    drachtio-srf: "patch:drachtio-srf@npm%3A5.0.12#~/.yarn/patches/drachtio-srf-npm-5.0.12-b0b1afaad6.patch"
+    ejson: "npm:^2.2.3"
+    emailreplyparser: "npm:^0.0.5"
+    emojibase: "npm:^16.0.0"
+    emojibase-data: "npm:^16.0.0"
+    esl: "npm:^11.2.1"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    exif-be-gone: "npm:^1.5.1"
+    expiry-map: "npm:^2.0.0"
+    express: "npm:^4.21.2"
+    express-rate-limit: "npm:^5.5.1"
+    express-session: "npm:^1.19.0"
+    fast-glob: "npm:^3.3.3"
+    fast-redact: "npm:^3.5.0"
+    fastq: "npm:^1.17.1"
+    fflate: "npm:^0.8.2"
+    file-type: "npm:^16.5.4"
+    filenamify: "npm:^4.3.0"
+    filesize: "npm:9.0.11"
+    generate-password: "npm:^1.7.1"
+    google-libphonenumber: "npm:^3.2.44"
+    gravatar: "npm:^1.8.2"
+    he: "npm:^1.2.0"
+    highlight.js: "npm:11.8.0"
+    hono: "npm:4.12.25"
+    http-proxy-agent: "npm:^7.0.2"
+    human-interval: "npm:^2.0.1"
+    i18next: "npm:~23.4.9"
+    i18next-http-backend: "npm:^3.0.6"
+    i18next-sprintf-postprocessor: "npm:^0.2.2"
+    iconv-lite: "npm:^0.6.3"
+    image-size: "npm:^1.2.1"
+    imap: "npm:^0.8.19"
+    ip-range-check: "npm:^0.2.0"
+    is-svg: "npm:^5.1.0"
+    isolated-vm: "npm:5.0.4"
+    jest: "npm:~30.2.0"
+    jschardet: "npm:^3.1.4"
+    jsdom: "npm:^26.1.0"
+    jsdom-global: "npm:^3.0.2"
+    json-2-csv: "npm:^5.5.10"
+    jsrsasign: "npm:^11.1.3"
+    juice: "npm:^8.1.0"
+    katex: "npm:~0.16.45"
+    ldap-escape: "npm:^2.0.6"
+    ldapjs: "npm:^2.3.3"
+    limax: "npm:^3.0.0"
+    localforage: "npm:^1.10.0"
+    lodash.clonedeep: "npm:^4.5.0"
+    lodash.debounce: "npm:^4.0.8"
+    lodash.escape: "npm:^4.0.1"
+    lodash.get: "npm:^4.4.2"
+    mailparser: "npm:~3.9.11"
+    marked: "npm:^4.3.0"
+    mem: "npm:^8.1.1"
+    meteor-node-stubs: "npm:~1.2.27"
+    mime-db: "npm:^1.52.0"
+    mime-type: "npm:^4.0.0"
+    mkdirp: "npm:^1.0.4"
+    mocha: "npm:^9.2.2"
+    moleculer: "npm:^0.14.35"
+    moment: "npm:^2.30.1"
+    moment-timezone: "npm:^0.5.48"
+    mongo-message-queue: "npm:^1.1.0"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    node-dogstatsd: "npm:^0.0.7"
+    node-fetch: "npm:2.7.0"
+    node-rsa: "npm:^1.1.1"
+    nodemailer: "npm:^9.0.1"
+    nyc: "npm:^17.1.0"
+    object-path: "npm:^0.11.8"
+    outdent: "npm:~0.8.0"
+    overlayscrollbars: "npm:~2.11.5"
+    overlayscrollbars-react: "npm:^0.5.6"
+    passport: "npm:^0.7.0"
+    passport-apple: "npm:^2.0.2"
+    passport-facebook: "npm:^3.0.0"
+    passport-github2: "npm:^0.1.12"
+    passport-google-oauth20: "npm:^2.0.0"
+    passport-oauth1: "npm:~1.3.0"
+    passport-oauth2: "npm:^1.8.0"
+    path: "npm:^0.12.7"
+    path-to-regexp: "npm:^6.3.0"
+    pino: "npm:10.3.1"
+    pino-pretty: "npm:13.1.3"
+    playwright-core: "npm:~1.52.0"
+    playwright-qase-reporter: "npm:~2.5.0"
+    postcss: "npm:8.5.10"
+    postcss-custom-properties: "npm:^14.0.6"
+    postcss-easy-import: "npm:^4.0.0"
+    postcss-lit: "npm:^1.1.1"
+    postcss-load-config: "npm:^6.0.1"
+    postcss-media-minmax: "npm:^5.0.0"
+    postcss-nested: "npm:^7.0.2"
+    postcss-url: "npm:^10.1.3"
+    postis: "npm:^2.2.0"
+    prettier: "npm:~3.3.3"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    proxy-from-env: "npm:^1.1.0"
+    proxyquire: "npm:^2.1.3"
+    psl: "npm:^1.10.0"
+    qs: "npm:^6.15.2"
+    query-string: "npm:^7.1.3"
+    queue-fifo: "npm:^0.2.6"
+    raw-loader: "npm:~4.0.2"
+    re-resizable: "npm:^6.10.4"
+    react: "npm:~19.2.7"
+    react-aria: "npm:~3.37.0"
+    react-docgen-typescript-plugin: "npm:^1.0.8"
+    react-dom: "npm:~19.2.7"
+    react-error-boundary: "npm:~6.1.2"
+    react-hook-form: "npm:~7.54.2"
+    react-i18next: "npm:~13.2.2"
+    react-is: "npm:~19.2.7"
+    react-keyed-flatten-children: "npm:~5.1.2"
+    react-stately: "npm:~3.17.0"
+    react-virtuoso: "npm:~4.18.10"
+    reflect-metadata: "npm:^0.2.2"
+    sanitize-html: "npm:~2.17.4"
+    semver: "npm:^7.6.3"
+    sharp: "npm:^0.33.5"
+    sinon: "npm:^19.0.5"
+    sodium-native: "npm:^4.3.3"
+    sodium-plus: "npm:^0.9.0"
+    source-map: "npm:~0.7.6"
+    speakeasy: "npm:^2.0.0"
+    storybook: "npm:^9.1.13"
+    stream-buffers: "npm:^3.0.3"
+    strict-uri-encode: "npm:^2.0.0"
+    string-strip-html: "npm:^8.5.0"
+    stylelint: "npm:^16.10.0"
+    stylelint-config-standard: "npm:^36.0.1"
+    stylelint-order: "npm:^6.0.4"
+    stylelint-selector-bem-pattern: "npm:^4.0.1"
+    supertest: "npm:~7.1.4"
+    supports-color: "npm:~7.2.0"
+    swagger-ui-express: "npm:^5.0.1"
+    swc-plugin-coverage-instrument: "npm:0.0.32"
+    swiper: "npm:12.1.3"
+    template-file: "npm:^6.0.1"
+    textarea-caret: "npm:^3.1.0"
+    tinykeys: "npm:^1.4.0"
+    ts-node: "npm:^10.9.2"
+    tsx: "npm:~4.22.4"
+    tsyringe: "npm:^4.10.0"
+    tweetnacl: "npm:^1.0.3"
+    twilio: "npm:~5.4.5"
+    twitter-api-v2: "npm:^1.29.0"
+    typescript: "npm:~5.9.3"
+    typia: "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
+    ua-parser-js: "npm:~1.0.41"
+    underscore: "npm:^1.13.8"
+    universal-perf-hooks: "npm:^1.0.1"
+    virtua: "npm:^0.49.0"
+    webdav: "npm:^4.11.5"
+    webpack: "npm:~5.104.1"
+    xml-crypto: "npm:~6.1.2"
+    xml-encryption: "npm:~4.0.0"
+    xml2js: "npm:~0.6.2"
+    yaqrcode: "npm:^0.2.1"
+    yoga-layout: "patch:yoga-layout@npm%3A3.2.1#~/.yarn/patches/yoga-layout-npm-3.2.1-51ec934670.patch"
+    zod: "npm:~4.3.6"
+    zustand: "npm:~5.0.12"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/mock-providers@workspace:^, @nexa/mock-providers@workspace:packages/mock-providers, @nexa/mock-providers@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/mock-providers@workspace:packages/mock-providers"
+  dependencies:
+    "@faker-js/faker": "npm:~8.0.2"
+    "@nexa/ddp-client": "workspace:~"
+    "@nexa/i18n": "workspace:~"
+    "@nexa/mongo-adapter": "workspace:~"
+    "@nexa/tools": "workspace:~"
+    "@nexa/ui-contexts": "workspace:^"
+    "@nexa/ui-video-conf": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@storybook/react": "npm:^9.1.13"
+    "@tanstack/react-query": "npm:~5.65.1"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/jest-dom": "npm:~6.8.0"
+    "@testing-library/react": "npm:~16.3.2"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-i18next: "npm:~13.2.2"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@storybook/react": "*"
+    "@tanstack/react-query": "*"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/model-typings@workspace:^, @nexa/model-typings@workspace:packages/model-typings, @nexa/model-typings@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/model-typings@workspace:packages/model-typings"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@types/node-rsa": "npm:^1.1.4"
+    eslint: "npm:~9.39.4"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/models@workspace:^, @nexa/models@workspace:packages/models, @nexa/models@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/models@workspace:packages/models"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/model-typings": "workspace:~"
+    "@nexa/random": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/sha256": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@types/jest": "npm:~30.0.0"
+    "@types/node-rsa": "npm:^1.1.4"
+    date-fns: "npm:~4.1.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    node-rsa: "npm:^1.1.1"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/mongo-adapter@workspace:^, @nexa/mongo-adapter@workspace:packages/mongo-adapter, @nexa/mongo-adapter@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/mongo-adapter@workspace:packages/mongo-adapter"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    mongodb: 6.10.0
+  languageName: unknown
+  linkType: soft
+
+"@nexa/network-broker@workspace:^, @nexa/network-broker@workspace:ee/packages/network-broker":
+  version: 0.0.0-use.local
+  resolution: "@nexa/network-broker@workspace:ee/packages/network-broker"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/chai": "npm:~4.3.20"
+    "@types/ejson": "npm:^2.2.2"
+    "@types/node": "npm:~22.19.17"
+    "@types/sinon": "npm:^10.0.20"
+    chai: "npm:^4.5.0"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    moleculer: "npm:^0.14.35"
+    pino: "npm:10.3.1"
+    sinon: "npm:^19.0.5"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/omni-core-ee@workspace:^, @nexa/omni-core-ee@workspace:ee/packages/omni-core-ee":
+  version: 0.0.0-use.local
+  resolution: "@nexa/omni-core-ee@workspace:ee/packages/omni-core-ee"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/logger": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/omni-core": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    mem: "npm:^8.1.1"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/omni-core@workspace:^, @nexa/omni-core@workspace:packages/omni-core":
+  version: 0.0.0-use.local
+  resolution: "@nexa/omni-core@workspace:packages/omni-core"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/models": "workspace:^"
+    "@nexa/patch-injection": "workspace:^"
+    "@nexa/tools": "workspace:*"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/omnichannel-services@workspace:^, @nexa/omnichannel-services@workspace:ee/packages/omnichannel-services":
+  version: 0.0.0-use.local
+  resolution: "@nexa/omnichannel-services@workspace:ee/packages/omnichannel-services"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/i18n": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/logger": "workspace:^"
+    "@nexa/message-types": "workspace:~"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/pdf-worker": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tools": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@types/jest": "npm:~30.0.0"
+    "@types/node": "npm:~22.19.17"
+    date-fns: "npm:~4.1.0"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    mem: "npm:^8.1.1"
+    moment-timezone: "npm:^0.5.48"
+    mongo-message-queue: "npm:^1.1.0"
+    mongodb: "npm:6.16.0"
+    pino: "npm:10.3.1"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/omnichannel-transcript@workspace:ee/apps/omnichannel-transcript":
+  version: 0.0.0-use.local
+  resolution: "@nexa/omnichannel-transcript@workspace:ee/apps/omnichannel-transcript"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/i18n": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/omnichannel-services": "workspace:^"
+    "@nexa/pdf-worker": "workspace:^"
+    "@nexa/tools": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@react-pdf/renderer": "npm:~4.5.1"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@types/i18next-sprintf-postprocessor": "npm:^0.2.3"
+    "@types/node": "npm:~22.19.17"
+    "@types/polka": "npm:^0.5.8"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    "@types/react": "npm:~19.2.17"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    i18next: "npm:~23.4.9"
+    i18next-sprintf-postprocessor: "npm:^0.2.2"
+    mem: "npm:^8.1.1"
+    moleculer: "npm:^0.14.35"
+    moment-timezone: "npm:^0.5.48"
+    mongo-message-queue: "npm:^1.1.0"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    pino: "npm:10.3.1"
+    polka: "npm:^0.5.2"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    react: "npm:~19.2.7"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/passport-x@workspace:packages/passport-x, @nexa/passport-x@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/passport-x@workspace:packages/passport-x"
+  dependencies:
+    "@types/express": "npm:^4.17.25"
+    "@types/passport": "npm:~1.0.17"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    passport-oauth1: "npm:~1.3.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/password-policies@workspace:^, @nexa/password-policies@workspace:packages/password-policies":
+  version: 0.0.0-use.local
+  resolution: "@nexa/password-policies@workspace:packages/password-policies"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/patch-injection@workspace:^, @nexa/patch-injection@workspace:packages/patch-injection":
+  version: 0.0.0-use.local
+  resolution: "@nexa/patch-injection@workspace:packages/patch-injection"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/pdf-worker@workspace:^, @nexa/pdf-worker@workspace:ee/packages/pdf-worker":
+  version: 0.0.0-use.local
+  resolution: "@nexa/pdf-worker@workspace:ee/packages/pdf-worker"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/message-parser": "workspace:~"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@react-pdf/renderer": "npm:~4.5.1"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@storybook/react": "npm:^9.1.13"
+    "@storybook/react-webpack5": "npm:^9.1.13"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@types/jest": "npm:~30.0.0"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    buffer: "npm:~6.0.3"
+    emojibase-data: "npm:^16.0.0"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    moment: "npm:^2.30.1"
+    moment-timezone: "npm:^0.5.48"
+    path-browserify: "npm:^1.0.1"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-i18next: "npm:~13.2.2"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/peggy-loader@workspace:packages/peggy-loader, @nexa/peggy-loader@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/peggy-loader@workspace:packages/peggy-loader"
+  dependencies:
+    "@rocket.chat/prettier-config": "npm:~0.31.25"
+    "@types/node": "npm:~22.19.17"
+    eslint: "npm:~9.39.4"
+    npm-run-all: "npm:^4.1.5"
+    peggy: "npm:4.1.1"
+    prettier: "npm:~3.3.3"
+    rimraf: "npm:^6.0.1"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+  peerDependencies:
+    peggy: "*"
+    webpack: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/poplib@workspace:^, @nexa/poplib@workspace:packages/node-poplib":
+  version: 0.0.0-use.local
+  resolution: "@nexa/poplib@workspace:packages/node-poplib"
+  dependencies:
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/presence-service@workspace:ee/apps/presence-service":
+  version: 0.0.0-use.local
+  resolution: "@nexa/presence-service@workspace:ee/apps/presence-service"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/presence": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/string-helpers": "npm:~0.32.0"
+    "@types/node": "npm:~22.19.17"
+    "@types/polka": "npm:^0.5.8"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    mem: "npm:^8.1.1"
+    moleculer: "npm:^0.14.35"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    pino: "npm:10.3.1"
+    polka: "npm:^0.5.2"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/presence@workspace:^, @nexa/presence@workspace:ee/packages/presence":
+  version: 0.0.0-use.local
+  resolution: "@nexa/presence@workspace:ee/packages/presence"
+  dependencies:
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@types/node": "npm:~22.19.17"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/queue-worker@workspace:ee/apps/queue-worker":
+  version: 0.0.0-use.local
+  resolution: "@nexa/queue-worker@workspace:ee/apps/queue-worker"
+  dependencies:
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/logger": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/omnichannel-services": "workspace:^"
+    "@nexa/tracing": "workspace:^"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@types/node": "npm:~22.19.17"
+    "@types/polka": "npm:^0.5.8"
+    "@types/prometheus-gc-stats": "npm:^0.6.4"
+    ejson: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    eventemitter3: "npm:^5.0.4"
+    mem: "npm:^8.1.1"
+    moleculer: "npm:^0.14.35"
+    moment-timezone: "npm:^0.5.48"
+    mongo-message-queue: "npm:^1.1.0"
+    mongodb: "npm:6.16.0"
+    nats: "npm:^2.28.2"
+    pino: "npm:10.3.1"
+    polka: "npm:^0.5.2"
+    prom-client: "npm:^14.2.0"
+    prometheus-gc-stats: "npm:^1.1.0"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/random@workspace:^, @nexa/random@workspace:packages/random, @nexa/random@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/random@workspace:packages/random"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/release-action@workspace:packages/release-action":
+  version: 0.0.0-use.local
+  resolution: "@nexa/release-action@workspace:packages/release-action"
+  dependencies:
+    "@actions/core": "npm:^3.0.1"
+    "@actions/exec": "npm:^3.0.0"
+    "@actions/github": "npm:^9.1.1"
+    "@octokit/core": "npm:^7.0.6"
+    "@octokit/plugin-throttling": "npm:^11.0.3"
+    "@types/node": "npm:~22.19.17"
+    esbuild: "npm:~0.28.1"
+    eslint: "npm:~9.39.4"
+    mdast-util-to-string: "npm:2.0.0"
+    remark-parse: "npm:9.0.0"
+    remark-stringify: "npm:9.0.1"
+    semver: "npm:^7.6.3"
+    typescript: "npm:~5.9.3"
+    unified: "npm:9.2.2"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/release-changelog@workspace:packages/release-changelog":
+  version: 0.0.0-use.local
+  resolution: "@nexa/release-changelog@workspace:packages/release-changelog"
+  dependencies:
+    "@changesets/types": "npm:^6.0.0"
+    "@types/node": "npm:~22.19.17"
+    dataloader: "npm:^2.2.3"
+    eslint: "npm:~9.39.4"
+    node-fetch: "npm:^2.7.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/rest-typings@workspace:^, @nexa/rest-typings@workspace:packages/rest-typings, @nexa/rest-typings@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/rest-typings@workspace:packages/rest-typings"
+  dependencies:
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/ui-kit": "workspace:~"
+    "@types/jest": "npm:~30.0.0"
+    ajv: "npm:^8.20.0"
+    ajv-formats: "npm:^3.0.1"
+    eslint: "npm:~9.39.4"
+    mongodb: "npm:6.16.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/server-cloud-communication@workspace:^, @nexa/server-cloud-communication@workspace:packages/server-cloud-communication":
+  version: 0.0.0-use.local
+  resolution: "@nexa/server-cloud-communication@workspace:packages/server-cloud-communication"
+  dependencies:
+    "@nexa/license": "workspace:^"
+    eslint: "npm:~9.39.4"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/server-fetch@workspace:^, @nexa/server-fetch@workspace:packages/server-fetch":
+  version: 0.0.0-use.local
+  resolution: "@nexa/server-fetch@workspace:packages/server-fetch"
+  dependencies:
+    "@nexa/logger": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/tools": "workspace:^"
+    "@types/jest": "npm:^29.5.14"
+    "@types/node-fetch": "npm:~2.6.13"
+    "@types/proxy-from-env": "npm:^1.0.4"
+    abort-controller: "npm:^3.0.0"
+    eslint: "npm:~9.39.4"
+    http-proxy-agent: "npm:^7.0.2"
+    https-proxy-agent: "npm:^7.0.6"
+    jest: "npm:^29.7.0"
+    node-fetch: "npm:2.7.0"
+    proxy-from-env: "npm:^1.1.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/sha256@workspace:^, @nexa/sha256@workspace:packages/sha256":
+  version: 0.0.0-use.local
+  resolution: "@nexa/sha256@workspace:packages/sha256"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/storybook-config@workspace:packages/storybook-config, @nexa/storybook-config@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/storybook-config@workspace:packages/storybook-config"
+  dependencies:
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@storybook/addon-a11y": "npm:^9.1.13"
+    "@storybook/addon-docs": "npm:^9.1.13"
+    "@storybook/addon-styling-webpack": "npm:^2.0.0"
+    "@storybook/addon-webpack5-compiler-swc": "npm:^4.0.3"
+    "@storybook/react": "npm:^9.1.13"
+    "@storybook/react-webpack5": "npm:^9.1.13"
+    eslint: "npm:~9.39.4"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    storybook-dark-mode: "npm:^5.0.0"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+  peerDependencies:
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/icons": "*"
+    "@storybook/react": "*"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/tools@workspace:*, @nexa/tools@workspace:^, @nexa/tools@workspace:packages/tools, @nexa/tools@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/tools@workspace:packages/tools"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/tracing@workspace:^, @nexa/tracing@workspace:packages/tracing":
+  version: 0.0.0-use.local
+  resolution: "@nexa/tracing@workspace:packages/tracing"
+  dependencies:
+    "@opentelemetry/api": "npm:^1.9.1"
+    "@opentelemetry/exporter-trace-otlp-grpc": "npm:^0.217.0"
+    "@opentelemetry/sdk-node": "npm:^0.217.0"
+    "@opentelemetry/sdk-trace-base": "npm:^2.7.1"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    ts-jest: "npm:~29.4.9"
+    typescript: "npm:~5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/tsconfig@workspace:*, @nexa/tsconfig@workspace:packages/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "@nexa/tsconfig@workspace:packages/tsconfig"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-avatar@workspace:^, @nexa/ui-avatar@workspace:packages/ui-avatar, @nexa/ui-avatar@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-avatar@workspace:packages/ui-avatar"
+  dependencies:
+    "@nexa/core-typings": "workspace:~"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    eslint: "npm:~9.39.4"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-virtuoso: "npm:~4.18.10"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/fuselage": "*"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-client@workspace:^, @nexa/ui-client@workspace:packages/ui-client, @nexa/ui-client@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-client@workspace:packages/ui-client"
+  dependencies:
+    "@nexa/core-typings": "workspace:~"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/mock-providers": "workspace:^"
+    "@nexa/models": "workspace:~"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-avatar": "workspace:~"
+    "@nexa/ui-contexts": "workspace:~"
+    "@react-aria/toolbar": "npm:^3.0.0-nightly.5042"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/layout": "npm:~0.36.0"
+    "@rocket.chat/logo": "npm:~0.33.1"
+    "@rocket.chat/onboarding-ui": "npm:~0.37.1"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@storybook/react": "npm:^9.1.13"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@types/jest": "npm:~30.0.0"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    dompurify: "npm:~3.4.7"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    overlayscrollbars: "npm:~2.11.5"
+    overlayscrollbars-react: "npm:^0.5.6"
+    re-resizable: "npm:^6.10.4"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-hook-form: "npm:~7.54.2"
+    react-i18next: "npm:~13.2.2"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@react-aria/toolbar": "*"
+    "@rocket.chat/css-in-js": "*"
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/fuselage-hooks": "*"
+    "@rocket.chat/icons": "*"
+    overlayscrollbars: "*"
+    overlayscrollbars-react: "*"
+    re-resizable: "*"
+    react: "*"
+    react-i18next: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-composer@workspace:^, @nexa/ui-composer@workspace:packages/ui-composer":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-composer@workspace:packages/ui-composer"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/mock-providers": "workspace:~"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-client": "workspace:~"
+    "@react-aria/toolbar": "npm:^3.0.0-nightly.5042"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@storybook/react": "npm:^9.1.13"
+    "@testing-library/react": "npm:~16.3.2"
+    "@testing-library/user-event": "npm:~14.6.1"
+    "@types/jest": "npm:~30.0.0"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+  peerDependencies:
+    "@nexa/ui-client": 32.0.0
+    "@react-aria/toolbar": "*"
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/icons": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-contexts@workspace:^, @nexa/ui-contexts@workspace:packages/ui-contexts, @nexa/ui-contexts@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-contexts@workspace:packages/ui-contexts"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/ddp-client": "workspace:~"
+    "@nexa/i18n": "workspace:~"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/password-policies": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/tools": "workspace:~"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@types/jest": "npm:~30.0.0"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    mongodb: "npm:6.16.0"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-virtuoso: "npm:~4.18.10"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/ddp-client": "workspace:^"
+    "@nexa/i18n": "workspace:~"
+    "@nexa/rest-typings": "workspace:^"
+    "@rocket.chat/emitter": "*"
+    "@rocket.chat/fuselage-hooks": "*"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-kit@workspace:^, @nexa/ui-kit@workspace:packages/ui-kit, @nexa/ui-kit@workspace:~":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-kit@workspace:packages/ui-kit"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@types/jest": "npm:~30.0.0"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    npm-run-all: "npm:~4.1.5"
+    prettier: "npm:~3.3.3"
+    rimraf: "npm:~6.0.1"
+    ts-jest: "npm:~29.4.9"
+    ts-patch: "npm:^3.3.0"
+    typescript: "npm:~5.9.3"
+    typia: "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
+  peerDependencies:
+    "@rocket.chat/icons": "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-video-conf@workspace:*, @nexa/ui-video-conf@workspace:^, @nexa/ui-video-conf@workspace:packages/ui-video-conf":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-video-conf@workspace:packages/ui-video-conf"
+  dependencies:
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@storybook/react": "npm:^9.1.13"
+    "@types/jest": "npm:~30.0.0"
+    "@types/jest-axe": "npm:~3.5.9"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    eslint: "npm:~9.39.4"
+    jest: "npm:~30.2.0"
+    jest-axe: "npm:~10.0.0"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+    webpack: "npm:~5.104.1"
+  peerDependencies:
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/css-in-js": "*"
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/fuselage-hooks": "*"
+    "@rocket.chat/icons": "*"
+    "@rocket.chat/styled": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/ui-voip@workspace:^, @nexa/ui-voip@workspace:packages/ui-voip":
+  version: 0.0.0-use.local
+  resolution: "@nexa/ui-voip@workspace:packages/ui-voip"
+  dependencies:
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/desktop-api": "workspace:^"
+    "@nexa/fuselage-ui-kit": "workspace:^"
+    "@nexa/jest-presets": "workspace:~"
+    "@nexa/media-signaling": "workspace:~"
+    "@nexa/mock-providers": "workspace:~"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-client": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@nexa/ui-kit": "workspace:^"
+    "@playwright/test": "npm:~1.52.0"
+    "@react-spectrum/test-utils": "npm:~1.0.0-alpha.8"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@storybook/react": "npm:^9.1.13"
+    "@storybook/test-runner": "npm:^0.22.1"
+    "@tanstack/react-query": "npm:~5.65.1"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@testing-library/user-event": "npm:~14.6.1"
+    "@types/jest": "npm:~30.0.0"
+    "@types/jest-axe": "npm:~3.5.9"
+    "@types/node": "npm:~22.19.17"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    date-fns: "npm:~4.1.0"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    jest: "npm:~30.2.0"
+    jest-axe: "npm:~10.0.0"
+    jsdom: "npm:^26.1.0"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-i18next: "npm:~13.2.2"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@nexa/fuselage-ui-kit": "workspace:^"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-client": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/css-in-js": "*"
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/fuselage-hooks": "*"
+    "@rocket.chat/icons": "*"
+    "@rocket.chat/styled": "*"
+    date-fns: "*"
+    react: "*"
+    react-aria: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/uikit-playground@workspace:apps/uikit-playground":
+  version: 0.0.0-use.local
+  resolution: "@nexa/uikit-playground@workspace:apps/uikit-playground"
+  dependencies:
+    "@codemirror/lang-javascript": "npm:^6.2.5"
+    "@codemirror/lang-json": "npm:^6.0.2"
+    "@hello-pangea/dnd": "npm:^17.0.0"
+    "@lezer/highlight": "npm:^1.2.3"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/fuselage-ui-kit": "workspace:~"
+    "@nexa/tsconfig": "workspace:*"
+    "@nexa/ui-avatar": "workspace:^"
+    "@nexa/ui-contexts": "workspace:~"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-toastbar": "npm:~0.36.1"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/logo": "npm:~0.33.1"
+    "@rocket.chat/styled": "npm:~0.34.1"
+    "@types/lodash": "npm:~4.17.24"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    "@vitejs/plugin-react": "npm:~6.0.1"
+    codemirror: "npm:^6.0.2"
+    eslint: "npm:~9.39.4"
+    eslint4b-prebuilt: "npm:^6.7.2"
+    prettier: "npm:~3.3.3"
+    rc-scrollbars: "npm:^1.1.6"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-router-dom: "npm:^6.30.4"
+    react-split-pane: "npm:^3.2.0"
+    react-virtuoso: "npm:~4.18.10"
+    reactflow: "npm:^11.11.4"
+    typescript: "npm:~5.9.3"
+    vite: "npm:^8.0.16"
+  languageName: unknown
+  linkType: soft
+
+"@nexa/web-ui-registration@workspace:^, @nexa/web-ui-registration@workspace:packages/web-ui-registration":
+  version: 0.0.0-use.local
+  resolution: "@nexa/web-ui-registration@workspace:packages/web-ui-registration"
+  dependencies:
+    "@nexa/core-typings": "workspace:~"
+    "@nexa/i18n": "workspace:~"
+    "@nexa/mock-providers": "workspace:~"
+    "@nexa/rest-typings": "workspace:~"
+    "@nexa/storybook-config": "workspace:~"
+    "@nexa/tools": "workspace:~"
+    "@nexa/ui-client": "workspace:^"
+    "@nexa/ui-contexts": "workspace:^"
+    "@rocket.chat/css-in-js": "npm:^0.33.0"
+    "@rocket.chat/emitter": "npm:^0.33.0"
+    "@rocket.chat/fuselage": "npm:^0.82.0"
+    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
+    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
+    "@rocket.chat/icons": "npm:^0.48.0"
+    "@rocket.chat/layout": "npm:~0.36.0"
+    "@storybook/react": "npm:^9.1.13"
+    "@tanstack/react-query": "npm:~5.65.1"
+    "@testing-library/dom": "npm:~10.4.1"
+    "@testing-library/react": "npm:~16.3.2"
+    "@types/react": "npm:~19.2.17"
+    "@types/react-dom": "npm:~19.2.3"
+    dompurify: "npm:~3.4.7"
+    eslint: "npm:~9.39.4"
+    i18next: "npm:~23.4.9"
+    react: "npm:~19.2.7"
+    react-dom: "npm:~19.2.7"
+    react-hook-form: "npm:~7.54.2"
+    react-i18next: "npm:~13.2.2"
+    react-virtuoso: "npm:~4.18.10"
+    storybook: "npm:^9.1.13"
+    typescript: "npm:~5.9.3"
+  peerDependencies:
+    "@nexa/tools": 0.3.0
+    "@nexa/ui-contexts": 32.0.0
+    "@rocket.chat/layout": "*"
+    "@tanstack/react-query": "*"
+    react: "*"
+    react-hook-form: "*"
+    react-i18next: "*"
+  languageName: unknown
+  linkType: soft
+
 "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1":
   version: 5.1.1-v1
   resolution: "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1"
@@ -8675,283 +10898,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/abac@workspace:^, @rocket.chat/abac@workspace:ee/packages/abac":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/abac@workspace:ee/packages/abac"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/server-fetch": "workspace:^"
-    "@rocket.chat/tools": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    "@types/node": "npm:~22.19.17"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    mem: "npm:^8.1.1"
-    mongodb: "npm:6.10.0"
-    mongodb-memory-server: "npm:^10.2.3"
-    p-limit: "npm:3.1.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/account-service@workspace:ee/apps/account-service":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/account-service@workspace:ee/apps/account-service"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/tools": "workspace:^"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/bcrypt": "npm:^6.0.0"
-    "@types/node": "npm:~22.19.17"
-    "@types/polka": "npm:^0.5.8"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    bcrypt: "npm:^6.0.0"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    mem: "npm:^8.1.1"
-    moleculer: "npm:^0.14.35"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    pino: "npm:10.3.1"
-    polka: "npm:^0.5.2"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/account-utils@workspace:^, @rocket.chat/account-utils@workspace:packages/account-utils":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/account-utils@workspace:packages/account-utils"
-  dependencies:
-    eslint: "npm:~9.39.4"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/agenda@workspace:^, @rocket.chat/agenda@workspace:packages/agenda":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/agenda@workspace:packages/agenda"
-  dependencies:
-    "@types/debug": "npm:^4.1.13"
-    cron: "npm:~1.8.2"
-    date.js: "npm:~0.3.3"
-    debug: "npm:~4.3.7"
-    eslint: "npm:~9.39.4"
-    human-interval: "npm:^2.0.1"
-    moment-timezone: "npm:~0.5.48"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/api-client@workspace:^, @rocket.chat/api-client@workspace:packages/api-client":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/api-client@workspace:packages/api-client"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    "@types/strict-uri-encode": "npm:^2.0.2"
-    eslint: "npm:~9.39.4"
-    filter-obj: "npm:^3.0.0"
-    jest: "npm:~30.2.0"
-    jest-fetch-mock: "npm:~3.0.3"
-    query-string: "npm:^7.1.3"
-    split-on-first: "npm:^3.0.0"
-    strict-uri-encode: "npm:^2.0.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/apps-engine@workspace:^, @rocket.chat/apps-engine@workspace:packages/apps-engine":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/apps-engine@workspace:packages/apps-engine"
-  dependencies:
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@types/node": "npm:~22.19.17"
-    eslint: "npm:~9.39.4"
-    npm-run-all: "npm:^4.1.5"
-    rimraf: "npm:^6.0.1"
-    typedoc: "npm:~0.28.10"
-    typescript: "npm:~5.9.3"
-    uuid: "npm:~11.1.1"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/apps@workspace:^, @rocket.chat/apps@workspace:packages/apps":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/apps@workspace:packages/apps"
-  dependencies:
-    "@msgpack/msgpack": "npm:3.0.0-beta2"
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/adm-zip": "npm:^0.5.7"
-    "@types/debug": "npm:^4.1.12"
-    "@types/lodash.clonedeep": "npm:^4.5.9"
-    "@types/node": "npm:~22.16.5"
-    "@types/semver": "npm:^7.5.8"
-    "@types/stack-trace": "npm:0.0.33"
-    "@types/uuid": "npm:~10.0.0"
-    acorn: "npm:8.17.0"
-    acorn-walk: "npm:8.3.5"
-    adm-zip: "npm:^0.5.16"
-    astring: "npm:1.8.6"
-    debug: "npm:^4.3.7"
-    esbuild: "npm:~0.28.1"
-    eslint: "npm:~9.39.4"
-    jose: "npm:^4.15.9"
-    jsonrpc-lite: "npm:^2.2.0"
-    lodash.clonedeep: "npm:^4.5.0"
-    npm-run-all: "npm:^4.1.5"
-    rimraf: "npm:^6.0.1"
-    semver: "npm:^7.6.3"
-    stack-trace: "npm:0.0.10"
-    ts-node: "npm:^6.2.0"
-    typescript: "npm:~5.9.3"
-    uuid: "npm:~11.1.1"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/authorization-service@workspace:ee/apps/authorization-service":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/authorization-service@workspace:ee/apps/authorization-service"
-  dependencies:
-    "@rocket.chat/abac": "workspace:^"
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/node": "npm:~22.19.17"
-    "@types/polka": "npm:^0.5.8"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    mem: "npm:^8.1.1"
-    moleculer: "npm:^0.14.35"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    pino: "npm:10.3.1"
-    polka: "npm:^0.5.2"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/base64@workspace:^, @rocket.chat/base64@workspace:packages/base64":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/base64@workspace:packages/base64"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/cas-validate@workspace:^, @rocket.chat/cas-validate@workspace:packages/cas-validate":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/cas-validate@workspace:packages/cas-validate"
-  dependencies:
-    cheerio: "npm:1.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/core-services@workspace:^, @rocket.chat/core-services@workspace:packages/core-services":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/core-services@workspace:packages/core-services"
-  dependencies:
-    "@rocket.chat/apps": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/federation-sdk": "npm:0.6.3"
-    "@rocket.chat/http-router": "workspace:^"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/media-signaling": "workspace:^"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    mongodb: "npm:6.16.0"
-    prettier: "npm:~3.3.3"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/core-typings@workspace:^, @rocket.chat/core-typings@workspace:packages/core-typings, @rocket.chat/core-typings@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/core-typings@workspace:packages/core-typings"
-  dependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@types/express": "npm:^4.17.25"
-    eslint: "npm:~9.39.4"
-    mongodb: "npm:6.16.0"
-    npm-run-all: "npm:~4.1.5"
-    prettier: "npm:~3.3.3"
-    rimraf: "npm:^6.0.1"
-    ts-patch: "npm:^3.3.0"
-    typescript: "npm:~5.9.3"
-    typia: "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
-    zod: "npm:~4.3.6"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/cron@workspace:^, @rocket.chat/cron@workspace:packages/cron":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/cron@workspace:packages/cron"
-  dependencies:
-    "@rocket.chat/agenda": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/random": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    eslint: "npm:~9.39.4"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/css-in-js@npm:^0.33.0":
   version: 0.33.0
   resolution: "@rocket.chat/css-in-js@npm:0.33.0"
@@ -8974,88 +10920,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/ddp-client@workspace:^, @rocket.chat/ddp-client@workspace:packages/ddp-client, @rocket.chat/ddp-client@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ddp-client@workspace:packages/ddp-client"
-  dependencies:
-    "@rocket.chat/api-client": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:~"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/media-signaling": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    "@types/ws": "npm:^8.18.1"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    jest-websocket-mock: "npm:~2.5.0"
-    typescript: "npm:~5.9.3"
-    ws: "npm:~8.21.0"
-  peerDependencies:
-    "@rocket.chat/emitter": "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ddp-streamer@workspace:ee/apps/ddp-streamer":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ddp-streamer@workspace:ee/apps/ddp-streamer"
-  dependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/ddp-client": "workspace:~"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/instance-status": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:*"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/tracing": "workspace:^"
-    "@types/ejson": "npm:^2.2.2"
-    "@types/jest": "npm:~30.0.0"
-    "@types/node": "npm:~22.19.17"
-    "@types/polka": "npm:^0.5.8"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    "@types/underscore": "npm:^1.13.0"
-    "@types/uuid": "npm:^10.0.0"
-    "@types/ws": "npm:^8.18.1"
-    colorette: "npm:^1.4.0"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    jaeger-client: "npm:^3.19.0"
-    jest: "npm:~30.2.0"
-    mem: "npm:^8.1.1"
-    moleculer: "npm:^0.14.35"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    pino: "npm:10.3.1"
-    pino-pretty: "npm:13.1.3"
-    polka: "npm:^0.5.2"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    sharp: "npm:^0.33.5"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:~5.9.3"
-    underscore: "npm:^1.13.8"
-    uuid: "npm:^11.1.1"
-    ws: "npm:~8.21.0"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/desktop-api@workspace:^, @rocket.chat/desktop-api@workspace:packages/desktop-api, @rocket.chat/desktop-api@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/desktop-api@workspace:packages/desktop-api"
-  dependencies:
-    eslint: "npm:~9.39.4"
-    rimraf: "npm:~6.0.1"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/emitter@npm:^0.32.0":
   version: 0.32.0
   resolution: "@rocket.chat/emitter@npm:0.32.0"
@@ -9069,80 +10933,6 @@ __metadata:
   checksum: 10/3da59b699e71e3a10c1759cea9b9c9f91ff5d9d19b39cc1b843e09d53fba397d4999a9366f492376fee4dcd70cf89dc2c2bd2ba6fff134d69527d28023dc1417
   languageName: node
   linkType: hard
-
-"@rocket.chat/eslint-config@workspace:packages/eslint-config, @rocket.chat/eslint-config@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/eslint-config@workspace:packages/eslint-config"
-  dependencies:
-    "@babel/core": "npm:~7.29.6"
-    "@babel/eslint-parser": "npm:~7.28.6"
-    "@eslint/js": "npm:~9.39.4"
-    "@types/eslint": "npm:~8.44.9"
-    "@types/prettier": "npm:^2.7.3"
-    eslint: "npm:~9.39.4"
-    eslint-config-prettier: "npm:~10.1.8"
-    eslint-import-resolver-typescript: "npm:~4.4.4"
-    eslint-plugin-anti-trojan-source: "npm:~1.1.2"
-    eslint-plugin-import-x: "npm:~4.17.1"
-    eslint-plugin-jest: "npm:~29.15.2"
-    eslint-plugin-jsx-a11y: "npm:~6.10.2"
-    eslint-plugin-prettier: "npm:~5.5.5"
-    eslint-plugin-react: "npm:~7.37.5"
-    eslint-plugin-react-hooks: "npm:~7.0.1"
-    eslint-plugin-storybook: "npm:~10.2.19"
-    eslint-plugin-testing-library: "npm:~7.16.2"
-    globals: "npm:~17.3.0"
-    prettier: "npm:~3.3.3"
-    typescript: "npm:~5.9.3"
-    typescript-eslint: "npm:~8.56.1"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/favicon@workspace:^, @rocket.chat/favicon@workspace:packages/favicon":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/favicon@workspace:packages/favicon"
-  dependencies:
-    eslint: "npm:~9.39.4"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/federation-matrix@workspace:^, @rocket.chat/federation-matrix@workspace:ee/packages/federation-matrix":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/federation-matrix@workspace:ee/packages/federation-matrix"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/ddp-client": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/federation-sdk": "npm:0.6.3"
-    "@rocket.chat/http-router": "workspace:^"
-    "@rocket.chat/license": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@types/lodash.debounce": "npm:^4.0.9"
-    "@types/node": "npm:~22.19.17"
-    "@types/sanitize-html": "npm:~2.16.1"
-    emojibase: "npm:^16.0.0"
-    emojibase-data: "npm:^16.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    jest-qase-reporter: "npm:^2.4.0"
-    lodash.debounce: "npm:^4.0.8"
-    marked: "npm:^16.1.2"
-    matrix-js-sdk: "npm:^38.4.0"
-    mem: "npm:^8.1.1"
-    mongodb: "npm:6.16.0"
-    pino: "npm:10.3.1"
-    pino-pretty: "npm:13.1.3"
-    reflect-metadata: "npm:^0.2.2"
-    sanitize-html: "npm:~2.17.4"
-    tsyringe: "npm:^4.10.0"
-    tweetnacl: "npm:^1.0.3"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
 
 "@rocket.chat/federation-sdk@npm:0.6.3":
   version: 0.6.3
@@ -9211,68 +11001,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/fuselage-ui-kit@workspace:^, @rocket.chat/fuselage-ui-kit@workspace:packages/fuselage-ui-kit, @rocket.chat/fuselage-ui-kit@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/fuselage-ui-kit@workspace:packages/fuselage-ui-kit"
-  dependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/gazzodown": "workspace:^"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/mock-providers": "workspace:^"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@rocket.chat/ui-video-conf": "workspace:^"
-    "@storybook/react": "npm:^9.1.13"
-    "@storybook/react-webpack5": "npm:^9.1.13"
-    "@tanstack/react-query": "npm:~5.65.1"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@testing-library/user-event": "npm:~14.6.1"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    cross-env: "npm:^7.0.3"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    normalize.css: "npm:^8.0.1"
-    npm-run-all: "npm:^4.1.5"
-    prettier: "npm:~3.3.3"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-i18next: "npm:~13.2.2"
-    react-virtuoso: "npm:~4.18.10"
-    rimraf: "npm:^6.0.1"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-  peerDependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/fuselage-hooks": "*"
-    "@rocket.chat/icons": "*"
-    "@rocket.chat/styled": "*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:^"
-    "@rocket.chat/ui-video-conf": "workspace:^"
-    "@tanstack/react-query": "*"
-    i18next: "*"
-    react: "*"
-    react-dom: "*"
-    react-i18next: "*"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/fuselage@npm:^0.82.0":
   version: 0.82.0
   resolution: "@rocket.chat/fuselage@npm:0.82.0"
@@ -9296,163 +11024,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/gazzodown@workspace:^, @rocket.chat/gazzodown@workspace:packages/gazzodown":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/gazzodown@workspace:packages/gazzodown"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-client": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@storybook/addon-links": "npm:^9.1.13"
-    "@storybook/react": "npm:^9.1.13"
-    "@storybook/react-webpack5": "npm:^9.1.13"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@types/jest": "npm:~30.0.0"
-    "@types/katex": "npm:~0.16.8"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    date-fns: "npm:~4.1.0"
-    dompurify: "npm:~3.4.7"
-    eslint: "npm:~9.39.4"
-    highlight.js: "npm:11.8.0"
-    i18next: "npm:~23.4.9"
-    identity-obj-proxy: "npm:^3.0.0"
-    jest: "npm:~30.2.0"
-    katex: "npm:~0.16.45"
-    outdent: "npm:^0.8.0"
-    react: "npm:~19.2.7"
-    react-aria: "npm:~3.37.0"
-    react-dom: "npm:~19.2.7"
-    react-error-boundary: "npm:~6.1.2"
-    react-i18next: "npm:~13.2.2"
-    react-stately: "npm:~3.17.0"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-  peerDependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/css-in-js": "*"
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/fuselage-tokens": "*"
-    "@rocket.chat/message-parser": 0.31.36
-    "@rocket.chat/styled": "*"
-    "@rocket.chat/ui-client": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    katex: "*"
-    react: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/http-router@workspace:^, @rocket.chat/http-router@workspace:packages/http-router":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/http-router@workspace:packages/http-router"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/express": "npm:^4.17.25"
-    "@types/jest": "npm:~30.0.0"
-    "@types/supertest": "npm:~6.0.3"
-    ajv: "npm:^8.20.0"
-    eslint: "npm:~9.39.4"
-    express: "npm:^4.21.2"
-    hono: "npm:4.12.25"
-    jest: "npm:~30.2.0"
-    qs: "npm:^6.15.2"
-    supertest: "npm:~7.1.4"
-    ts-jest: "npm:~29.4.9"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/i18n@workspace:^, @rocket.chat/i18n@workspace:packages/i18n, @rocket.chat/i18n@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/i18n@workspace:packages/i18n"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tools": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@rocket.chat/tools": "workspace:~"
-    i18next: "*"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/icons@npm:^0.48.0":
   version: 0.48.0
   resolution: "@rocket.chat/icons@npm:0.48.0"
   checksum: 10/29a8367a541c2dc0ee4d17b6601336aff4a22b84ccd1c743fd85a3d59185695d98bda1703271383142eec966af981b611fdf6f302cc2ba5040c431eeeb7a9536
   languageName: node
   linkType: hard
-
-"@rocket.chat/instance-status@workspace:^, @rocket.chat/instance-status@workspace:packages/instance-status":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/instance-status@workspace:packages/instance-status"
-  dependencies:
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    eslint: "npm:~9.39.4"
-    mongodb: "npm:6.16.0"
-    prettier: "npm:~3.3.3"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/jest-presets@workspace:*, @rocket.chat/jest-presets@workspace:^, @rocket.chat/jest-presets@workspace:packages/jest-presets, @rocket.chat/jest-presets@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/jest-presets@workspace:packages/jest-presets"
-  dependencies:
-    "@swc/core": "npm:1.15.30"
-    "@swc/jest": "npm:~0.2.39"
-    "@testing-library/jest-dom": "npm:~6.8.0"
-    "@types/identity-obj-proxy": "npm:^3.0.2"
-    "@types/jest": "npm:~30.0.0"
-    "@types/jest-axe": "npm:~3.5.9"
-    "@types/uuid": "npm:^10.0.0"
-    eslint: "npm:~9.39.4"
-    identity-obj-proxy: "npm:~3.0.0"
-    jest: "npm:~30.2.0"
-    jest-axe: "npm:~10.0.0"
-    jest-environment-jsdom: "npm:~30.2.0"
-    jest-environment-node: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-    uuid: "npm:~11.1.1"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/jwt@workspace:^, @rocket.chat/jwt@workspace:packages/jwt":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/jwt@workspace:packages/jwt"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    jose: "npm:^4.15.9"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
 
 "@rocket.chat/layout@npm:~0.36.0":
   version: 0.36.0
@@ -9467,140 +11044,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/license@workspace:^, @rocket.chat/license@workspace:ee/packages/license":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/license@workspace:ee/packages/license"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/jwt": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/bcrypt": "npm:^6.0.0"
-    "@types/jest": "npm:~30.0.0"
-    "@types/ws": "npm:^8.5.14"
-    bcrypt: "npm:^6.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    jest-websocket-mock: "npm:~2.5.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/livechat@workspace:^, @rocket.chat/livechat@workspace:packages/livechat":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/livechat@workspace:packages/livechat"
-  dependencies:
-    "@babel/core": "npm:~7.29.6"
-    "@babel/preset-env": "npm:~7.29.5"
-    "@babel/preset-react": "npm:~7.28.5"
-    "@babel/preset-typescript": "npm:~7.28.5"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/ddp-client": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/gazzodown": "workspace:^"
-    "@rocket.chat/logo": "npm:~0.33.1"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/random": "workspace:~"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@storybook/addon-docs": "npm:^9.1.13"
-    "@storybook/addon-styling-webpack": "npm:^1.0.1"
-    "@storybook/addon-webpack5-compiler-swc": "npm:^4.0.3"
-    "@storybook/preact": "npm:9.0.0-alpha.11"
-    "@storybook/preact-webpack5": "npm:9.0.0-alpha.11"
-    "@types/crypto-js": "npm:~4.2.2"
-    "@types/mini-css-extract-plugin": "npm:~2.5.1"
-    "@types/react": "npm:~19.2.17"
-    "@types/webpack-env": "npm:~1.18.8"
-    "@types/whatwg-fetch": "npm:~0.0.33"
-    ajv: "npm:^8.20.0"
-    ajv-formats: "npm:^3.0.1"
-    autoprefixer: "npm:^9.8.8"
-    babel-loader: "npm:~10.0.0"
-    cross-env: "npm:^7.0.3"
-    css-loader: "npm:^4.3.0"
-    css-vars-ponyfill: "npm:^2.4.9"
-    cssnano: "npm:^7.1.7"
-    date-fns: "npm:~4.1.0"
-    desvg-loader: "npm:^0.1.0"
-    dompurify: "npm:~3.4.7"
-    emoji-mart: "npm:^3.0.1"
-    eslint: "npm:~9.39.4"
-    file-loader: "npm:^6.2.0"
-    history: "npm:~5.3.0"
-    html-webpack-plugin: "npm:~5.6.7"
-    i18next: "npm:~23.4.9"
-    if-env: "npm:^1.0.4"
-    lorem-ipsum: "npm:^2.0.8"
-    mem: "npm:^8.1.1"
-    mini-css-extract-plugin: "npm:~2.9.4"
-    npm-run-all: "npm:^4.1.5"
-    path-to-regexp: "npm:^6.3.0"
-    postcss: "npm:8.5.10"
-    postcss-css-variables: "npm:^0.19.0"
-    postcss-dir-pseudo-class: "npm:^9.0.1"
-    postcss-flexbugs-fixes: "npm:^5.0.2"
-    postcss-loader: "npm:^8.1.1"
-    postcss-logical: "npm:^8.0.0"
-    postcss-scss: "npm:^4.0.9"
-    postcss-selector-not: "npm:^8.0.1"
-    preact: "npm:~10.25.4"
-    preact-router: "npm:^4.1.2"
-    query-string: "npm:^7.1.3"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-hook-form: "npm:~7.54.2"
-    react-i18next: "npm:~13.2.2"
-    resolve-url-loader: "npm:~5.0.0"
-    rimraf: "npm:^6.0.1"
-    sass: "npm:~1.80.7"
-    sass-loader: "npm:~16.0.7"
-    storybook: "npm:^9.1.13"
-    storybook-dark-mode: "npm:^5.0.0"
-    style-loader: "npm:^1.3.0"
-    stylelint: "npm:^16.10.0"
-    stylelint-order: "npm:^6.0.4"
-    svg-loader: "npm:^0.0.2"
-    terser-webpack-plugin: "npm:~5.3.17"
-    typescript: "npm:~5.9.3"
-    url-loader: "npm:^4.1.1"
-    webpack: "npm:~5.104.1"
-    webpack-cli: "npm:~5.1.4"
-    webpack-dev-server: "npm:~5.2.5"
-    whatwg-fetch: "npm:^3.6.20"
-  peerDependencies:
-    "@rocket.chat/fuselage-tokens": "*"
-    "@rocket.chat/logo": "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/log-format@workspace:^, @rocket.chat/log-format@workspace:packages/log-format":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/log-format@workspace:packages/log-format"
-  dependencies:
-    "@types/chalk": "npm:^2.2.4"
-    "@types/ejson": "npm:^2.2.2"
-    chalk: "npm:^4.1.2"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/logger@workspace:^, @rocket.chat/logger@workspace:packages/logger":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/logger@workspace:packages/logger"
-  dependencies:
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    eslint: "npm:~9.39.4"
-    pino: "npm:10.3.1"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/logo@npm:~0.33.1":
   version: 0.33.1
   resolution: "@rocket.chat/logo@npm:0.33.1"
@@ -9613,38 +11056,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/media-calls@workspace:^, @rocket.chat/media-calls@workspace:ee/packages/media-calls":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/media-calls@workspace:ee/packages/media-calls"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/media-signaling": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    drachtio-srf: "patch:drachtio-srf@npm%3A5.0.12#~/.yarn/patches/drachtio-srf-npm-5.0.12-b0b1afaad6.patch"
-    eslint: "npm:~9.39.4"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/media-signaling@workspace:^, @rocket.chat/media-signaling@workspace:packages/media-signaling, @rocket.chat/media-signaling@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/media-signaling@workspace:packages/media-signaling"
-  dependencies:
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    ajv: "npm:^8.20.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/memo@npm:^0.31.25, @rocket.chat/memo@npm:~0.31.25":
   version: 0.31.25
   resolution: "@rocket.chat/memo@npm:0.31.25"
@@ -9652,684 +11063,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/message-parser@workspace:^, @rocket.chat/message-parser@workspace:packages/message-parser, @rocket.chat/message-parser@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/message-parser@workspace:packages/message-parser"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/peggy-loader": "workspace:~"
-    "@rocket.chat/prettier-config": "npm:~0.31.25"
-    "@types/jest": "npm:~30.0.0"
-    "@types/node": "npm:~22.19.17"
-    eslint: "npm:~9.39.4"
-    fast-check: "npm:^4.6.0"
-    jest: "npm:~30.2.0"
-    npm-run-all: "npm:^4.1.5"
-    peggy: "npm:4.1.1"
-    prettier: "npm:~3.3.3"
-    prettier-plugin-pegjs: "npm:~0.5.4"
-    rimraf: "npm:^6.0.1"
-    tinybench: "npm:^3.0.7"
-    tldts: "npm:~6.1.86"
-    ts-loader: "npm:~9.5.7"
-    ts-node: "npm:~10.9.2"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-    webpack-cli: "npm:~5.1.4"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/message-types@workspace:packages/message-types, @rocket.chat/message-types@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/message-types@workspace:packages/message-types"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:~"
-    date-fns: "npm:~4.1.0"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    moment: "npm:^2.30.1"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    date-fns: ~4.1.0
-    moment: ^2.30.1
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/meteor@workspace:apps/meteor":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/meteor@workspace:apps/meteor"
-  dependencies:
-    "@aws-sdk/client-s3": "npm:^3.862.0"
-    "@aws-sdk/lib-storage": "npm:^3.862.0"
-    "@aws-sdk/s3-request-presigner": "npm:^3.862.0"
-    "@axe-core/playwright": "npm:^4.10.2"
-    "@babel/core": "npm:~7.29.6"
-    "@babel/preset-env": "npm:~7.29.5"
-    "@babel/preset-react": "npm:~7.27.1"
-    "@babel/register": "npm:~7.28.6"
-    "@babel/runtime": "npm:~7.29.2"
-    "@bugsnag/js": "npm:~7.20.2"
-    "@bugsnag/plugin-react": "npm:~7.19.0"
-    "@datastructures-js/priority-queue": "npm:^6.3.5"
-    "@date-fns/tz": "npm:^1.4.1"
-    "@faker-js/faker": "npm:~8.0.2"
-    "@google-cloud/storage": "npm:^7.19.0"
-    "@kaciras/deasync": "npm:^1.1.0"
-    "@nivo/bar": "npm:0.88.0"
-    "@nivo/core": "npm:0.88.0"
-    "@nivo/heatmap": "npm:0.88.0"
-    "@nivo/line": "npm:0.88.0"
-    "@nivo/pie": "npm:0.88.0"
-    "@noble/ed25519": "npm:^3.0.0"
-    "@node-oauth/oauth2-server": "npm:~5.3.0"
-    "@opentelemetry/api": "npm:^1.9.1"
-    "@opentelemetry/exporter-trace-otlp-grpc": "npm:^0.217.0"
-    "@opentelemetry/sdk-node": "npm:^0.217.0"
-    "@parse/node-apn": "npm:^8.1.0"
-    "@playwright/test": "npm:~1.52.0"
-    "@react-aria/toolbar": "npm:^3.0.0-nightly.5042"
-    "@react-pdf/renderer": "npm:~4.5.1"
-    "@rocket.chat/abac": "workspace:^"
-    "@rocket.chat/account-utils": "workspace:^"
-    "@rocket.chat/agenda": "workspace:^"
-    "@rocket.chat/api-client": "workspace:^"
-    "@rocket.chat/apps": "workspace:^"
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/base64": "workspace:^"
-    "@rocket.chat/cas-validate": "workspace:^"
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/cron": "workspace:^"
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/ddp-client": "workspace:^"
-    "@rocket.chat/desktop-api": "workspace:~"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/favicon": "workspace:^"
-    "@rocket.chat/federation-matrix": "workspace:^"
-    "@rocket.chat/federation-sdk": "npm:0.6.3"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-forms": "npm:~1.5.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-toastbar": "npm:~0.36.1"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/fuselage-ui-kit": "workspace:^"
-    "@rocket.chat/gazzodown": "workspace:^"
-    "@rocket.chat/http-router": "workspace:^"
-    "@rocket.chat/i18n": "workspace:^"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/instance-status": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/jwt": "workspace:^"
-    "@rocket.chat/layout": "npm:~0.36.0"
-    "@rocket.chat/license": "workspace:^"
-    "@rocket.chat/livechat": "workspace:^"
-    "@rocket.chat/log-format": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/logo": "npm:~0.33.1"
-    "@rocket.chat/media-calls": "workspace:^"
-    "@rocket.chat/media-signaling": "workspace:^"
-    "@rocket.chat/memo": "npm:~0.31.25"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/message-types": "workspace:~"
-    "@rocket.chat/mock-providers": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/mongo-adapter": "workspace:^"
-    "@rocket.chat/mp3-encoder": "npm:^0.31.26"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/omni-core": "workspace:^"
-    "@rocket.chat/omni-core-ee": "workspace:^"
-    "@rocket.chat/omnichannel-services": "workspace:^"
-    "@rocket.chat/onboarding-ui": "npm:~0.37.1"
-    "@rocket.chat/passport-x": "workspace:~"
-    "@rocket.chat/password-policies": "workspace:^"
-    "@rocket.chat/patch-injection": "workspace:^"
-    "@rocket.chat/pdf-worker": "workspace:^"
-    "@rocket.chat/poplib": "workspace:^"
-    "@rocket.chat/presence": "workspace:^"
-    "@rocket.chat/random": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/server-cloud-communication": "workspace:^"
-    "@rocket.chat/server-fetch": "workspace:^"
-    "@rocket.chat/sha256": "workspace:^"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tools": "workspace:^"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-client": "workspace:^"
-    "@rocket.chat/ui-composer": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@rocket.chat/ui-video-conf": "workspace:^"
-    "@rocket.chat/ui-voip": "workspace:^"
-    "@rocket.chat/web-ui-registration": "workspace:^"
-    "@slack/bolt": "npm:^3.22.0"
-    "@slack/rtm-api": "npm:~7.0.4"
-    "@storybook/react": "npm:^9.1.13"
-    "@storybook/react-webpack5": "npm:^9.1.13"
-    "@tanstack/react-query": "npm:~5.65.1"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@testing-library/user-event": "npm:~14.6.1"
-    "@types/adm-zip": "npm:^0.5.8"
-    "@types/archiver": "npm:~6.0.4"
-    "@types/babel__preset-env": "npm:^7.10.0"
-    "@types/bad-words": "npm:^3.0.3"
-    "@types/bcrypt": "npm:^6.0.0"
-    "@types/body-parser": "npm:^1.19.6"
-    "@types/busboy": "npm:^1.5.4"
-    "@types/chai": "npm:~4.3.20"
-    "@types/chai-as-promised": "npm:^7.1.8"
-    "@types/chai-datetime": "npm:0.0.39"
-    "@types/chai-dom": "npm:1.11.3"
-    "@types/chai-spies": "npm:~1.0.6"
-    "@types/codemirror": "npm:~5.60.17"
-    "@types/cookie": "npm:^0.5.4"
-    "@types/cookie-parser": "npm:^1.4.10"
-    "@types/cors": "npm:^2.8.19"
-    "@types/cssom": "npm:^0.4.3"
-    "@types/ejson": "npm:^2.2.2"
-    "@types/express": "npm:^4.17.25"
-    "@types/express-rate-limit": "npm:^5.1.3"
-    "@types/express-session": "npm:^1"
-    "@types/fast-redact": "npm:^3"
-    "@types/google-libphonenumber": "npm:^7.4.30"
-    "@types/gravatar": "npm:^1.8.6"
-    "@types/he": "npm:^1.2.3"
-    "@types/i18next-sprintf-postprocessor": "npm:^0.2.3"
-    "@types/imap": "npm:^0.8.43"
-    "@types/jest": "npm:~30.0.0"
-    "@types/jsdom": "npm:^21.1.7"
-    "@types/jsdom-global": "npm:^3.0.7"
-    "@types/jsrsasign": "npm:^10.5.15"
-    "@types/katex": "npm:^0.16.8"
-    "@types/later": "npm:^1.2.9"
-    "@types/ldapjs": "npm:^2.2.5"
-    "@types/less": "npm:~3.0.8"
-    "@types/lodash": "npm:~4.17.24"
-    "@types/lodash.clonedeep": "npm:^4.5.9"
-    "@types/lodash.debounce": "npm:^4.0.9"
-    "@types/lodash.escape": "npm:^4.0.9"
-    "@types/lodash.get": "npm:^4.4.9"
-    "@types/mailparser": "npm:^3.4.6"
-    "@types/marked": "npm:^4.3.2"
-    "@types/meteor": "npm:^2.9.11"
-    "@types/meteor-collection-hooks": "npm:^0.8.9"
-    "@types/mkdirp": "npm:^1.0.2"
-    "@types/mocha": "github:whitecolor/mocha-types"
-    "@types/node": "npm:~22.19.17"
-    "@types/node-rsa": "npm:^1.1.4"
-    "@types/nodemailer": "npm:^8.0.1"
-    "@types/oauth2-server": "npm:^3.0.18"
-    "@types/object-path": "npm:^0.11.4"
-    "@types/parseurl": "npm:^1.3.3"
-    "@types/passport": "npm:^1.0.17"
-    "@types/passport-apple": "npm:^2"
-    "@types/passport-facebook": "npm:^3.0.4"
-    "@types/passport-github2": "npm:^1.2.9"
-    "@types/passport-google-oauth20": "npm:^2"
-    "@types/passport-oauth2": "npm:^1"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    "@types/proxy-from-env": "npm:^1.0.4"
-    "@types/proxyquire": "npm:^1.3.31"
-    "@types/psl": "npm:^1.1.3"
-    "@types/qs": "npm:^6.14.0"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    "@types/react-is": "npm:^19"
-    "@types/sanitize-html": "npm:~2.16.1"
-    "@types/semver": "npm:^7.5.8"
-    "@types/sharp": "npm:^0.32.0"
-    "@types/sinon": "npm:^10.0.20"
-    "@types/speakeasy": "npm:^2.0.10"
-    "@types/strict-uri-encode": "npm:^2.0.2"
-    "@types/supertest": "npm:~6.0.3"
-    "@types/supports-color": "npm:~7.2.1"
-    "@types/swagger-ui-express": "npm:^4.1.8"
-    "@types/textarea-caret": "npm:^3.0.4"
-    "@types/ua-parser-js": "npm:^0.7.39"
-    "@types/underscore": "npm:^1.13.0"
-    "@types/xml-encryption": "npm:~1.2.4"
-    "@xmldom/xmldom": "npm:~0.8.13"
-    adm-zip: "npm:0.5.17"
-    ajv: "npm:^8.20.0"
-    ajv-formats: "npm:~3.0.1"
-    archiver: "npm:^7.0.1"
-    asterisk-manager: "npm:^0.2.0"
-    atlassian-crowd-patched: "npm:^0.5.1"
-    autoprefixer: "npm:^9.8.8"
-    babel-loader: "npm:~10.0.0"
-    babel-plugin-array-includes: "npm:^2.0.3"
-    babel-plugin-istanbul: "npm:~7.0.1"
-    bad-words: "npm:^3.0.4"
-    bcrypt: "npm:^6.0.0"
-    body-parser: "npm:1.20.4"
-    bson: "npm:^6.7.1"
-    busboy: "npm:^1.6.0"
-    chai: "npm:^4.5.0"
-    chai-as-promised: "npm:^7.1.2"
-    chai-datetime: "npm:^1.8.1"
-    chai-dom: "npm:^1.12.1"
-    chai-spies: "npm:~1.1.0"
-    chalk: "npm:^4.1.2"
-    change-case: "npm:^4.1.2"
-    chart.js: "npm:^3.9.1"
-    codemirror: "npm:~5.65.21"
-    colorette: "npm:^2.0.20"
-    colors: "npm:^1.4.0"
-    connect: "npm:^3.7.0"
-    connect-mongo: "npm:5.1.0"
-    cookie: "npm:^0.7.2"
-    cookie-parser: "npm:^1.4.7"
-    cors: "npm:^2.8.6"
-    cron: "npm:~1.8.2"
-    cron-validator: "npm:^1.3.1"
-    cross-env: "npm:^7.0.3"
-    css-vars-ponyfill: "npm:^2.4.9"
-    csv-parse: "npm:^5.5.6"
-    date-fns: "npm:~4.1.0"
-    date.js: "npm:~0.3.3"
-    debug: "npm:~4.3.7"
-    docker-compose: "npm:^0.24.8"
-    dompurify: "npm:~3.4.7"
-    drachtio-srf: "patch:drachtio-srf@npm%3A5.0.12#~/.yarn/patches/drachtio-srf-npm-5.0.12-b0b1afaad6.patch"
-    ejson: "npm:^2.2.3"
-    emailreplyparser: "npm:^0.0.5"
-    emojibase: "npm:^16.0.0"
-    emojibase-data: "npm:^16.0.0"
-    esl: "npm:^11.2.1"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    exif-be-gone: "npm:^1.5.1"
-    expiry-map: "npm:^2.0.0"
-    express: "npm:^4.21.2"
-    express-rate-limit: "npm:^5.5.1"
-    express-session: "npm:^1.19.0"
-    fast-glob: "npm:^3.3.3"
-    fast-redact: "npm:^3.5.0"
-    fastq: "npm:^1.17.1"
-    fflate: "npm:^0.8.2"
-    file-type: "npm:^16.5.4"
-    filenamify: "npm:^4.3.0"
-    filesize: "npm:9.0.11"
-    generate-password: "npm:^1.7.1"
-    google-libphonenumber: "npm:^3.2.44"
-    gravatar: "npm:^1.8.2"
-    he: "npm:^1.2.0"
-    highlight.js: "npm:11.8.0"
-    hono: "npm:4.12.25"
-    http-proxy-agent: "npm:^7.0.2"
-    human-interval: "npm:^2.0.1"
-    i18next: "npm:~23.4.9"
-    i18next-http-backend: "npm:^3.0.6"
-    i18next-sprintf-postprocessor: "npm:^0.2.2"
-    iconv-lite: "npm:^0.6.3"
-    image-size: "npm:^1.2.1"
-    imap: "npm:^0.8.19"
-    ip-range-check: "npm:^0.2.0"
-    is-svg: "npm:^5.1.0"
-    isolated-vm: "npm:5.0.4"
-    jest: "npm:~30.2.0"
-    jschardet: "npm:^3.1.4"
-    jsdom: "npm:^26.1.0"
-    jsdom-global: "npm:^3.0.2"
-    json-2-csv: "npm:^5.5.10"
-    jsrsasign: "npm:^11.1.3"
-    juice: "npm:^8.1.0"
-    katex: "npm:~0.16.45"
-    ldap-escape: "npm:^2.0.6"
-    ldapjs: "npm:^2.3.3"
-    limax: "npm:^3.0.0"
-    localforage: "npm:^1.10.0"
-    lodash.clonedeep: "npm:^4.5.0"
-    lodash.debounce: "npm:^4.0.8"
-    lodash.escape: "npm:^4.0.1"
-    lodash.get: "npm:^4.4.2"
-    mailparser: "npm:~3.9.11"
-    marked: "npm:^4.3.0"
-    mem: "npm:^8.1.1"
-    meteor-node-stubs: "npm:~1.2.27"
-    mime-db: "npm:^1.52.0"
-    mime-type: "npm:^4.0.0"
-    mkdirp: "npm:^1.0.4"
-    mocha: "npm:^9.2.2"
-    moleculer: "npm:^0.14.35"
-    moment: "npm:^2.30.1"
-    moment-timezone: "npm:^0.5.48"
-    mongo-message-queue: "npm:^1.1.0"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    node-dogstatsd: "npm:^0.0.7"
-    node-fetch: "npm:2.7.0"
-    node-rsa: "npm:^1.1.1"
-    nodemailer: "npm:^9.0.1"
-    nyc: "npm:^17.1.0"
-    object-path: "npm:^0.11.8"
-    outdent: "npm:~0.8.0"
-    overlayscrollbars: "npm:~2.11.5"
-    overlayscrollbars-react: "npm:^0.5.6"
-    passport: "npm:^0.7.0"
-    passport-apple: "npm:^2.0.2"
-    passport-facebook: "npm:^3.0.0"
-    passport-github2: "npm:^0.1.12"
-    passport-google-oauth20: "npm:^2.0.0"
-    passport-oauth1: "npm:~1.3.0"
-    passport-oauth2: "npm:^1.8.0"
-    path: "npm:^0.12.7"
-    path-to-regexp: "npm:^6.3.0"
-    pino: "npm:10.3.1"
-    pino-pretty: "npm:13.1.3"
-    playwright-core: "npm:~1.52.0"
-    playwright-qase-reporter: "npm:~2.5.0"
-    postcss: "npm:8.5.10"
-    postcss-custom-properties: "npm:^14.0.6"
-    postcss-easy-import: "npm:^4.0.0"
-    postcss-lit: "npm:^1.1.1"
-    postcss-load-config: "npm:^6.0.1"
-    postcss-media-minmax: "npm:^5.0.0"
-    postcss-nested: "npm:^7.0.2"
-    postcss-url: "npm:^10.1.3"
-    postis: "npm:^2.2.0"
-    prettier: "npm:~3.3.3"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    proxy-from-env: "npm:^1.1.0"
-    proxyquire: "npm:^2.1.3"
-    psl: "npm:^1.10.0"
-    qs: "npm:^6.15.2"
-    query-string: "npm:^7.1.3"
-    queue-fifo: "npm:^0.2.6"
-    raw-loader: "npm:~4.0.2"
-    re-resizable: "npm:^6.10.4"
-    react: "npm:~19.2.7"
-    react-aria: "npm:~3.37.0"
-    react-docgen-typescript-plugin: "npm:^1.0.8"
-    react-dom: "npm:~19.2.7"
-    react-error-boundary: "npm:~6.1.2"
-    react-hook-form: "npm:~7.54.2"
-    react-i18next: "npm:~13.2.2"
-    react-is: "npm:~19.2.7"
-    react-keyed-flatten-children: "npm:~5.1.2"
-    react-stately: "npm:~3.17.0"
-    react-virtuoso: "npm:~4.18.10"
-    reflect-metadata: "npm:^0.2.2"
-    sanitize-html: "npm:~2.17.4"
-    semver: "npm:^7.6.3"
-    sharp: "npm:^0.33.5"
-    sinon: "npm:^19.0.5"
-    sodium-native: "npm:^4.3.3"
-    sodium-plus: "npm:^0.9.0"
-    source-map: "npm:~0.7.6"
-    speakeasy: "npm:^2.0.0"
-    storybook: "npm:^9.1.13"
-    stream-buffers: "npm:^3.0.3"
-    strict-uri-encode: "npm:^2.0.0"
-    string-strip-html: "npm:^8.5.0"
-    stylelint: "npm:^16.10.0"
-    stylelint-config-standard: "npm:^36.0.1"
-    stylelint-order: "npm:^6.0.4"
-    stylelint-selector-bem-pattern: "npm:^4.0.1"
-    supertest: "npm:~7.1.4"
-    supports-color: "npm:~7.2.0"
-    swagger-ui-express: "npm:^5.0.1"
-    swc-plugin-coverage-instrument: "npm:0.0.32"
-    swiper: "npm:12.1.3"
-    template-file: "npm:^6.0.1"
-    textarea-caret: "npm:^3.1.0"
-    tinykeys: "npm:^1.4.0"
-    ts-node: "npm:^10.9.2"
-    tsx: "npm:~4.22.4"
-    tsyringe: "npm:^4.10.0"
-    tweetnacl: "npm:^1.0.3"
-    twilio: "npm:~5.4.5"
-    twitter-api-v2: "npm:^1.29.0"
-    typescript: "npm:~5.9.3"
-    typia: "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
-    ua-parser-js: "npm:~1.0.41"
-    underscore: "npm:^1.13.8"
-    universal-perf-hooks: "npm:^1.0.1"
-    virtua: "npm:^0.49.0"
-    webdav: "npm:^4.11.5"
-    webpack: "npm:~5.104.1"
-    xml-crypto: "npm:~6.1.2"
-    xml-encryption: "npm:~4.0.0"
-    xml2js: "npm:~0.6.2"
-    yaqrcode: "npm:^0.2.1"
-    yoga-layout: "patch:yoga-layout@npm%3A3.2.1#~/.yarn/patches/yoga-layout-npm-3.2.1-51ec934670.patch"
-    zod: "npm:~4.3.6"
-    zustand: "npm:~5.0.12"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/mock-providers@workspace:^, @rocket.chat/mock-providers@workspace:packages/mock-providers, @rocket.chat/mock-providers@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/mock-providers@workspace:packages/mock-providers"
-  dependencies:
-    "@faker-js/faker": "npm:~8.0.2"
-    "@rocket.chat/ddp-client": "workspace:~"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/i18n": "workspace:~"
-    "@rocket.chat/mongo-adapter": "workspace:~"
-    "@rocket.chat/tools": "workspace:~"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@rocket.chat/ui-video-conf": "workspace:*"
-    "@storybook/react": "npm:^9.1.13"
-    "@tanstack/react-query": "npm:~5.65.1"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/jest-dom": "npm:~6.8.0"
-    "@testing-library/react": "npm:~16.3.2"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-i18next: "npm:~13.2.2"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@storybook/react": "*"
-    "@tanstack/react-query": "*"
-    react: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/model-typings@workspace:^, @rocket.chat/model-typings@workspace:packages/model-typings, @rocket.chat/model-typings@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/model-typings@workspace:packages/model-typings"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@types/node-rsa": "npm:^1.1.4"
-    eslint: "npm:~9.39.4"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/models@workspace:^, @rocket.chat/models@workspace:packages/models, @rocket.chat/models@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/models@workspace:packages/models"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/model-typings": "workspace:~"
-    "@rocket.chat/random": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/sha256": "workspace:^"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    "@types/node-rsa": "npm:^1.1.4"
-    date-fns: "npm:~4.1.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    node-rsa: "npm:^1.1.1"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/mongo-adapter@workspace:^, @rocket.chat/mongo-adapter@workspace:packages/mongo-adapter, @rocket.chat/mongo-adapter@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/mongo-adapter@workspace:packages/mongo-adapter"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    mongodb: 6.10.0
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/mp3-encoder@npm:^0.31.26":
   version: 0.31.26
   resolution: "@rocket.chat/mp3-encoder@npm:0.31.26"
   checksum: 10/e24094d9b63b836a3610f5e102c59cc13ce076c3b0923556361a441b9115dd0d8a96e56804e7a2322e641a3631d90029f249024c0d5c06c383b6fd456afef489
   languageName: node
   linkType: hard
-
-"@rocket.chat/network-broker@workspace:^, @rocket.chat/network-broker@workspace:ee/packages/network-broker":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/network-broker@workspace:ee/packages/network-broker"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/chai": "npm:~4.3.20"
-    "@types/ejson": "npm:^2.2.2"
-    "@types/node": "npm:~22.19.17"
-    "@types/sinon": "npm:^10.0.20"
-    chai: "npm:^4.5.0"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    moleculer: "npm:^0.14.35"
-    pino: "npm:10.3.1"
-    sinon: "npm:^19.0.5"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/omni-core-ee@workspace:^, @rocket.chat/omni-core-ee@workspace:ee/packages/omni-core-ee":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/omni-core-ee@workspace:ee/packages/omni-core-ee"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/omni-core": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    mem: "npm:^8.1.1"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/omni-core@workspace:^, @rocket.chat/omni-core@workspace:packages/omni-core":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/omni-core@workspace:packages/omni-core"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/patch-injection": "workspace:^"
-    "@rocket.chat/tools": "workspace:*"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/omnichannel-services@workspace:^, @rocket.chat/omnichannel-services@workspace:ee/packages/omnichannel-services":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/omnichannel-services@workspace:ee/packages/omnichannel-services"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/i18n": "workspace:^"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/message-types": "workspace:~"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/pdf-worker": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/tools": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    "@types/node": "npm:~22.19.17"
-    date-fns: "npm:~4.1.0"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    mem: "npm:^8.1.1"
-    moment-timezone: "npm:^0.5.48"
-    mongo-message-queue: "npm:^1.1.0"
-    mongodb: "npm:6.16.0"
-    pino: "npm:10.3.1"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/omnichannel-transcript@workspace:ee/apps/omnichannel-transcript":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/omnichannel-transcript@workspace:ee/apps/omnichannel-transcript"
-  dependencies:
-    "@react-pdf/renderer": "npm:~4.5.1"
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/i18n": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/omnichannel-services": "workspace:^"
-    "@rocket.chat/pdf-worker": "workspace:^"
-    "@rocket.chat/tools": "workspace:^"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/i18next-sprintf-postprocessor": "npm:^0.2.3"
-    "@types/node": "npm:~22.19.17"
-    "@types/polka": "npm:^0.5.8"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    "@types/react": "npm:~19.2.17"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    i18next: "npm:~23.4.9"
-    i18next-sprintf-postprocessor: "npm:^0.2.2"
-    mem: "npm:^8.1.1"
-    moleculer: "npm:^0.14.35"
-    moment-timezone: "npm:^0.5.48"
-    mongo-message-queue: "npm:^1.1.0"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    pino: "npm:10.3.1"
-    polka: "npm:^0.5.2"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    react: "npm:~19.2.7"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
 
 "@rocket.chat/onboarding-ui@npm:~0.37.1":
   version: 0.37.1
@@ -10351,158 +11090,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/passport-x@workspace:packages/passport-x, @rocket.chat/passport-x@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/passport-x@workspace:packages/passport-x"
-  dependencies:
-    "@types/express": "npm:^4.17.25"
-    "@types/passport": "npm:~1.0.17"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    passport-oauth1: "npm:~1.3.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/password-policies@workspace:^, @rocket.chat/password-policies@workspace:packages/password-policies":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/password-policies@workspace:packages/password-policies"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/patch-injection@workspace:^, @rocket.chat/patch-injection@workspace:packages/patch-injection":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/patch-injection@workspace:packages/patch-injection"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/pdf-worker@workspace:^, @rocket.chat/pdf-worker@workspace:ee/packages/pdf-worker":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/pdf-worker@workspace:ee/packages/pdf-worker"
-  dependencies:
-    "@react-pdf/renderer": "npm:~4.5.1"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/message-parser": "workspace:~"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@storybook/react": "npm:^9.1.13"
-    "@storybook/react-webpack5": "npm:^9.1.13"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@types/jest": "npm:~30.0.0"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    buffer: "npm:~6.0.3"
-    emojibase-data: "npm:^16.0.0"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    moment: "npm:^2.30.1"
-    moment-timezone: "npm:^0.5.48"
-    path-browserify: "npm:^1.0.1"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-i18next: "npm:~13.2.2"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/peggy-loader@workspace:packages/peggy-loader, @rocket.chat/peggy-loader@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/peggy-loader@workspace:packages/peggy-loader"
-  dependencies:
-    "@rocket.chat/prettier-config": "npm:~0.31.25"
-    "@types/node": "npm:~22.19.17"
-    eslint: "npm:~9.39.4"
-    npm-run-all: "npm:^4.1.5"
-    peggy: "npm:4.1.1"
-    prettier: "npm:~3.3.3"
-    rimraf: "npm:^6.0.1"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-  peerDependencies:
-    peggy: "*"
-    webpack: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/poplib@workspace:^, @rocket.chat/poplib@workspace:packages/node-poplib":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/poplib@workspace:packages/node-poplib"
-  dependencies:
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/presence-service@workspace:ee/apps/presence-service":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/presence-service@workspace:ee/apps/presence-service"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/presence": "workspace:^"
-    "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/node": "npm:~22.19.17"
-    "@types/polka": "npm:^0.5.8"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    mem: "npm:^8.1.1"
-    moleculer: "npm:^0.14.35"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    pino: "npm:10.3.1"
-    polka: "npm:^0.5.2"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/presence@workspace:^, @rocket.chat/presence@workspace:ee/packages/presence":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/presence@workspace:ee/packages/presence"
-  dependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@types/node": "npm:~22.19.17"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
 "@rocket.chat/prettier-config@npm:~0.31.25":
   version: 0.31.25
   resolution: "@rocket.chat/prettier-config@npm:0.31.25"
@@ -10511,179 +11098,6 @@ __metadata:
   checksum: 10/4c0be678e7c161bf132014aa3f986b84f4ec06808b5149f967d52515fb929ee07d073b00a60e197256c8244e02b7e521be20707d6f841de4949d8f516fb8ec09
   languageName: node
   linkType: hard
-
-"@rocket.chat/queue-worker@workspace:ee/apps/queue-worker":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/queue-worker@workspace:ee/apps/queue-worker"
-  dependencies:
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/omnichannel-services": "workspace:^"
-    "@rocket.chat/tracing": "workspace:^"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/node": "npm:~22.19.17"
-    "@types/polka": "npm:^0.5.8"
-    "@types/prometheus-gc-stats": "npm:^0.6.4"
-    ejson: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    eventemitter3: "npm:^5.0.4"
-    mem: "npm:^8.1.1"
-    moleculer: "npm:^0.14.35"
-    moment-timezone: "npm:^0.5.48"
-    mongo-message-queue: "npm:^1.1.0"
-    mongodb: "npm:6.16.0"
-    nats: "npm:^2.28.2"
-    pino: "npm:10.3.1"
-    polka: "npm:^0.5.2"
-    prom-client: "npm:^14.2.0"
-    prometheus-gc-stats: "npm:^1.1.0"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/random@workspace:^, @rocket.chat/random@workspace:packages/random, @rocket.chat/random@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/random@workspace:packages/random"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/release-action@workspace:packages/release-action":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/release-action@workspace:packages/release-action"
-  dependencies:
-    "@actions/core": "npm:^3.0.1"
-    "@actions/exec": "npm:^3.0.0"
-    "@actions/github": "npm:^9.1.1"
-    "@octokit/core": "npm:^7.0.6"
-    "@octokit/plugin-throttling": "npm:^11.0.3"
-    "@types/node": "npm:~22.19.17"
-    esbuild: "npm:~0.28.1"
-    eslint: "npm:~9.39.4"
-    mdast-util-to-string: "npm:2.0.0"
-    remark-parse: "npm:9.0.0"
-    remark-stringify: "npm:9.0.1"
-    semver: "npm:^7.6.3"
-    typescript: "npm:~5.9.3"
-    unified: "npm:9.2.2"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/release-changelog@workspace:packages/release-changelog":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/release-changelog@workspace:packages/release-changelog"
-  dependencies:
-    "@changesets/types": "npm:^6.0.0"
-    "@types/node": "npm:~22.19.17"
-    dataloader: "npm:^2.2.3"
-    eslint: "npm:~9.39.4"
-    node-fetch: "npm:^2.7.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/rest-typings@workspace:^, @rocket.chat/rest-typings@workspace:packages/rest-typings, @rocket.chat/rest-typings@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/rest-typings@workspace:packages/rest-typings"
-  dependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:~"
-    "@types/jest": "npm:~30.0.0"
-    ajv: "npm:^8.20.0"
-    ajv-formats: "npm:^3.0.1"
-    eslint: "npm:~9.39.4"
-    mongodb: "npm:6.16.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/server-cloud-communication@workspace:^, @rocket.chat/server-cloud-communication@workspace:packages/server-cloud-communication":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/server-cloud-communication@workspace:packages/server-cloud-communication"
-  dependencies:
-    "@rocket.chat/license": "workspace:^"
-    eslint: "npm:~9.39.4"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/server-fetch@workspace:^, @rocket.chat/server-fetch@workspace:packages/server-fetch":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/server-fetch@workspace:packages/server-fetch"
-  dependencies:
-    "@rocket.chat/logger": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/tools": "workspace:^"
-    "@types/jest": "npm:^29.5.14"
-    "@types/node-fetch": "npm:~2.6.13"
-    "@types/proxy-from-env": "npm:^1.0.4"
-    abort-controller: "npm:^3.0.0"
-    eslint: "npm:~9.39.4"
-    http-proxy-agent: "npm:^7.0.2"
-    https-proxy-agent: "npm:^7.0.6"
-    jest: "npm:^29.7.0"
-    node-fetch: "npm:2.7.0"
-    proxy-from-env: "npm:^1.1.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/sha256@workspace:^, @rocket.chat/sha256@workspace:packages/sha256":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/sha256@workspace:packages/sha256"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/storybook-config@workspace:packages/storybook-config, @rocket.chat/storybook-config@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/storybook-config@workspace:packages/storybook-config"
-  dependencies:
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@storybook/addon-a11y": "npm:^9.1.13"
-    "@storybook/addon-docs": "npm:^9.1.13"
-    "@storybook/addon-styling-webpack": "npm:^2.0.0"
-    "@storybook/addon-webpack5-compiler-swc": "npm:^4.0.3"
-    "@storybook/react": "npm:^9.1.13"
-    "@storybook/react-webpack5": "npm:^9.1.13"
-    eslint: "npm:~9.39.4"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    storybook-dark-mode: "npm:^5.0.0"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-  peerDependencies:
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/icons": "*"
-    "@storybook/react": "*"
-    react: "*"
-  languageName: unknown
-  linkType: soft
 
 "@rocket.chat/string-helpers@npm:~0.32.0":
   version: 0.32.0
@@ -10711,420 +11125,6 @@ __metadata:
   checksum: 10/74d59b73bf35ab14fabb89ee720b254c8f3c3421504c598ee84aa26b04a6bbe44ea0228785773d5e7cb25af0296235cc5079ef5ab8ebeee014a7761c66824a0f
   languageName: node
   linkType: hard
-
-"@rocket.chat/tools@workspace:*, @rocket.chat/tools@workspace:^, @rocket.chat/tools@workspace:packages/tools, @rocket.chat/tools@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/tools@workspace:packages/tools"
-  dependencies:
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/tracing@workspace:^, @rocket.chat/tracing@workspace:packages/tracing":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/tracing@workspace:packages/tracing"
-  dependencies:
-    "@opentelemetry/api": "npm:^1.9.1"
-    "@opentelemetry/exporter-trace-otlp-grpc": "npm:^0.217.0"
-    "@opentelemetry/sdk-node": "npm:^0.217.0"
-    "@opentelemetry/sdk-trace-base": "npm:^2.7.1"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    ts-jest: "npm:~29.4.9"
-    typescript: "npm:~5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/tsconfig@workspace:*, @rocket.chat/tsconfig@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/tsconfig@workspace:packages/tsconfig"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-avatar@workspace:^, @rocket.chat/ui-avatar@workspace:packages/ui-avatar, @rocket.chat/ui-avatar@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-avatar@workspace:packages/ui-avatar"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:~"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    eslint: "npm:~9.39.4"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-virtuoso: "npm:~4.18.10"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    react: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-client@workspace:^, @rocket.chat/ui-client@workspace:packages/ui-client, @rocket.chat/ui-client@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-client@workspace:packages/ui-client"
-  dependencies:
-    "@react-aria/toolbar": "npm:^3.0.0-nightly.5042"
-    "@rocket.chat/core-typings": "workspace:~"
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/layout": "npm:~0.36.0"
-    "@rocket.chat/logo": "npm:~0.33.1"
-    "@rocket.chat/mock-providers": "workspace:^"
-    "@rocket.chat/models": "workspace:~"
-    "@rocket.chat/onboarding-ui": "npm:~0.37.1"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-avatar": "workspace:~"
-    "@rocket.chat/ui-contexts": "workspace:~"
-    "@storybook/react": "npm:^9.1.13"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@types/jest": "npm:~30.0.0"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    dompurify: "npm:~3.4.7"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    overlayscrollbars: "npm:~2.11.5"
-    overlayscrollbars-react: "npm:^0.5.6"
-    re-resizable: "npm:^6.10.4"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-hook-form: "npm:~7.54.2"
-    react-i18next: "npm:~13.2.2"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@react-aria/toolbar": "*"
-    "@rocket.chat/css-in-js": "*"
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/fuselage-hooks": "*"
-    "@rocket.chat/icons": "*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    overlayscrollbars: "*"
-    overlayscrollbars-react: "*"
-    re-resizable: "*"
-    react: "*"
-    react-i18next: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-composer@workspace:^, @rocket.chat/ui-composer@workspace:packages/ui-composer":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-composer@workspace:packages/ui-composer"
-  dependencies:
-    "@react-aria/toolbar": "npm:^3.0.0-nightly.5042"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/mock-providers": "workspace:~"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-client": "workspace:~"
-    "@storybook/react": "npm:^9.1.13"
-    "@testing-library/react": "npm:~16.3.2"
-    "@testing-library/user-event": "npm:~14.6.1"
-    "@types/jest": "npm:~30.0.0"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-  peerDependencies:
-    "@react-aria/toolbar": "*"
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/icons": "*"
-    "@rocket.chat/ui-client": 32.0.0
-    react: "*"
-    react-dom: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-contexts@workspace:^, @rocket.chat/ui-contexts@workspace:packages/ui-contexts, @rocket.chat/ui-contexts@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-contexts@workspace:packages/ui-contexts"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/ddp-client": "workspace:~"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/i18n": "workspace:~"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/password-policies": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
-    "@rocket.chat/tools": "workspace:~"
-    "@types/jest": "npm:~30.0.0"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    mongodb: "npm:6.16.0"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-virtuoso: "npm:~4.18.10"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/ddp-client": "workspace:^"
-    "@rocket.chat/emitter": "*"
-    "@rocket.chat/fuselage-hooks": "*"
-    "@rocket.chat/i18n": "workspace:~"
-    "@rocket.chat/rest-typings": "workspace:^"
-    react: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-kit@workspace:^, @rocket.chat/ui-kit@workspace:packages/ui-kit, @rocket.chat/ui-kit@workspace:~":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-kit@workspace:packages/ui-kit"
-  dependencies:
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@types/jest": "npm:~30.0.0"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    npm-run-all: "npm:~4.1.5"
-    prettier: "npm:~3.3.3"
-    rimraf: "npm:~6.0.1"
-    ts-jest: "npm:~29.4.9"
-    ts-patch: "npm:^3.3.0"
-    typescript: "npm:~5.9.3"
-    typia: "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
-  peerDependencies:
-    "@rocket.chat/icons": "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-video-conf@workspace:*, @rocket.chat/ui-video-conf@workspace:^, @rocket.chat/ui-video-conf@workspace:packages/ui-video-conf":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-video-conf@workspace:packages/ui-video-conf"
-  dependencies:
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@storybook/react": "npm:^9.1.13"
-    "@types/jest": "npm:~30.0.0"
-    "@types/jest-axe": "npm:~3.5.9"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    eslint: "npm:~9.39.4"
-    jest: "npm:~30.2.0"
-    jest-axe: "npm:~10.0.0"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-    webpack: "npm:~5.104.1"
-  peerDependencies:
-    "@rocket.chat/css-in-js": "*"
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/fuselage-hooks": "*"
-    "@rocket.chat/icons": "*"
-    "@rocket.chat/styled": "*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    react: "*"
-    react-dom: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/ui-voip@workspace:^, @rocket.chat/ui-voip@workspace:packages/ui-voip":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/ui-voip@workspace:packages/ui-voip"
-  dependencies:
-    "@playwright/test": "npm:~1.52.0"
-    "@react-spectrum/test-utils": "npm:~1.0.0-alpha.8"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/desktop-api": "workspace:^"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/fuselage-ui-kit": "workspace:^"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/jest-presets": "workspace:~"
-    "@rocket.chat/media-signaling": "workspace:~"
-    "@rocket.chat/mock-providers": "workspace:~"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-client": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@rocket.chat/ui-kit": "workspace:^"
-    "@storybook/react": "npm:^9.1.13"
-    "@storybook/test-runner": "npm:^0.22.1"
-    "@tanstack/react-query": "npm:~5.65.1"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@testing-library/user-event": "npm:~14.6.1"
-    "@types/jest": "npm:~30.0.0"
-    "@types/jest-axe": "npm:~3.5.9"
-    "@types/node": "npm:~22.19.17"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    date-fns: "npm:~4.1.0"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    jest: "npm:~30.2.0"
-    jest-axe: "npm:~10.0.0"
-    jsdom: "npm:^26.1.0"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-i18next: "npm:~13.2.2"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@rocket.chat/css-in-js": "*"
-    "@rocket.chat/fuselage": "*"
-    "@rocket.chat/fuselage-hooks": "*"
-    "@rocket.chat/fuselage-ui-kit": "workspace:^"
-    "@rocket.chat/icons": "*"
-    "@rocket.chat/styled": "*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-client": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    date-fns: "*"
-    react: "*"
-    react-aria: "*"
-    react-dom: "*"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/uikit-playground@workspace:apps/uikit-playground":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/uikit-playground@workspace:apps/uikit-playground"
-  dependencies:
-    "@codemirror/lang-javascript": "npm:^6.2.5"
-    "@codemirror/lang-json": "npm:^6.0.2"
-    "@hello-pangea/dnd": "npm:^17.0.0"
-    "@lezer/highlight": "npm:^1.2.3"
-    "@rocket.chat/core-typings": "workspace:^"
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-toastbar": "npm:~0.36.1"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/fuselage-ui-kit": "workspace:~"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/logo": "npm:~0.33.1"
-    "@rocket.chat/styled": "npm:~0.34.1"
-    "@rocket.chat/tsconfig": "workspace:*"
-    "@rocket.chat/ui-avatar": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:~"
-    "@types/lodash": "npm:~4.17.24"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    "@vitejs/plugin-react": "npm:~6.0.1"
-    codemirror: "npm:^6.0.2"
-    eslint: "npm:~9.39.4"
-    eslint4b-prebuilt: "npm:^6.7.2"
-    prettier: "npm:~3.3.3"
-    rc-scrollbars: "npm:^1.1.6"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-router-dom: "npm:^6.30.4"
-    react-split-pane: "npm:^3.2.0"
-    react-virtuoso: "npm:~4.18.10"
-    reactflow: "npm:^11.11.4"
-    typescript: "npm:~5.9.3"
-    vite: "npm:^8.0.16"
-  languageName: unknown
-  linkType: soft
-
-"@rocket.chat/web-ui-registration@workspace:^, @rocket.chat/web-ui-registration@workspace:packages/web-ui-registration":
-  version: 0.0.0-use.local
-  resolution: "@rocket.chat/web-ui-registration@workspace:packages/web-ui-registration"
-  dependencies:
-    "@rocket.chat/core-typings": "workspace:~"
-    "@rocket.chat/css-in-js": "npm:^0.33.0"
-    "@rocket.chat/emitter": "npm:^0.33.0"
-    "@rocket.chat/fuselage": "npm:^0.82.0"
-    "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
-    "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
-    "@rocket.chat/i18n": "workspace:~"
-    "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/layout": "npm:~0.36.0"
-    "@rocket.chat/mock-providers": "workspace:~"
-    "@rocket.chat/rest-typings": "workspace:~"
-    "@rocket.chat/storybook-config": "workspace:~"
-    "@rocket.chat/tools": "workspace:~"
-    "@rocket.chat/ui-client": "workspace:^"
-    "@rocket.chat/ui-contexts": "workspace:^"
-    "@storybook/react": "npm:^9.1.13"
-    "@tanstack/react-query": "npm:~5.65.1"
-    "@testing-library/dom": "npm:~10.4.1"
-    "@testing-library/react": "npm:~16.3.2"
-    "@types/react": "npm:~19.2.17"
-    "@types/react-dom": "npm:~19.2.3"
-    dompurify: "npm:~3.4.7"
-    eslint: "npm:~9.39.4"
-    i18next: "npm:~23.4.9"
-    react: "npm:~19.2.7"
-    react-dom: "npm:~19.2.7"
-    react-hook-form: "npm:~7.54.2"
-    react-i18next: "npm:~13.2.2"
-    react-virtuoso: "npm:~4.18.10"
-    storybook: "npm:^9.1.13"
-    typescript: "npm:~5.9.3"
-  peerDependencies:
-    "@rocket.chat/layout": "*"
-    "@rocket.chat/tools": 0.3.0
-    "@rocket.chat/ui-contexts": 32.0.0
-    "@tanstack/react-query": "*"
-    react: "*"
-    react-hook-form: "*"
-    react-i18next: "*"
-  languageName: unknown
-  linkType: soft
 
 "@rolldown/binding-android-arm64@npm:1.0.3":
   version: 1.0.3
@@ -32966,7 +32966,7 @@ __metadata:
   resolution: "rocket.chat@workspace:."
   dependencies:
     "@changesets/cli": "npm:^2.27.12"
-    "@rocket.chat/eslint-config": "workspace:~"
+    "@nexa/eslint-config": "workspace:~"
     "@types/chart.js": "npm:^2.9.41"
     "@types/js-yaml": "npm:^4.0.9"
     "@types/node": "npm:~22.19.17"
@@ -32984,18 +32984,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rocketchat-services@workspace:apps/meteor/ee/server/services"
   dependencies:
-    "@rocket.chat/apps-engine": "workspace:^"
-    "@rocket.chat/core-services": "workspace:^"
-    "@rocket.chat/core-typings": "workspace:^"
+    "@nexa/apps-engine": "workspace:^"
+    "@nexa/core-services": "workspace:^"
+    "@nexa/core-typings": "workspace:^"
+    "@nexa/message-parser": "workspace:^"
+    "@nexa/model-typings": "workspace:^"
+    "@nexa/models": "workspace:^"
+    "@nexa/network-broker": "workspace:^"
+    "@nexa/rest-typings": "workspace:^"
+    "@nexa/ui-kit": "workspace:~"
     "@rocket.chat/emitter": "npm:^0.33.0"
     "@rocket.chat/icons": "npm:^0.48.0"
-    "@rocket.chat/message-parser": "workspace:^"
-    "@rocket.chat/model-typings": "workspace:^"
-    "@rocket.chat/models": "workspace:^"
-    "@rocket.chat/network-broker": "workspace:^"
-    "@rocket.chat/rest-typings": "workspace:^"
     "@rocket.chat/string-helpers": "npm:~0.32.0"
-    "@rocket.chat/ui-kit": "workspace:~"
     "@types/cookie": "npm:^0.5.4"
     "@types/cookie-parser": "npm:^1.4.10"
     "@types/ejson": "npm:^2.2.2"
