@@ -1,0 +1,326 @@
+/* Nexa Chat - Modern Authentication Screens */
+
+/*====================================
+  LOGIN PAGE LAYOUT
+====================================*/
+
+.rcx-form {
+	max-width: 28rem;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+}
+
+.rcx-form__header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.rcx-form__title {
+	font-size: 1.875rem;
+	font-weight: 700;
+	color: #111827;
+	margin-bottom: 0.5rem;
+	background: linear-gradient(135deg, #6C63FF, #A855F7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.rcx-form__subtitle {
+	font-size: 0.875rem;
+	color: #6B7280;
+	margin-bottom: 1.5rem;
+}
+
+/*====================================
+  FORM FIELDS
+====================================*/
+
+.rcx-field {
+	margin-bottom: 1.25rem;
+}
+
+.rcx-field__label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	font-size: 0.875rem;
+	color: #111827;
+}
+
+.rcx-field__row {
+	position: relative;
+}
+
+.rcx-input,
+.rcx-password-input,
+textarea.rcx-input {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #E5E7EB;
+	border-radius: 0.5rem;
+	background-color: #FFFFFF;
+	color: #111827;
+	font-size: 0.875rem;
+	font-family: inherit;
+	transition: all 0.2s ease;
+}
+
+.rcx-input:focus,
+.rcx-password-input:focus,
+textarea.rcx-input:focus {
+	outline: none;
+	border-color: #6C63FF;
+	box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+}
+
+.rcx-input:hover,
+.rcx-password-input:hover {
+	border-color: #D1D5DB;
+}
+
+/*====================================
+  BUTTONS
+====================================*/
+
+.rcx-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	font-size: 0.875rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-decoration: none;
+}
+
+.rcx-button--primary {
+	background-color: #6C63FF;
+	color: white;
+	width: 100%;
+}
+
+.rcx-button--primary:hover {
+	background-color: #5A50D5;
+	box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+	transform: translateY(-1px);
+}
+
+.rcx-button--primary:active {
+	transform: translateY(0);
+}
+
+.rcx-button--secondary {
+	background-color: #F3F4F6;
+	color: #111827;
+}
+
+.rcx-button--secondary:hover {
+	background-color: #E5E7EB;
+}
+
+.rcx-button--ghost {
+	background-color: transparent;
+	color: #6C63FF;
+	text-decoration: none;
+}
+
+.rcx-button--ghost:hover {
+	background-color: rgba(108, 99, 255, 0.1);
+	text-decoration: underline;
+}
+
+/*====================================
+  FORM SECTIONS
+====================================*/
+
+.rcx-form__group {
+	margin-bottom: 1.5rem;
+}
+
+.rcx-form__divider {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 1.5rem 0;
+	color: #9CA3AF;
+	font-size: 0.875rem;
+}
+
+.rcx-form__divider::before,
+.rcx-form__divider::after {
+	content: '';
+	flex: 1;
+	height: 1px;
+	background-color: #E5E7EB;
+}
+
+/*====================================
+  ERROR MESSAGES
+====================================*/
+
+.rcx-callout {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border-left: 4px solid;
+	margin-bottom: 1rem;
+}
+
+.rcx-callout--danger {
+	background-color: rgba(239, 68, 68, 0.1);
+	color: #DC2626;
+	border-left-color: #EF4444;
+}
+
+.rcx-callout--warning {
+	background-color: rgba(245, 158, 11, 0.1);
+	color: #D97706;
+	border-left-color: #F59E0B;
+}
+
+.rcx-callout--success {
+	background-color: rgba(34, 197, 94, 0.1);
+	color: #16A34A;
+	border-left-color: #22C55E;
+}
+
+.rcx-field__error {
+	font-size: 0.75rem;
+	color: #EF4444;
+	margin-top: 0.375rem;
+}
+
+/*====================================
+  LINKS
+====================================*/
+
+.rcx-field__link,
+.rcx-link {
+	color: #6C63FF;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s ease;
+}
+
+.rcx-field__link:hover,
+.rcx-link:hover {
+	color: #5A50D5;
+	text-decoration: underline;
+}
+
+/*====================================
+  FORM FOOTER
+====================================*/
+
+.rcx-form__footer {
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid #E5E7EB;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #6B7280;
+}
+
+.rcx-form__footer a {
+	color: #6C63FF;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.rcx-form__footer a:hover {
+	text-decoration: underline;
+}
+
+/*====================================
+  SOCIAL LOGIN BUTTONS
+====================================*/
+
+.rcx-box.rcx-box--full {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.rcx-box.rcx-box--full .rcx-button {
+	flex: 1;
+	padding: 0.75rem;
+	font-size: 0.875rem;
+	background-color: #F3F4F6;
+	color: #111827;
+	border: 1px solid #E5E7EB;
+}
+
+.rcx-box.rcx-box--full .rcx-button:hover {
+	background-color: #E5E7EB;
+}
+
+/*====================================
+  REGISTER TEMPLATE
+====================================*/
+
+.rcx-register-template {
+	background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.rcx-register-template__container {
+	width: 100%;
+	max-width: 28rem;
+	background-color: #FFFFFF;
+	border-radius: 1rem;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+}
+
+.rcx-register-template__header {
+	padding: 2rem 1.5rem 0;
+	text-align: center;
+}
+
+.rcx-register-template__body {
+	padding: 1.5rem;
+}
+
+.rcx-register-template__footer {
+	padding: 1.5rem;
+	background-color: #F9FAFB;
+	border-top: 1px solid #E5E7EB;
+	text-align: center;
+}
+
+/*====================================
+  LOADING STATE
+====================================*/
+
+.rcx-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.rcx-button:disabled::after {
+	content: '';
+	display: inline-block;
+	width: 0.875rem;
+	height: 0.875rem;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	border-top-color: rgba(255, 255, 255, 1);
+	animation: spin 0.6s linear infinite;
+	margin-left: 0.5rem;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
