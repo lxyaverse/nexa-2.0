@@ -33,9 +33,9 @@
 		"webpack": "~5.104.1"
 	},
 	"devDependencies": {
+		"@nexa/tsconfig": "workspace:*",
 		"@rocket.chat/fuselage": "^0.82.0",
 		"@rocket.chat/icons": "^0.48.0",
-		"@nexa/tsconfig": "workspace:*",
 		"@storybook/react": "^9.1.13",
 		"eslint": "~9.39.4",
 		"react": "~19.2.7",

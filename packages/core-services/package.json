@@ -18,15 +18,15 @@
 	},
 	"dependencies": {
 		"@nexa/core-typings": "workspace:^",
-		"@rocket.chat/federation-sdk": "0.6.3",
 		"@nexa/http-router": "workspace:^",
-		"@rocket.chat/icons": "^0.48.0",
 		"@nexa/media-signaling": "workspace:^",
 		"@nexa/message-parser": "workspace:^",
 		"@nexa/models": "workspace:^",
 		"@nexa/rest-typings": "workspace:^",
 		"@nexa/tracing": "workspace:^",
-		"@nexa/ui-kit": "workspace:~"
+		"@nexa/ui-kit": "workspace:~",
+		"@rocket.chat/federation-sdk": "0.6.3",
+		"@rocket.chat/icons": "^0.48.0"
 	},
 	"devDependencies": {
 		"@nexa/apps": "workspace:^",
