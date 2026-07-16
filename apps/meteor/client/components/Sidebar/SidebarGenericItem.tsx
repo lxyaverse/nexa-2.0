@@ -12,6 +12,7 @@ export type SidebarGenericItemProps = {
 
 const SidebarGenericItem = ({ href, active, externalUrl, children, ...props }: SidebarGenericItemProps) => (
 	<SidebarItem
+		className='rcx-sidebar-item'
 		selected={active}
 		clickable
 		is='a'
@@ -19,7 +20,7 @@ const SidebarGenericItem = ({ href, active, externalUrl, children, ...props }: S
 		{...(externalUrl && { target: '_blank', rel: 'noopener noreferrer' })}
 		{...props}
 	>
-		<Box display='flex' flexDirection='row' alignItems='center' pb={8} width='100%'>
+		<Box display='flex' flexDirection='row' alignItems='center' width='100%' className='rcx-sidebar-item-content'>
 			{children}
 		</Box>
 	</SidebarItem>

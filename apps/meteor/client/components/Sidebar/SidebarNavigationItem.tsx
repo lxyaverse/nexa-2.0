@@ -36,20 +36,19 @@ const SidebarNavigationItem = ({
 
 	return (
 		<SidebarGenericItem active={isActive} href={path} externalUrl={externalUrl} aria-current={isActive ? 'page' : undefined}>
-			{icon && <Icon name={icon} size='x20' mi={4} />}
+			{icon && <Icon name={icon} size='x20' mi={4} className='rcx-sidebar-item-icon' />}
 			<Box
 				withTruncatedText
-				fontScale='p2'
-				mi={4}
+				className='rcx-sidebar-item-label'
 				flexGrow={1}
 				display='flex'
 				alignItems='center'
 				justifyContent='space-between'
 				width='100%'
 			>
-				{label} {tag && <Tag>{tag}</Tag>}
+				{label} {tag && <Tag className='rcx-sidebar-item-tag'>{tag}</Tag>}
 			</Box>
-			{Badge ? <Badge /> : null}
+			{Badge ? <Box className='rcx-sidebar-item-badge'><Badge /></Box> : null}
 		</SidebarGenericItem>
 	);
 };
