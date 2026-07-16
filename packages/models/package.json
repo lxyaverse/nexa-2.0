@@ -23,8 +23,8 @@
 		"@nexa/random": "workspace:^",
 		"@nexa/rest-typings": "workspace:^",
 		"@nexa/sha256": "workspace:^",
-		"@rocket.chat/string-helpers": "~0.32.0",
 		"@nexa/tracing": "workspace:^",
+		"@rocket.chat/string-helpers": "~0.32.0",
 		"date-fns": "~4.1.0",
 		"node-rsa": "^1.1.1"
 	},

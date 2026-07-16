@@ -34,9 +34,9 @@
 		"typia": "patch:typia@npm%3A9.7.2#~/.yarn/patches/typia-npm-9.7.2-5c5d9c80b4.patch"
 	},
 	"devDependencies": {
-		"@rocket.chat/icons": "^0.48.0",
 		"@nexa/jest-presets": "workspace:~",
 		"@nexa/tsconfig": "workspace:*",
+		"@rocket.chat/icons": "^0.48.0",
 		"@types/jest": "~30.0.0",
 		"eslint": "~9.39.4",
 		"jest": "~30.2.0",

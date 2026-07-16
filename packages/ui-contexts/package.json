@@ -22,15 +22,15 @@
 	"devDependencies": {
 		"@nexa/core-typings": "workspace:^",
 		"@nexa/ddp-client": "workspace:~",
+		"@nexa/i18n": "workspace:~",
+		"@nexa/jest-presets": "workspace:~",
+		"@nexa/rest-typings": "workspace:^",
+		"@nexa/tools": "workspace:~",
 		"@rocket.chat/emitter": "^0.33.0",
 		"@rocket.chat/fuselage": "^0.82.0",
 		"@rocket.chat/fuselage-hooks": "~0.43.0",
 		"@rocket.chat/fuselage-tokens": "~0.33.2",
-		"@nexa/i18n": "workspace:~",
 		"@rocket.chat/icons": "^0.48.0",
-		"@nexa/jest-presets": "workspace:~",
-		"@nexa/rest-typings": "workspace:^",
-		"@nexa/tools": "workspace:~",
 		"@types/jest": "~30.0.0",
 		"@types/react": "~19.2.17",
 		"@types/react-dom": "~19.2.3",
@@ -46,10 +46,10 @@
 	"peerDependencies": {
 		"@nexa/core-typings": "workspace:^",
 		"@nexa/ddp-client": "workspace:^",
-		"@rocket.chat/emitter": "*",
-		"@rocket.chat/fuselage-hooks": "*",
 		"@nexa/i18n": "workspace:~",
 		"@nexa/rest-typings": "workspace:^",
+		"@rocket.chat/emitter": "*",
+		"@rocket.chat/fuselage-hooks": "*",
 		"react": "*"
 	},
 	"volta": {

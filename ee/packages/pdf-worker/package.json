@@ -18,8 +18,8 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@react-pdf/renderer": "~4.5.1",
 		"@nexa/core-typings": "workspace:^",
+		"@react-pdf/renderer": "~4.5.1",
 		"@rocket.chat/fuselage-tokens": "~0.33.2",
 		"emojibase-data": "^16.0.0",
 		"moment": "^2.30.1",
