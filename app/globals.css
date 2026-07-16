@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-online: var(--online);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+:root {
+  /* Nexa Chat brand: purple #6C63FF */
+  --background: #ffffff;
+  --foreground: #1f2329;
+  --card: #ffffff;
+  --card-foreground: #1f2329;
+  --popover: #ffffff;
+  --popover-foreground: #1f2329;
+  --primary: #6c63ff;
+  --primary-foreground: #ffffff;
+  --secondary: #f2f3f5;
+  --secondary-foreground: #1f2329;
+  --muted: #f2f3f5;
+  --muted-foreground: #6c727f;
+  --accent: #eeedff;
+  --accent-foreground: #4c45c8;
+  --destructive: #ec0d2a;
+  --destructive-foreground: #ffffff;
+  --border: #e4e7ea;
+  --input: #e4e7ea;
+  --ring: #6c63ff;
+  --online: #158d65;
+
+  /* Rocket.Chat-style dark sidebar */
+  --sidebar: #1f2329;
+  --sidebar-foreground: #e4e7ea;
+  --sidebar-accent: #2f343d;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2f343d;
+
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--background);
+  color: var(--foreground);
+}
