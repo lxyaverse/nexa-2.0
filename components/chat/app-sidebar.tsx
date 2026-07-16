@@ -48,7 +48,7 @@ export function AppSidebar({
       <div className="flex h-14 items-center justify-between border-b border-sidebar-border px-4">
         <Link href="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
           <Image
-            src="/images/logo_dark.svg"
+            src="/images/nexa-wordmark-light.svg"
             alt="Nexa Chat"
             width={120}
             height={34}

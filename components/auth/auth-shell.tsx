@@ -15,10 +15,10 @@ export function AuthShell({
       <div className="w-full max-w-sm">
         <div className="mb-8 flex flex-col items-center gap-4 text-center">
           <Image
-            src="/images/logo.svg"
+            src="/images/nexa-wordmark-dark.svg"
             alt="Nexa Chat"
             width={160}
-            height={46}
+            height={38}
             priority
             className="h-11 w-auto"
           />

@@ -13,8 +13,7 @@ export const metadata: Metadata = {
   description:
     'Nexa Chat — real-time team communication. Channels, direct messages, and presence, built for the modern web.',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/images/nexa-icon.svg',
   },
 }
 
