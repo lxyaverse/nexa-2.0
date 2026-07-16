@@ -1,215 +1,379 @@
-/*
- * Nexa Chat — Settings & Admin Panel Styles
- * Modernizes the existing account and admin settings pages
- * with Nexa design language without modifying their logic.
- */
+/* Nexa Chat - Settings Panel */
 
-/* =====================================================
-   PAGE LAYOUT
-   ===================================================== */
-
-/* Settings page container */
-.rcx-page--settings,
-[class*='AccountSidebar'],
-[class*='AccountPreferences'] {
-	/* nothing structural — rely on existing layout */
-}
-
-/* Settings page header */
-.rcx-page-header--settings .rcx-page-header__title,
-[class*='PageHeader'] .rcx-page-header__title {
-	font-size: 1.375rem;
-	font-weight: 700;
-	letter-spacing: -0.015em;
-	color: var(--rcx-color-font-titles-labels, #111827);
-}
-
-/* =====================================================
-   SETTINGS SIDEBAR NAV (left panel)
-   ===================================================== */
-
-/* Nav item links */
-.rcx-sidebar--settings .rcx-sidebar-item,
-[class*='AccountSidebar'] .rcx-option {
+.rcx-settings-panel {
+	background: var(--content-background-color);
 	border-radius: 8px;
-	transition: background-color 0.12s ease, color 0.12s ease;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.rcx-sidebar--settings .rcx-sidebar-item:hover,
-[class*='AccountSidebar'] .rcx-option:hover {
-	background-color: rgba(108, 99, 255, 0.06);
+/* Settings Header */
+.rcx-settings-panel__header {
+	padding: 16px;
+	border-bottom: 1px solid var(--component-color);
+	background: linear-gradient(135deg, var(--nexa-primary) 0%, var(--nexa-primary-dark) 100%);
+	color: white;
+	
+	h3 {
+		color: white;
+		margin: 0;
+	}
 }
 
-.rcx-sidebar--settings .rcx-sidebar-item--selected,
-[class*='AccountSidebar'] .rcx-option--focus {
-	background-color: rgba(108, 99, 255, 0.1);
-	color: var(--color-primary, #6c63ff);
-	font-weight: 600;
+/* Settings Content */
+.rcx-settings-panel__content {
+	display: flex;
+	flex: 1;
+	overflow: auto;
+	
+	/* Vertical Tabs */
+	.rcx-tabs {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+		border-right: 1px solid var(--component-color);
+		background: var(--component-color);
+		
+		.rcx-tab {
+			padding: 12px 16px;
+			text-align: left;
+			background: transparent;
+			border: none;
+			border-left: 3px solid transparent;
+			color: var(--secondary-font-color);
+			cursor: pointer;
+			transition: all 0.2s;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-weight: 500;
+			
+			&:hover {
+				background: var(--content-background-color);
+				color: var(--primary-font-color);
+			}
+			
+			&.active {
+				border-left-color: var(--nexa-primary);
+				background: var(--content-background-color);
+				color: var(--nexa-primary);
+			}
+		}
+	}
+	
+	/* Tab Panes */
+	.rcx-tab-pane {
+		flex: 1;
+		overflow: auto;
+		padding: 16px;
+		
+		h3 {
+			margin-top: 0;
+			color: var(--primary-font-color);
+		}
+	}
 }
 
-/* =====================================================
-   FORM SECTIONS (accordion-like)
-   ===================================================== */
-
-/* Section / accordion header */
-.rcx-accordion__item > button,
-.rcx-accordion__bar {
-	font-size: 0.9375rem;
-	font-weight: 600;
-	color: var(--rcx-color-font-titles-labels, #1f2937);
-	border-bottom: 1px solid var(--rcx-color-stroke-extra-light, #e5e7eb);
-	transition: color 0.12s ease;
+/* Settings Rows */
+.rcx-setting-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 0;
+	border-bottom: 1px solid var(--component-color);
+	
+	&:last-child {
+		border-bottom: none;
+	}
+	
+	.rcx-setting-row__label {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		
+		.rcx-setting-row__title {
+			font-weight: 600;
+			color: var(--primary-font-color);
+		}
+		
+		.rcx-setting-row__description {
+			font-size: 12px;
+			color: var(--secondary-font-color);
+		}
+	}
+	
+	.rcx-setting-row__control {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		
+		/* Toggle Switch */
+		.rcx-toggle {
+			position: relative;
+			width: 44px;
+			height: 24px;
+			background: var(--component-color);
+			border-radius: 12px;
+			cursor: pointer;
+			transition: background 0.2s;
+			border: none;
+			padding: 2px;
+			
+			&:checked {
+				background: var(--nexa-primary);
+			}
+			
+			&::after {
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: white;
+				border-radius: 50%;
+				transition: all 0.2s;
+				left: 2px;
+				top: 2px;
+			}
+			
+			&:checked::after {
+				left: 22px;
+			}
+		}
+		
+		/* Select Dropdown */
+		.rcx-select {
+			padding: 8px 12px;
+			border: 1px solid var(--component-color);
+			border-radius: 6px;
+			background: var(--content-background-color);
+			color: var(--primary-font-color);
+			font-size: 13px;
+			cursor: pointer;
+			transition: all 0.2s;
+			min-width: 150px;
+			
+			&:hover {
+				border-color: var(--nexa-primary);
+			}
+			
+			&:focus {
+				border-color: var(--nexa-primary);
+				outline: none;
+				box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+			}
+		}
+	}
 }
 
-.rcx-accordion__item > button:hover,
-.rcx-accordion__bar:hover {
-	color: var(--color-primary, #6c63ff);
+/* Settings Section */
+.rcx-settings-section {
+	margin-bottom: 24px;
+	
+	&__title {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 16px;
+		font-size: 16px;
+		font-weight: 700;
+		color: var(--primary-font-color);
+	}
+	
+	&__description {
+		font-size: 13px;
+		color: var(--secondary-font-color);
+		margin-bottom: 12px;
+		line-height: 1.5;
+	}
 }
 
-/* Open accordion border accent */
-.rcx-accordion__item--expanded > button {
-	color: var(--color-primary, #6c63ff);
-	border-bottom-color: var(--color-primary, #6c63ff);
+/* Settings Footer */
+.rcx-settings-panel__footer {
+	display: flex;
+	gap: 8px;
+	padding: 16px;
+	border-top: 1px solid var(--component-color);
+	background: var(--component-color);
+	justify-content: flex-end;
+	
+	button {
+		padding: 10px 20px;
+		border: none;
+		border-radius: 6px;
+		font-size: 13px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.2s;
+		
+		&.primary {
+			background: linear-gradient(135deg, var(--nexa-primary), var(--nexa-primary-dark));
+			color: white;
+			
+			&:hover:not(:disabled) {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+			}
+			
+			&:disabled {
+				opacity: 0.6;
+				cursor: not-allowed;
+			}
+		}
+		
+		&.secondary {
+			background: transparent;
+			border: 1px solid var(--component-color);
+			color: var(--primary-font-color);
+			
+			&:hover {
+				background: var(--content-background-color);
+			}
+		}
+	}
 }
 
-/* =====================================================
-   FORM CONTROLS
-   ===================================================== */
-
-/* Input fields inside settings */
-.rcx-page .rcx-input-box,
-.rcx-page .rcx-text-input__wrapper > input {
-	border-radius: 8px;
-	border-color: var(--rcx-color-stroke-medium, #d1d5db);
-	transition: border-color 0.15s ease, box-shadow 0.15s ease;
-	font-size: 0.9375rem;
-}
-
-.rcx-page .rcx-input-box:focus,
-.rcx-page .rcx-text-input__wrapper > input:focus {
-	border-color: var(--color-primary, #6c63ff);
-	box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
-	outline: none;
-}
-
-/* Select dropdowns */
-.rcx-page .rcx-select__wrapper {
-	border-radius: 8px;
-	border-color: var(--rcx-color-stroke-medium, #d1d5db);
-}
-
-/* Toggle switches */
-.rcx-toggle-switch__input:checked + .rcx-toggle-switch__track {
-	background-color: var(--color-primary, #6c63ff);
-}
-
-.rcx-toggle-switch__track {
-	transition: background-color 0.2s ease;
-}
-
-/* Labels */
-.rcx-label,
-.rcx-field__label {
-	font-size: 0.875rem;
-	font-weight: 500;
-	color: var(--rcx-color-font-titles-labels, #374151);
-	margin-bottom: 4px;
-}
-
-/* Hint / description text */
-.rcx-field__hint {
-	font-size: 0.8125rem;
-	color: var(--rcx-color-font-annotation, #6b7280);
-	margin-top: 4px;
-}
-
-/* Save/submit button */
-.rcx-page .rcx-button--primary {
-	background-color: var(--color-primary, #6c63ff);
-	border-color: var(--color-primary, #6c63ff);
-	border-radius: 8px;
-	font-weight: 600;
-	transition: background-color 0.15s ease, transform 0.1s ease;
-}
-
-.rcx-page .rcx-button--primary:hover {
-	background-color: var(--color-primary-dark, #5a50d5);
-	border-color: var(--color-primary-dark, #5a50d5);
-}
-
-.rcx-page .rcx-button--primary:active {
-	transform: scale(0.97);
-}
-
-/* =====================================================
-   ADMIN PANEL
-   ===================================================== */
-
-/* Admin sidebar items */
-.rcx-sidebar--admin .rcx-option--focus {
-	background-color: rgba(108, 99, 255, 0.1);
-	color: var(--color-primary, #6c63ff);
-}
-
-/* Admin page content area */
-.rcx-page--admin .rcx-page__content {
-	padding: 24px;
-}
-
-/* Admin section headers */
-.rcx-page--admin .rcx-page-header__title {
-	font-size: 1.25rem;
-	font-weight: 700;
-}
-
-/* Admin table rows */
-.rcx-table .rcx-table__tr:hover {
-	background-color: rgba(108, 99, 255, 0.04);
-}
-
-/* Admin action button (e.g. "Add user") */
-.rcx-page--admin .rcx-button--primary {
-	background-color: var(--color-primary, #6c63ff);
-	border-color: var(--color-primary, #6c63ff);
-	border-radius: 8px;
-	font-weight: 600;
-}
-
-/* Pagination active page */
-.rcx-pagination__button--current {
-	background-color: var(--color-primary, #6c63ff);
-	color: #ffffff;
-	border-color: var(--color-primary, #6c63ff);
+/* Settings Groups */
+.rcx-settings-group {
+	background: var(--component-color);
 	border-radius: 6px;
-	font-weight: 700;
+	padding: 12px;
+	margin-bottom: 12px;
+	
+	&__title {
+		font-size: 13px;
+		font-weight: 600;
+		color: var(--nexa-primary);
+		margin-bottom: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+	
+	.rcx-setting-row {
+		border-bottom: 1px solid var(--content-background-color);
+		
+		&:last-child {
+			border-bottom: none;
+		}
+	}
 }
 
-/* =====================================================
-   AVATAR EDITOR
-   ===================================================== */
-
-/* The avatar upload area in account settings */
-.rcx-avatar-editor {
-	border-radius: 12px;
-	border: 2px dashed var(--rcx-color-stroke-medium, #d1d5db);
-	transition: border-color 0.15s ease;
+/* Notification Preferences */
+.rcx-notification-preferences {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 12px;
+	
+	.rcx-preference-card {
+		background: var(--component-color);
+		padding: 12px;
+		border-radius: 6px;
+		border: 1px solid transparent;
+		transition: all 0.2s;
+		cursor: pointer;
+		
+		&:hover {
+			border-color: var(--nexa-primary);
+			background: linear-gradient(135deg, var(--component-color), rgba(108, 99, 255, 0.05));
+		}
+		
+		&.active {
+			border-color: var(--nexa-primary);
+			background: linear-gradient(135deg, var(--component-color), rgba(108, 99, 255, 0.1));
+		}
+		
+		.rcx-preference-card__icon {
+			font-size: 24px;
+			margin-bottom: 8px;
+		}
+		
+		.rcx-preference-card__title {
+			font-size: 13px;
+			font-weight: 600;
+			color: var(--primary-font-color);
+		}
+	}
 }
 
-.rcx-avatar-editor:hover {
-	border-color: var(--color-primary, #6c63ff);
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	.rcx-settings-panel {
+		background: #1e293b;
+	}
+	
+	.rcx-settings-panel__header {
+		border-bottom-color: #334155;
+	}
+	
+	.rcx-settings-panel__content .rcx-tabs {
+		background: #0f172a;
+		border-right-color: #334155;
+	}
+	
+	.rcx-setting-row {
+		border-bottom-color: #334155;
+	}
+	
+	.rcx-settings-panel__footer {
+		background: #0f172a;
+		border-top-color: #334155;
+	}
 }
 
-/* =====================================================
-   DARK MODE
-   ===================================================== */
-
-[data-color-scheme='dark'] .rcx-accordion__item > button,
-[data-color-scheme='dark'] .rcx-accordion__bar {
-	border-bottom-color: rgba(255, 255, 255, 0.1);
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.rcx-settings-panel__content {
+		flex-direction: column;
+		
+		.rcx-tabs {
+			width: 100%;
+			border-right: none;
+			border-bottom: 1px solid var(--component-color);
+			flex-direction: row;
+			overflow-x: auto;
+			
+			.rcx-tab {
+				border-left: none;
+				border-bottom: 3px solid transparent;
+				padding: 10px 12px;
+				white-space: nowrap;
+				
+				&.active {
+					border-left: none;
+					border-bottom-color: var(--nexa-primary);
+				}
+			}
+		}
+	}
+	
+	.rcx-notification-preferences {
+		grid-template-columns: 1fr;
+	}
+	
+	.rcx-setting-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+		
+		.rcx-setting-row__control {
+			width: 100%;
+			justify-content: flex-end;
+		}
+	}
 }
 
-[data-color-scheme='dark'] .rcx-page .rcx-input-box:focus,
-[data-color-scheme='dark'] .rcx-page .rcx-text-input__wrapper > input:focus {
-	border-color: var(--color-primary, #6c63ff);
-	box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+@media (max-width: 480px) {
+	.rcx-settings-panel__header {
+		padding: 12px;
+	}
+	
+	.rcx-settings-panel__footer {
+		flex-direction: column;
+		
+		button {
+			width: 100%;
+		}
+	}
 }
