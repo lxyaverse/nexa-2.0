@@ -1,0 +1,215 @@
+/*
+ * Nexa Chat — Settings & Admin Panel Styles
+ * Modernizes the existing account and admin settings pages
+ * with Nexa design language without modifying their logic.
+ */
+
+/* =====================================================
+   PAGE LAYOUT
+   ===================================================== */
+
+/* Settings page container */
+.rcx-page--settings,
+[class*='AccountSidebar'],
+[class*='AccountPreferences'] {
+	/* nothing structural — rely on existing layout */
+}
+
+/* Settings page header */
+.rcx-page-header--settings .rcx-page-header__title,
+[class*='PageHeader'] .rcx-page-header__title {
+	font-size: 1.375rem;
+	font-weight: 700;
+	letter-spacing: -0.015em;
+	color: var(--rcx-color-font-titles-labels, #111827);
+}
+
+/* =====================================================
+   SETTINGS SIDEBAR NAV (left panel)
+   ===================================================== */
+
+/* Nav item links */
+.rcx-sidebar--settings .rcx-sidebar-item,
+[class*='AccountSidebar'] .rcx-option {
+	border-radius: 8px;
+	transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.rcx-sidebar--settings .rcx-sidebar-item:hover,
+[class*='AccountSidebar'] .rcx-option:hover {
+	background-color: rgba(108, 99, 255, 0.06);
+}
+
+.rcx-sidebar--settings .rcx-sidebar-item--selected,
+[class*='AccountSidebar'] .rcx-option--focus {
+	background-color: rgba(108, 99, 255, 0.1);
+	color: var(--color-primary, #6c63ff);
+	font-weight: 600;
+}
+
+/* =====================================================
+   FORM SECTIONS (accordion-like)
+   ===================================================== */
+
+/* Section / accordion header */
+.rcx-accordion__item > button,
+.rcx-accordion__bar {
+	font-size: 0.9375rem;
+	font-weight: 600;
+	color: var(--rcx-color-font-titles-labels, #1f2937);
+	border-bottom: 1px solid var(--rcx-color-stroke-extra-light, #e5e7eb);
+	transition: color 0.12s ease;
+}
+
+.rcx-accordion__item > button:hover,
+.rcx-accordion__bar:hover {
+	color: var(--color-primary, #6c63ff);
+}
+
+/* Open accordion border accent */
+.rcx-accordion__item--expanded > button {
+	color: var(--color-primary, #6c63ff);
+	border-bottom-color: var(--color-primary, #6c63ff);
+}
+
+/* =====================================================
+   FORM CONTROLS
+   ===================================================== */
+
+/* Input fields inside settings */
+.rcx-page .rcx-input-box,
+.rcx-page .rcx-text-input__wrapper > input {
+	border-radius: 8px;
+	border-color: var(--rcx-color-stroke-medium, #d1d5db);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+	font-size: 0.9375rem;
+}
+
+.rcx-page .rcx-input-box:focus,
+.rcx-page .rcx-text-input__wrapper > input:focus {
+	border-color: var(--color-primary, #6c63ff);
+	box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
+	outline: none;
+}
+
+/* Select dropdowns */
+.rcx-page .rcx-select__wrapper {
+	border-radius: 8px;
+	border-color: var(--rcx-color-stroke-medium, #d1d5db);
+}
+
+/* Toggle switches */
+.rcx-toggle-switch__input:checked + .rcx-toggle-switch__track {
+	background-color: var(--color-primary, #6c63ff);
+}
+
+.rcx-toggle-switch__track {
+	transition: background-color 0.2s ease;
+}
+
+/* Labels */
+.rcx-label,
+.rcx-field__label {
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: var(--rcx-color-font-titles-labels, #374151);
+	margin-bottom: 4px;
+}
+
+/* Hint / description text */
+.rcx-field__hint {
+	font-size: 0.8125rem;
+	color: var(--rcx-color-font-annotation, #6b7280);
+	margin-top: 4px;
+}
+
+/* Save/submit button */
+.rcx-page .rcx-button--primary {
+	background-color: var(--color-primary, #6c63ff);
+	border-color: var(--color-primary, #6c63ff);
+	border-radius: 8px;
+	font-weight: 600;
+	transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.rcx-page .rcx-button--primary:hover {
+	background-color: var(--color-primary-dark, #5a50d5);
+	border-color: var(--color-primary-dark, #5a50d5);
+}
+
+.rcx-page .rcx-button--primary:active {
+	transform: scale(0.97);
+}
+
+/* =====================================================
+   ADMIN PANEL
+   ===================================================== */
+
+/* Admin sidebar items */
+.rcx-sidebar--admin .rcx-option--focus {
+	background-color: rgba(108, 99, 255, 0.1);
+	color: var(--color-primary, #6c63ff);
+}
+
+/* Admin page content area */
+.rcx-page--admin .rcx-page__content {
+	padding: 24px;
+}
+
+/* Admin section headers */
+.rcx-page--admin .rcx-page-header__title {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+/* Admin table rows */
+.rcx-table .rcx-table__tr:hover {
+	background-color: rgba(108, 99, 255, 0.04);
+}
+
+/* Admin action button (e.g. "Add user") */
+.rcx-page--admin .rcx-button--primary {
+	background-color: var(--color-primary, #6c63ff);
+	border-color: var(--color-primary, #6c63ff);
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+/* Pagination active page */
+.rcx-pagination__button--current {
+	background-color: var(--color-primary, #6c63ff);
+	color: #ffffff;
+	border-color: var(--color-primary, #6c63ff);
+	border-radius: 6px;
+	font-weight: 700;
+}
+
+/* =====================================================
+   AVATAR EDITOR
+   ===================================================== */
+
+/* The avatar upload area in account settings */
+.rcx-avatar-editor {
+	border-radius: 12px;
+	border: 2px dashed var(--rcx-color-stroke-medium, #d1d5db);
+	transition: border-color 0.15s ease;
+}
+
+.rcx-avatar-editor:hover {
+	border-color: var(--color-primary, #6c63ff);
+}
+
+/* =====================================================
+   DARK MODE
+   ===================================================== */
+
+[data-color-scheme='dark'] .rcx-accordion__item > button,
+[data-color-scheme='dark'] .rcx-accordion__bar {
+	border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-color-scheme='dark'] .rcx-page .rcx-input-box:focus,
+[data-color-scheme='dark'] .rcx-page .rcx-text-input__wrapper > input:focus {
+	border-color: var(--color-primary, #6c63ff);
+	box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
