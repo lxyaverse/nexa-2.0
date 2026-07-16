@@ -9,11 +9,13 @@ export function MessageComposer({
   placeholder,
   onTyping,
   onSent,
+  onOptimisticSend,
 }: {
   channelId: string
   placeholder: string
   onTyping: () => void
   onSent: (messageId: string) => void
+  onOptimisticSend?: (tempId: string, content: string) => void
 }) {
   const [value, setValue] = useState('')
   const [sending, setSending] = useState(false)
@@ -24,11 +26,15 @@ export function MessageComposer({
     if (!content || sending) return
     setSending(true)
     setValue('')
+    // Optimistic update immediately
+    const tempId = `temp-${Date.now()}`
+    onOptimisticSend?.(tempId, content)
     const res = await sendMessage(channelId, content)
     setSending(false)
     if (res?.error) {
       setValue(content) // restore on failure
     } else if (res?.id) {
+      // Replace the temp message with the real one from DB
       onSent(res.id)
     }
     textareaRef.current?.focus()

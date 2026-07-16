@@ -39,12 +39,14 @@ export default async function ChannelPage({
       .insert({ channel_id: channel.id, user_id: user.id })
   }
 
-  const { data: messages } = await supabase
+  const { data: messages, error: msgError } = await supabase
     .from('messages')
-    .select('*, author:profiles(*), reactions:message_reactions(*)')
+    .select('*, author:profiles!messages_user_id_fkey(*), reactions:message_reactions(*)')
     .eq('channel_id', channel.id)
     .order('created_at', { ascending: false })
     .limit(80)
+
+
 
   const initialMessages = ((messages as MessageWithAuthor[]) ?? []).reverse()
 

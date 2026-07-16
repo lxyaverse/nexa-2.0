@@ -34,20 +34,61 @@ export function ChatRoom({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [channel.id])
 
+  const profileRef = useRef<{ id: string; display_name: string; username: string } | null>(null)
+
+  // Fetch own profile once so optimistic messages have author data
+  useEffect(() => {
+    if (profileRef.current) return
+    supabase
+      .from('profiles')
+      .select('id, display_name, username, avatar_url, status_text, created_at')
+      .eq('id', currentUserId)
+      .maybeSingle()
+      .then(({ data }) => {
+        if (data) profileRef.current = data
+      })
+  }, [supabase, currentUserId])
+
   const handleInsert = useCallback(
     async (messageId: string) => {
       const { data } = await supabase
         .from('messages')
-        .select('*, author:profiles(*), reactions:message_reactions(*)')
+        .select('*, author:profiles!messages_user_id_fkey(*), reactions:message_reactions(*)')
         .eq('id', messageId)
         .maybeSingle()
       if (data) {
-        setMessages((prev) =>
-          prev.some((m) => m.id === data.id) ? prev : [...prev, data as MessageWithAuthor],
-        )
+        setMessages((prev) => {
+          // Remove any temp message whose content matches, then append real
+          const withoutTemp = prev.filter(
+            (m) => !(m.id.startsWith('temp-') && m.content === data.content && m.user_id === data.user_id),
+          )
+          return withoutTemp.some((m) => m.id === data.id)
+            ? withoutTemp
+            : [...withoutTemp, data as MessageWithAuthor]
+        })
       }
     },
     [supabase],
+  )
+
+  // Called immediately by the composer with the content — adds message optimistically
+  // then the realtime INSERT or subsequent handleInsert de-dupes by id
+  const handleOptimisticSend = useCallback(
+    (tempId: string, content: string) => {
+      const now = new Date().toISOString()
+      const optimistic: MessageWithAuthor = {
+        id: tempId,
+        channel_id: channel.id,
+        user_id: currentUserId,
+        content,
+        edited_at: null,
+        created_at: now,
+        author: profileRef.current as Profile | null,
+        reactions: [],
+      }
+      setMessages((prev) => [...prev, optimistic])
+    },
+    [channel.id, currentUserId],
   )
 
   const handleUpdate = useCallback(
@@ -170,6 +211,7 @@ export function ChatRoom({
         placeholder={`Message ${title}`}
         onTyping={broadcastTyping}
         onSent={handleInsert}
+        onOptimisticSend={handleOptimisticSend}
       />
     </div>
   )
