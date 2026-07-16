@@ -1,0 +1,324 @@
+/* Nexa Chat - Friends & Social System */
+
+.rcx-friends-panel {
+	background: var(--component-color);
+	border-radius: 8px;
+	border: 1px solid transparent;
+	transition: all 0.2s;
+	
+	&:hover {
+		border-color: var(--nexa-primary);
+		box-shadow: 0 2px 8px rgba(108, 99, 255, 0.1);
+	}
+}
+
+/* Friend Items */
+.rcx-friend-item {
+	background: var(--content-background-color);
+	border: 1px solid var(--component-color);
+	transition: all 0.2s;
+	
+	&:hover {
+		border-color: var(--nexa-primary);
+		box-shadow: 0 2px 8px rgba(108, 99, 255, 0.12);
+		background: linear-gradient(135deg, var(--content-background-color), rgba(108, 99, 255, 0.02));
+	}
+	
+	/* Mutual friends badge */
+	.rcx-badge {
+		background: linear-gradient(135deg, var(--nexa-primary), var(--nexa-primary-dark));
+		color: white;
+		font-size: 11px;
+		padding: 2px 8px;
+		border-radius: 12px;
+	}
+}
+
+/* Friend Request Card */
+.rcx-friend-request {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+	background: linear-gradient(135deg, rgba(108, 99, 255, 0.05), rgba(168, 85, 247, 0.05));
+	border: 1px solid rgba(108, 99, 255, 0.2);
+	border-radius: 8px;
+	transition: all 0.2s;
+	
+	&:hover {
+		border-color: var(--nexa-primary);
+		box-shadow: 0 4px 12px rgba(108, 99, 255, 0.15);
+	}
+	
+	.rcx-friend-request__avatar {
+		flex-shrink: 0;
+	}
+	
+	.rcx-friend-request__info {
+		flex-grow: 1;
+	}
+	
+	.rcx-friend-request__actions {
+		display: flex;
+		gap: 6px;
+		
+		button {
+			padding: 6px 12px;
+			border: none;
+			border-radius: 4px;
+			font-size: 13px;
+			cursor: pointer;
+			transition: all 0.2s;
+			
+			&.accept {
+				background: linear-gradient(135deg, var(--nexa-primary), var(--nexa-primary-dark));
+				color: white;
+				
+				&:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+				}
+			}
+			
+			&.reject {
+				background: var(--component-color);
+				color: var(--secondary-font-color);
+				
+				&:hover {
+					background: #ef4444;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+/* Friends List */
+.rcx-friends-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	
+	&.loading {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+	
+	.rcx-friends-list__empty {
+		text-align: center;
+		padding: 32px 16px;
+		color: var(--secondary-font-color);
+	}
+}
+
+/* Social Tabs */
+.rcx-tabs {
+	border-bottom: 1px solid var(--component-color);
+	
+	.rcx-tab {
+		padding: 12px 16px;
+		border: none;
+		background: transparent;
+		color: var(--secondary-font-color);
+		cursor: pointer;
+		transition: all 0.2s;
+		position: relative;
+		font-weight: 500;
+		
+		&:hover {
+			color: var(--primary-font-color);
+		}
+		
+		&.active {
+			color: var(--nexa-primary);
+			
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				right: 0;
+				height: 2px;
+				background: linear-gradient(90deg, var(--nexa-primary), var(--nexa-secondary));
+			}
+		}
+	}
+}
+
+/* Friend Search */
+.rcx-friend-search {
+	position: relative;
+	margin-bottom: 12px;
+	
+	.rcx-friend-search__input {
+		width: 100%;
+		padding: 10px 12px;
+		border: 1px solid var(--component-color);
+		border-radius: 6px;
+		font-size: 14px;
+		background: var(--content-background-color);
+		transition: all 0.2s;
+		
+		&:focus {
+			border-color: var(--nexa-primary);
+			box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+			outline: none;
+		}
+		
+		&::placeholder {
+			color: var(--secondary-font-color);
+		}
+	}
+	
+	.rcx-friend-search__icon {
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: var(--secondary-font-color);
+		pointer-events: none;
+	}
+}
+
+/* Friend Actions */
+.rcx-friend-actions {
+	display: flex;
+	gap: 6px;
+	
+	button {
+		padding: 6px 10px;
+		background: transparent;
+		border: 1px solid var(--component-color);
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.15s;
+		
+		&:hover {
+			border-color: var(--nexa-primary);
+			background: rgba(108, 99, 255, 0.05);
+			color: var(--nexa-primary);
+		}
+		
+		&.primary {
+			background: var(--nexa-primary);
+			border-color: var(--nexa-primary);
+			color: white;
+			
+			&:hover {
+				background: var(--nexa-primary-dark);
+				border-color: var(--nexa-primary-dark);
+			}
+		}
+		
+		&.danger {
+			&:hover {
+				background: #ef4444;
+				border-color: #ef4444;
+				color: white;
+			}
+		}
+	}
+}
+
+/* Mutual Friends Display */
+.rcx-mutual-friends {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 8px;
+	background: var(--component-color);
+	border-radius: 4px;
+	font-size: 12px;
+	
+	.rcx-mutual-friends__avatars {
+		display: flex;
+		gap: -8px;
+		
+		.rcx-avatar {
+			width: 20px;
+			height: 20px;
+			border: 2px solid var(--content-background-color);
+			border-radius: 50%;
+			
+			&:not(:first-child) {
+				margin-left: -8px;
+			}
+		}
+	}
+	
+	.rcx-mutual-friends__count {
+		color: var(--secondary-font-color);
+		font-weight: 500;
+	}
+}
+
+/* Online Status Indicator for Friends */
+.rcx-friend-item__status {
+	position: relative;
+	
+	.rcx-status-indicator {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		border: 2px solid var(--content-background-color);
+		
+		&.online {
+			background: #10b981;
+			animation: pulse 2s infinite;
+		}
+		
+		&.away {
+			background: #8b5cf6;
+		}
+		
+		&.offline {
+			background: #6b7280;
+		}
+	}
+}
+
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.7;
+	}
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	.rcx-friends-panel {
+		background: #1e293b;
+		
+		.rcx-friend-item {
+			background: #0f172a;
+		}
+	}
+	
+	.rcx-friend-search__input {
+		background: #1e293b;
+		border-color: #334155;
+		color: #f1f5f9;
+	}
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+	.rcx-friend-request__actions {
+		flex-direction: column;
+		gap: 4px;
+		
+		button {
+			width: 100%;
+		}
+	}
+	
+	.rcx-tabs .rcx-tab {
+		padding: 10px 12px;
+		font-size: 13px;
+	}
+}

@@ -1,4 +1,4 @@
-export const GO_ROCKET_CHAT_PREFIX = 'https://go.rocket.chat';
+export const GO_ROCKET_CHAT_PREFIX = 'https://nexachat.com';
 
 export const links = {
 	go: {
@@ -35,26 +35,26 @@ export const links = {
 		abacLDAPDocs: `${GO_ROCKET_CHAT_PREFIX}/i/abac-ldap`,
 		logsDocs: `${GO_ROCKET_CHAT_PREFIX}/i/logs-docs`,
 	},
-	/** @deprecated use `go.rocket.chat` links */
-	desktopAppDownload: 'https://rocket.chat/download',
-	/** @deprecated use `go.rocket.chat` links */
-	enterprise: 'https://www.rocket.chat/enterprise',
-	/** @deprecated use `go.rocket.chat` links */
-	outboundDocs: 'https://docs.rocket.chat/docs/p2p-outbound-messaging',
-	/** @deprecated use `go.rocket.chat` links */
-	privacy: 'https://rocket.chat/privacy',
-	/** @deprecated use `go.rocket.chat` links */
-	retentionPolicy: 'https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/retention-policies',
-	/** @deprecated use `go.rocket.chat` links */
-	rocketChat: 'https://rocket.chat/',
-	/** @deprecated use `go.rocket.chat` links */
-	rocketChatUpdated: 'https://rocket.chat/updated',
-	/** @deprecated use `go.rocket.chat` links */
-	scaling: 'https://docs.rocket.chat/deploy/scaling-rocket.chat',
-	/** @deprecated use `go.rocket.chat` links */
-	terms: 'https://rocket.chat/terms',
-	/** @deprecated use `go.rocket.chat` links */
-	updatingRocketChat: 'https://docs.rocket.chat/v1/docs/en/updating-rocketchat',
-	/** @deprecated use `go.rocket.chat` links */
-	webhooks: 'https://docs.rocket.chat/use-rocket.chat/omnichannel/webhooks',
+	/** @deprecated use `nexachat.com` links */
+	desktopAppDownload: 'https://nexachat.com/download',
+	/** @deprecated use `nexachat.com` links */
+	enterprise: 'https://nexachat.com/enterprise',
+	/** @deprecated use `nexachat.com` links */
+	outboundDocs: 'https://docs.nexachat.com/docs/p2p-outbound-messaging',
+	/** @deprecated use `nexachat.com` links */
+	privacy: 'https://nexachat.com/privacy',
+	/** @deprecated use `nexachat.com` links */
+	retentionPolicy: 'https://docs.nexachat.com/workspace-administration/settings/retention-policies',
+	/** @deprecated use `nexachat.com` links */
+	rocketChat: 'https://nexachat.com/',
+	/** @deprecated use `nexachat.com` links */
+	rocketChatUpdated: 'https://nexachat.com/updated',
+	/** @deprecated use `nexachat.com` links */
+	scaling: 'https://docs.nexachat.com/deploy/scaling',
+	/** @deprecated use `nexachat.com` links */
+	terms: 'https://nexachat.com/terms',
+	/** @deprecated use `nexachat.com` links */
+	updatingRocketChat: 'https://docs.nexachat.com/updating',
+	/** @deprecated use `nexachat.com` links */
+	webhooks: 'https://docs.nexachat.com/omnichannel/webhooks',
 } as const;

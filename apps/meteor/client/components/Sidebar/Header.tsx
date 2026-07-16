@@ -12,15 +12,27 @@ const Header = ({ title, onClose, children, ...props }: HeaderProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<Box display='flex' flexDirection='column' pb={16} {...props}>
+		<Box display='flex' flexDirection='column' pb={16} className='rcx-sidebar__header' {...props}>
 			{(title || onClose) && (
-				<Box display='flex' flexDirection='row' alignItems='center' pi={24} justifyContent='space-between' flexGrow={1}>
+				<Box display='flex' flexDirection='row' alignItems='center' justifyContent='space-between' flexGrow={1}>
 					{title && (
-						<Box color='default' fontScale='p2b' flexShrink={1} withTruncatedText>
+						<Box 
+							className='rcx-sidebar__header-title'
+							flexShrink={1} 
+							withTruncatedText
+						>
 							{title}
 						</Box>
 					)}
-					{onClose && <IconButton small aria-label={t('Close')} icon='cross' onClick={onClose} />}
+					{onClose && (
+						<IconButton 
+							className='rcx-sidebar__close-button'
+							small 
+							aria-label={t('Close')} 
+							icon='cross' 
+							onClick={onClose}
+						/>
+					)}
 				</Box>
 			)}
 			{children}

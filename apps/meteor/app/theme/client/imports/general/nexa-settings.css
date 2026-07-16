@@ -1,0 +1,379 @@
+/* Nexa Chat - Settings Panel */
+
+.rcx-settings-panel {
+	background: var(--content-background-color);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Settings Header */
+.rcx-settings-panel__header {
+	padding: 16px;
+	border-bottom: 1px solid var(--component-color);
+	background: linear-gradient(135deg, var(--nexa-primary) 0%, var(--nexa-primary-dark) 100%);
+	color: white;
+	
+	h3 {
+		color: white;
+		margin: 0;
+	}
+}
+
+/* Settings Content */
+.rcx-settings-panel__content {
+	display: flex;
+	flex: 1;
+	overflow: auto;
+	
+	/* Vertical Tabs */
+	.rcx-tabs {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+		border-right: 1px solid var(--component-color);
+		background: var(--component-color);
+		
+		.rcx-tab {
+			padding: 12px 16px;
+			text-align: left;
+			background: transparent;
+			border: none;
+			border-left: 3px solid transparent;
+			color: var(--secondary-font-color);
+			cursor: pointer;
+			transition: all 0.2s;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-weight: 500;
+			
+			&:hover {
+				background: var(--content-background-color);
+				color: var(--primary-font-color);
+			}
+			
+			&.active {
+				border-left-color: var(--nexa-primary);
+				background: var(--content-background-color);
+				color: var(--nexa-primary);
+			}
+		}
+	}
+	
+	/* Tab Panes */
+	.rcx-tab-pane {
+		flex: 1;
+		overflow: auto;
+		padding: 16px;
+		
+		h3 {
+			margin-top: 0;
+			color: var(--primary-font-color);
+		}
+	}
+}
+
+/* Settings Rows */
+.rcx-setting-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 0;
+	border-bottom: 1px solid var(--component-color);
+	
+	&:last-child {
+		border-bottom: none;
+	}
+	
+	.rcx-setting-row__label {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		
+		.rcx-setting-row__title {
+			font-weight: 600;
+			color: var(--primary-font-color);
+		}
+		
+		.rcx-setting-row__description {
+			font-size: 12px;
+			color: var(--secondary-font-color);
+		}
+	}
+	
+	.rcx-setting-row__control {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		
+		/* Toggle Switch */
+		.rcx-toggle {
+			position: relative;
+			width: 44px;
+			height: 24px;
+			background: var(--component-color);
+			border-radius: 12px;
+			cursor: pointer;
+			transition: background 0.2s;
+			border: none;
+			padding: 2px;
+			
+			&:checked {
+				background: var(--nexa-primary);
+			}
+			
+			&::after {
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: white;
+				border-radius: 50%;
+				transition: all 0.2s;
+				left: 2px;
+				top: 2px;
+			}
+			
+			&:checked::after {
+				left: 22px;
+			}
+		}
+		
+		/* Select Dropdown */
+		.rcx-select {
+			padding: 8px 12px;
+			border: 1px solid var(--component-color);
+			border-radius: 6px;
+			background: var(--content-background-color);
+			color: var(--primary-font-color);
+			font-size: 13px;
+			cursor: pointer;
+			transition: all 0.2s;
+			min-width: 150px;
+			
+			&:hover {
+				border-color: var(--nexa-primary);
+			}
+			
+			&:focus {
+				border-color: var(--nexa-primary);
+				outline: none;
+				box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+			}
+		}
+	}
+}
+
+/* Settings Section */
+.rcx-settings-section {
+	margin-bottom: 24px;
+	
+	&__title {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 16px;
+		font-size: 16px;
+		font-weight: 700;
+		color: var(--primary-font-color);
+	}
+	
+	&__description {
+		font-size: 13px;
+		color: var(--secondary-font-color);
+		margin-bottom: 12px;
+		line-height: 1.5;
+	}
+}
+
+/* Settings Footer */
+.rcx-settings-panel__footer {
+	display: flex;
+	gap: 8px;
+	padding: 16px;
+	border-top: 1px solid var(--component-color);
+	background: var(--component-color);
+	justify-content: flex-end;
+	
+	button {
+		padding: 10px 20px;
+		border: none;
+		border-radius: 6px;
+		font-size: 13px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.2s;
+		
+		&.primary {
+			background: linear-gradient(135deg, var(--nexa-primary), var(--nexa-primary-dark));
+			color: white;
+			
+			&:hover:not(:disabled) {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+			}
+			
+			&:disabled {
+				opacity: 0.6;
+				cursor: not-allowed;
+			}
+		}
+		
+		&.secondary {
+			background: transparent;
+			border: 1px solid var(--component-color);
+			color: var(--primary-font-color);
+			
+			&:hover {
+				background: var(--content-background-color);
+			}
+		}
+	}
+}
+
+/* Settings Groups */
+.rcx-settings-group {
+	background: var(--component-color);
+	border-radius: 6px;
+	padding: 12px;
+	margin-bottom: 12px;
+	
+	&__title {
+		font-size: 13px;
+		font-weight: 600;
+		color: var(--nexa-primary);
+		margin-bottom: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+	
+	.rcx-setting-row {
+		border-bottom: 1px solid var(--content-background-color);
+		
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+/* Notification Preferences */
+.rcx-notification-preferences {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 12px;
+	
+	.rcx-preference-card {
+		background: var(--component-color);
+		padding: 12px;
+		border-radius: 6px;
+		border: 1px solid transparent;
+		transition: all 0.2s;
+		cursor: pointer;
+		
+		&:hover {
+			border-color: var(--nexa-primary);
+			background: linear-gradient(135deg, var(--component-color), rgba(108, 99, 255, 0.05));
+		}
+		
+		&.active {
+			border-color: var(--nexa-primary);
+			background: linear-gradient(135deg, var(--component-color), rgba(108, 99, 255, 0.1));
+		}
+		
+		.rcx-preference-card__icon {
+			font-size: 24px;
+			margin-bottom: 8px;
+		}
+		
+		.rcx-preference-card__title {
+			font-size: 13px;
+			font-weight: 600;
+			color: var(--primary-font-color);
+		}
+	}
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	.rcx-settings-panel {
+		background: #1e293b;
+	}
+	
+	.rcx-settings-panel__header {
+		border-bottom-color: #334155;
+	}
+	
+	.rcx-settings-panel__content .rcx-tabs {
+		background: #0f172a;
+		border-right-color: #334155;
+	}
+	
+	.rcx-setting-row {
+		border-bottom-color: #334155;
+	}
+	
+	.rcx-settings-panel__footer {
+		background: #0f172a;
+		border-top-color: #334155;
+	}
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.rcx-settings-panel__content {
+		flex-direction: column;
+		
+		.rcx-tabs {
+			width: 100%;
+			border-right: none;
+			border-bottom: 1px solid var(--component-color);
+			flex-direction: row;
+			overflow-x: auto;
+			
+			.rcx-tab {
+				border-left: none;
+				border-bottom: 3px solid transparent;
+				padding: 10px 12px;
+				white-space: nowrap;
+				
+				&.active {
+					border-left: none;
+					border-bottom-color: var(--nexa-primary);
+				}
+			}
+		}
+	}
+	
+	.rcx-notification-preferences {
+		grid-template-columns: 1fr;
+	}
+	
+	.rcx-setting-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+		
+		.rcx-setting-row__control {
+			width: 100%;
+			justify-content: flex-end;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.rcx-settings-panel__header {
+		padding: 12px;
+	}
+	
+	.rcx-settings-panel__footer {
+		flex-direction: column;
+		
+		button {
+			width: 100%;
+		}
+	}
+}
