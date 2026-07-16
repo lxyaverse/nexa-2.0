@@ -7235,7 +7235,7 @@ __metadata:
     "@rocket.chat/fuselage-hooks": "npm:~0.43.0"
     "@rocket.chat/fuselage-tokens": "npm:~0.33.2"
     "@rocket.chat/icons": "npm:^0.48.0"
-    "@storybook/addon-a11y": "npm:^9.1.13"
+    "@storybook/addon-a11y": "npm:^10.5.2"
     "@storybook/addon-docs": "npm:^9.1.13"
     "@storybook/addon-styling-webpack": "npm:^2.0.0"
     "@storybook/addon-webpack5-compiler-swc": "npm:^4.0.3"
@@ -12179,15 +12179,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^9.1.13":
-  version: 9.1.20
-  resolution: "@storybook/addon-a11y@npm:9.1.20"
+"@storybook/addon-a11y@npm:^10.5.2":
+  version: 10.5.2
+  resolution: "@storybook/addon-a11y@npm:10.5.2"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     axe-core: "npm:^4.2.0"
   peerDependencies:
-    storybook: ^9.1.20
-  checksum: 10/f4abdac66261a031d9870a2d55d4881107541d89ed684fc47aa37ab2dc9ab43fc6fd0f2e6f1ffdbf0d2b2f3715a2b2352cd3be45b6662eb1028fd1bcaaad3be8
+    storybook: ^10.5.2
+  checksum: 10/94b327f274724b9e94be9cfcd5acb5e0ff09f2dec19f5b89b02eb3190cbc98193c36d93606f09b5db26abf1f13165fca3af9120b1c8d888079dc1fd72c0a46fe
   languageName: node
   linkType: hard
 
