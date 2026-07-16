@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/apps",
+	"name": "@nexa/apps",
 	"version": "0.7.1",
 	"private": true,
 	"main": "./dist/index.js",
@@ -31,9 +31,9 @@
 	},
 	"dependencies": {
 		"@msgpack/msgpack": "3.0.0-beta2",
-		"@rocket.chat/apps-engine": "workspace:^",
-		"@rocket.chat/core-typings": "workspace:^",
-		"@rocket.chat/model-typings": "workspace:^",
+		"@nexa/apps-engine": "workspace:^",
+		"@nexa/core-typings": "workspace:^",
+		"@nexa/model-typings": "workspace:^",
 		"acorn": "8.17.0",
 		"acorn-walk": "8.3.5",
 		"adm-zip": "^0.5.16",
@@ -48,7 +48,7 @@
 		"uuid": "~11.1.1"
 	},
 	"devDependencies": {
-		"@rocket.chat/tsconfig": "workspace:*",
+		"@nexa/tsconfig": "workspace:*",
 		"@types/adm-zip": "^0.5.7",
 		"@types/debug": "^4.1.12",
 		"@types/lodash.clonedeep": "^4.5.9",

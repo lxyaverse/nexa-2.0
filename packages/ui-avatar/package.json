@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/ui-avatar",
+	"name": "@nexa/ui-avatar",
 	"version": "28.0.0",
 	"private": true,
 	"main": "./dist/index.js",
@@ -15,13 +15,13 @@
 		"typecheck": "tsc -p tsconfig.json --noEmit"
 	},
 	"devDependencies": {
-		"@rocket.chat/core-typings": "workspace:~",
+		"@nexa/core-typings": "workspace:~",
 		"@rocket.chat/emitter": "^0.33.0",
 		"@rocket.chat/fuselage": "^0.82.0",
 		"@rocket.chat/fuselage-hooks": "~0.43.0",
 		"@rocket.chat/fuselage-tokens": "~0.33.2",
 		"@rocket.chat/icons": "^0.48.0",
-		"@rocket.chat/ui-contexts": "workspace:^",
+		"@nexa/ui-contexts": "workspace:^",
 		"@types/react": "~19.2.17",
 		"@types/react-dom": "~19.2.3",
 		"eslint": "~9.39.4",
@@ -32,7 +32,7 @@
 	},
 	"peerDependencies": {
 		"@rocket.chat/fuselage": "*",
-		"@rocket.chat/ui-contexts": "workspace:^",
+		"@nexa/ui-contexts": "workspace:^",
 		"react": "*"
 	},
 	"volta": {

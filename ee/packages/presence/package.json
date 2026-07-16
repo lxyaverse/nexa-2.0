@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/presence",
+	"name": "@nexa/presence",
 	"version": "0.3.0",
 	"private": true,
 	"main": "./dist/Presence.js",
@@ -16,15 +16,15 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@rocket.chat/core-services": "workspace:^",
-		"@rocket.chat/core-typings": "workspace:^",
-		"@rocket.chat/logger": "workspace:^",
-		"@rocket.chat/models": "workspace:^",
+		"@nexa/core-services": "workspace:^",
+		"@nexa/core-typings": "workspace:^",
+		"@nexa/logger": "workspace:^",
+		"@nexa/models": "workspace:^",
 		"mongodb": "6.16.0"
 	},
 	"devDependencies": {
-		"@rocket.chat/apps-engine": "workspace:^",
-		"@rocket.chat/rest-typings": "workspace:^",
+		"@nexa/apps-engine": "workspace:^",
+		"@nexa/rest-typings": "workspace:^",
 		"@types/node": "~22.19.17",
 		"eslint": "~9.39.4",
 		"jest": "~30.2.0",

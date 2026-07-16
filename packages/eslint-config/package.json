@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/eslint-config",
+	"name": "@nexa/eslint-config",
 	"version": "0.8.0",
 	"description": "Rocket.Chat's JS/TS ESLint config",
 	"type": "module",

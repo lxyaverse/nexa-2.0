@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/license",
+	"name": "@nexa/license",
 	"version": "1.1.16",
 	"private": true,
 	"main": "./dist/index.js",
@@ -17,14 +17,14 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@rocket.chat/core-typings": "workspace:^",
-		"@rocket.chat/jwt": "workspace:^",
-		"@rocket.chat/logger": "workspace:^",
+		"@nexa/core-typings": "workspace:^",
+		"@nexa/jwt": "workspace:^",
+		"@nexa/logger": "workspace:^",
 		"bcrypt": "^6.0.0"
 	},
 	"devDependencies": {
-		"@rocket.chat/jest-presets": "workspace:~",
-		"@rocket.chat/tsconfig": "workspace:*",
+		"@nexa/jest-presets": "workspace:~",
+		"@nexa/tsconfig": "workspace:*",
 		"@types/bcrypt": "^6.0.0",
 		"@types/jest": "~30.0.0",
 		"@types/ws": "^8.5.14",

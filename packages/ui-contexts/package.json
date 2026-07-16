@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/ui-contexts",
+	"name": "@nexa/ui-contexts",
 	"version": "32.0.0",
 	"private": true,
 	"main": "./dist/index.js",
@@ -17,20 +17,20 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@rocket.chat/password-policies": "workspace:^"
+		"@nexa/password-policies": "workspace:^"
 	},
 	"devDependencies": {
-		"@rocket.chat/core-typings": "workspace:^",
-		"@rocket.chat/ddp-client": "workspace:~",
+		"@nexa/core-typings": "workspace:^",
+		"@nexa/ddp-client": "workspace:~",
 		"@rocket.chat/emitter": "^0.33.0",
 		"@rocket.chat/fuselage": "^0.82.0",
 		"@rocket.chat/fuselage-hooks": "~0.43.0",
 		"@rocket.chat/fuselage-tokens": "~0.33.2",
-		"@rocket.chat/i18n": "workspace:~",
+		"@nexa/i18n": "workspace:~",
 		"@rocket.chat/icons": "^0.48.0",
-		"@rocket.chat/jest-presets": "workspace:~",
-		"@rocket.chat/rest-typings": "workspace:^",
-		"@rocket.chat/tools": "workspace:~",
+		"@nexa/jest-presets": "workspace:~",
+		"@nexa/rest-typings": "workspace:^",
+		"@nexa/tools": "workspace:~",
 		"@types/jest": "~30.0.0",
 		"@types/react": "~19.2.17",
 		"@types/react-dom": "~19.2.3",
@@ -44,12 +44,12 @@
 		"typescript": "~5.9.3"
 	},
 	"peerDependencies": {
-		"@rocket.chat/core-typings": "workspace:^",
-		"@rocket.chat/ddp-client": "workspace:^",
+		"@nexa/core-typings": "workspace:^",
+		"@nexa/ddp-client": "workspace:^",
 		"@rocket.chat/emitter": "*",
 		"@rocket.chat/fuselage-hooks": "*",
-		"@rocket.chat/i18n": "workspace:~",
-		"@rocket.chat/rest-typings": "workspace:^",
+		"@nexa/i18n": "workspace:~",
+		"@nexa/rest-typings": "workspace:^",
 		"react": "*"
 	},
 	"volta": {

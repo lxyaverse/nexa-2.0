@@ -24,13 +24,13 @@
 	"scripts": {
 		"build": "turbo run build",
 		"build:services": "turbo run build --filter=rocketchat-services...",
-		"dev": "turbo run dev --env-mode=loose --parallel --filter=@rocket.chat/meteor...",
-		"dsv": "turbo run dsv --env-mode=loose --filter=@rocket.chat/meteor...",
+		"dev": "turbo run dev --env-mode=loose --parallel --filter=@nexa/meteor...",
+		"dsv": "turbo run dsv --env-mode=loose --filter=@nexa/meteor...",
 		"ms": "turbo run ms --env-mode=loose",
 		"fossify": "TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' ts-node scripts/fossify.ts",
 		"fuselage": "./fuselage.sh",
 		"lint": "turbo run lint",
-		"storybook": "yarn workspace @rocket.chat/meteor run storybook",
+		"storybook": "yarn workspace @nexa/meteor run storybook",
 		"test-storybook": "turbo run test-storybook",
 		"testunit": "turbo run testunit"
 	},
@@ -184,7 +184,7 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.12",
-		"@rocket.chat/eslint-config": "workspace:~",
+		"@nexa/eslint-config": "workspace:~",
 		"@types/chart.js": "^2.9.41",
 		"@types/js-yaml": "^4.0.9",
 		"@types/node": "~22.19.17",

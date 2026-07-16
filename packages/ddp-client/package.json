@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/ddp-client",
+	"name": "@nexa/ddp-client",
 	"version": "1.1.1",
 	"main": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
@@ -16,14 +16,14 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@rocket.chat/api-client": "workspace:^",
-		"@rocket.chat/core-typings": "workspace:~",
-		"@rocket.chat/media-signaling": "workspace:^",
-		"@rocket.chat/rest-typings": "workspace:^"
+		"@nexa/api-client": "workspace:^",
+		"@nexa/core-typings": "workspace:~",
+		"@nexa/media-signaling": "workspace:^",
+		"@nexa/rest-typings": "workspace:^"
 	},
 	"devDependencies": {
-		"@rocket.chat/jest-presets": "workspace:~",
-		"@rocket.chat/tsconfig": "workspace:*",
+		"@nexa/jest-presets": "workspace:~",
+		"@nexa/tsconfig": "workspace:*",
 		"@types/jest": "~30.0.0",
 		"@types/ws": "^8.18.1",
 		"eslint": "~9.39.4",

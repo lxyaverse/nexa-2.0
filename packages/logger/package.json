@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/logger",
+	"name": "@nexa/logger",
 	"version": "1.0.1",
 	"private": true,
 	"main": "./dist/index.js",

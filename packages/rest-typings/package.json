@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/rest-typings",
+	"name": "@nexa/rest-typings",
 	"version": "8.7.0-develop",
 	"main": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
@@ -14,14 +14,14 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@rocket.chat/core-typings": "workspace:^",
-		"@rocket.chat/message-parser": "workspace:^",
-		"@rocket.chat/ui-kit": "workspace:~",
+		"@nexa/core-typings": "workspace:^",
+		"@nexa/message-parser": "workspace:^",
+		"@nexa/ui-kit": "workspace:~",
 		"ajv": "^8.20.0",
 		"ajv-formats": "^3.0.1"
 	},
 	"devDependencies": {
-		"@rocket.chat/apps-engine": "workspace:^",
+		"@nexa/apps-engine": "workspace:^",
 		"@types/jest": "~30.0.0",
 		"eslint": "~9.39.4",
 		"mongodb": "6.16.0",

@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/passport-x",
+	"name": "@nexa/passport-x",
 	"version": "0.0.1",
 	"private": true,
 	"description": "Fork of passport-twitter for X (Twitter) OAuth",

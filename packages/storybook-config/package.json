@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/storybook-config",
+	"name": "@nexa/storybook-config",
 	"version": "0.0.3",
 	"private": true,
 	"main": "./dist/index.js",
@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@rocket.chat/fuselage": "^0.82.0",
 		"@rocket.chat/icons": "^0.48.0",
-		"@rocket.chat/tsconfig": "workspace:*",
+		"@nexa/tsconfig": "workspace:*",
 		"@storybook/react": "^9.1.13",
 		"eslint": "~9.39.4",
 		"react": "~19.2.7",

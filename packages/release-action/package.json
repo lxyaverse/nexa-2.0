@@ -1,5 +1,5 @@
 {
-	"name": "@rocket.chat/release-action",
+	"name": "@nexa/release-action",
 	"version": "2.2.4",
 	"private": true,
 	"main": "dist/index.js",
