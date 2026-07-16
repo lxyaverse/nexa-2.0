@@ -22,7 +22,7 @@
 		"@nexa/rest-typings": "workspace:^",
 		"ajv": "^8.20.0",
 		"express": "^4.21.2",
-		"hono": "4.12.25",
+		"hono": "4.12.30",
 		"qs": "^6.15.2"
 	},
 	"devDependencies": {
