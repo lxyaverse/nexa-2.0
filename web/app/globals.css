@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), 'Geist', system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono', monospace;
+
+  --color-background: #0b0b12;
+  --color-foreground: #ededf2;
+  --color-card: #14141d;
+  --color-card-foreground: #ededf2;
+  --color-muted: #1c1c28;
+  --color-muted-foreground: #9d9daf;
+  --color-primary: #6c63ff;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #8f88ff;
+  --color-accent-foreground: #0b0b12;
+  --color-border: #26263a;
+  --radius: 0.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
