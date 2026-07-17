@@ -11,8 +11,8 @@ export default async function ChatLayout({ children }: { children: React.ReactNo
   } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  const [{ data: profile }, { data: channels }, { data: memberships }] = await Promise.all([
-    supabase.from('profiles').select('*').eq('id', user.id).single(),
+  const [{ data: initialProfile }, { data: channels }, { data: memberships }] = await Promise.all([
+    supabase.from('profiles').select('*').eq('id', user.id).maybeSingle(),
     supabase.from('channels').select('*').neq('type', 'dm').order('name'),
     supabase
       .from('channel_members')
@@ -20,7 +20,31 @@ export default async function ChatLayout({ children }: { children: React.ReactNo
       .eq('user_id', user.id),
   ])
 
-  if (!profile) redirect('/login')
+  let profile = initialProfile
+
+  if (!profile) {
+    // Auto-create profile if it is missing (e.g. user registered before schema/trigger was created)
+    const emailName = user.email ? user.email.split('@')[0] : 'user'
+    const fallbackUsername = `${emailName}-${user.id.slice(0, 4)}`
+    const fallbackDisplayName = emailName
+
+    const { data: newProfile, error: insertError } = await supabase
+      .from('profiles')
+      .insert({
+        id: user.id,
+        username: fallbackUsername,
+        display_name: fallbackDisplayName,
+      })
+      .select('*')
+      .maybeSingle()
+
+    if (insertError || !newProfile) {
+      console.error('Failed to auto-create profile:', insertError)
+      await supabase.auth.signOut()
+      redirect('/login')
+    }
+    profile = newProfile
+  }
 
   const memberChannelIds = new Set((memberships ?? []).map((m) => m.channel_id))
   const dmChannelIds = (memberships ?? [])
